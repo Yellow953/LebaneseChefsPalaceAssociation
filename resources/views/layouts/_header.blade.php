@@ -45,49 +45,6 @@ $user = auth()->user();
 
             <!--begin::Navbar-->
             <div class="app-navbar flex-shrink-0">
-                <!--begin::Search-->
-                <div class="app-navbar-item align-items-stretch ms-1 ms-md-3">
-                    <!--begin::Search-->
-                    <div id="kt_header_search" class="header-search d-none d-md-flex align-items-stretch"
-                        data-kt-search-enter="enter" data-kt-menu-trigger="auto" data-kt-menu-overflow="false">
-                        <!--begin::Search toggle-->
-                        <div class="d-flex align-items-center">
-                            <div
-                                class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-40px h-md-40px">
-                                <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                <span class="svg-icon svg-icon-2 svg-icon-md-1">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1"
-                                            transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
-                                        <path
-                                            d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                            fill="currentColor" />
-                                    </svg>
-                                </span>
-                                <!--end::Svg Icon-->
-                            </div>
-
-                            <!--begin::Form-->
-                            <form class="w-100 position-relative" action="{{ route('app') }}" method="POST"
-                                enctype="multipart/form-data" id="redirectForm" autocomplete="off">
-                                @csrf
-                                <input type="hidden" name="route" value="">
-
-                                <!--begin::Input-->
-                                <input type="text" class="form-control typeahead tt-query" name="routes-search"
-                                    id="routes-search" spellcheck="false"
-                                    value="{{ request()->query('routes-search') }}" placeholder="Search..." />
-                                <!--end::Input-->
-                            </form>
-                            <!--end::Form-->
-                        </div>
-                        <!--end::Search toggle-->
-                    </div>
-                    <!--end::Search-->
-                </div>
-                <!--end::Search-->
-
                 <!--begin::Theme mode-->
                 <div class="app-navbar-item ms-1 ms-md-3">
                     <!--begin::Menu toggle-->
