@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Costpitality'),
+    'name' => env('APP_NAME', "Lebanese Chef's Palace Association"),
 
     /*
     |--------------------------------------------------------------------------

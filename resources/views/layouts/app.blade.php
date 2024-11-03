@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Costpitality</title>
+    <title>Lebanese Chef's Palace Association</title>
 </head>
 
 <body>
