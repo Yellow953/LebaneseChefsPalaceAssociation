@@ -54,16 +54,14 @@
                 </div>
                 <!--end:Menu item-->
 
-                {{--
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('clients*') ? 'active' : '' }}"
-                        href="{{ route('clients') }}">
+                    <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }}" href="{{ route('chefs') }}">
                         <span class="menu-icon">
                             <i class="bi bi-person-fill"></i>
                         </span>
-                        <span class="menu-title">Clients</span>
+                        <span class="menu-title">Chefs</span>
                     </a>
                     <!--end:Menu link-->
                 </div>
@@ -71,31 +69,16 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('analytics*') ? 'active' : '' }}"
-                        href="{{ route('analytics') }}">
-                        <span class="menu-icon">
-                            <i class="bi bi-bar-chart-fill"></i>
-                        </span>
-                        <span class="menu-title">Analytics</span>
-                    </a>
-                    <!--end:Menu link-->
-                </div>
-                <!--end:Menu item-->
-                <!--begin:Menu item-->
-                <div class="menu-item">
-                    <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('businesses*') ? 'active' : '' }}"
-                        href="{{ route('businesses') }}">
+                    <a class="menu-link {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
+                        href="{{ route('restaurants') }}">
                         <span class="menu-icon">
                             <i class="bi bi-building-fill"></i>
                         </span>
-                        <span class="menu-title">Businesses</span>
+                        <span class="menu-title">Restaurants</span>
                     </a>
                     <!--end:Menu link-->
                 </div>
                 <!--end:Menu item-->
-                --}}
-
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->

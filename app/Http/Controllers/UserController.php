@@ -19,7 +19,7 @@ class UserController extends Controller
     }
 
     public function new()
-    {;
+    {
         return view('users.new');
     }
 

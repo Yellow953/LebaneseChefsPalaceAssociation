@@ -6,11 +6,12 @@
     align-items: center;
 }
 
-.breadcrumb .breadcrumb-item, .breadcrumb .breadcrumb-item i {
+.breadcrumb .breadcrumb-item,
+.breadcrumb .breadcrumb-item i {
     font-size: 1.1rem;
 }
 
-.menu-icon i{
+.menu-icon i {
     font-size: 1.25rem;
     color: white !important;
 }
@@ -24,40 +25,41 @@
     color: #009ef7 !important;
 }
 
-.menu-link.active .menu-icon i, .menu-link.active .menu-title {
+.menu-link.active .menu-icon i,
+.menu-link.active .menu-title {
     color: #009ef7 !important;
 }
 
-table thead tr th{
+table thead tr th {
     font-weight: bold !important;
     font-size: 1.1rem !important;
     letter-spacing: 0.5px;
 }
 
-.ml-2{
+.ml-2 {
     margin-left: 0.5rem !important;
 }
-.mr-2{
+.mr-2 {
     margin-right: 0.5rem !important;
 }
 
-.card-head{
+.card-head {
     padding: 25px 0;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 25px;
     padding: 0 10px;
 }
 
-.btn-icon i{
+.btn-icon i {
     color: black !important;
 }
-.btn-icon:hover i{
+.btn-icon:hover i {
     color: white !important;
 }
 
-.backup-img{
+.backup-img {
     height: 300px;
 }
 
@@ -81,43 +83,47 @@ table thead tr th{
     border-bottom: none;
 }
 
-#discount_text:hover{
-    cursor:copy ;
+#discount_text:hover {
+    cursor: copy;
 }
 
-#discount_input{
+#discount_input {
     width: 200px;
     margin-bottom: 10px;
 }
 
-.bank-note:hover, .product-item:hover{
-    cursor:pointer;
+.bank-note:hover,
+.product-item:hover {
+    cursor: pointer;
 }
 
-.border{
+.border {
     border: 1px solid #cecece !important;
 }
 
-.fs-paragraph{
+.fs-paragraph {
     font-size: medium;
 }
 
 /* Scroller */
-#kt_app_body::-webkit-scrollbar-track, .custom_scroller::-webkit-scrollbar-track {
+#kt_app_body::-webkit-scrollbar-track,
+.custom_scroller::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 7px;
     background-color: #1b1b1d;
 }
 
-#kt_app_body::-webkit-scrollbar, .custom_scroller::-webkit-scrollbar {
+#kt_app_body::-webkit-scrollbar,
+.custom_scroller::-webkit-scrollbar {
     width: 12px;
     background-color: #1b1b1d;
 }
 
-#kt_app_body::-webkit-scrollbar-thumb, .custom_scroller::-webkit-scrollbar-thumb {
+#kt_app_body::-webkit-scrollbar-thumb,
+.custom_scroller::-webkit-scrollbar-thumb {
     border-radius: 7px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: #009EF7;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #009ef7;
 }
 
 /* start typeahead */
@@ -130,7 +136,7 @@ table thead tr th{
 .typeahead,
 .tt-query,
 .tt-hint {
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 20px;
     height: 35px;
@@ -146,7 +152,7 @@ table thead tr th{
 }
 
 .typeahead:focus {
-    border: 2px solid #0097CF;
+    border: 2px solid #0097cf;
 }
 
 .tt-query {
@@ -158,7 +164,7 @@ table thead tr th{
 }
 
 .tt-menu {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -174,8 +180,8 @@ table thead tr th{
 
 .tt-suggestion:hover {
     cursor: pointer;
-    background-color: #0097CF;
-    color: #FFFFFF;
+    background-color: #0097cf;
+    color: #ffffff;
 }
 
 .tt-suggestion p {
@@ -190,7 +196,7 @@ table thead tr th{
     width: 450px;
 }
 
-  .calculator-screen {
+.calculator-screen {
     width: 100%;
     height: 80px;
     border: none;
@@ -200,24 +206,24 @@ table thead tr th{
     padding-right: 20px;
     padding-left: 10px;
     font-size: 4rem;
-  }
+}
 
-  .calculator button {
+.calculator button {
     height: 60px;
-    font-size: 2rem!important;
-  }
+    font-size: 2rem !important;
+}
 
-  .equal-sign {
+.equal-sign {
     height: 300px !important;
     grid-area: 2 / 4 / 6 / 5;
-  }
+}
 
-  .calculator-keys {
+.calculator-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     padding: 20px;
-  }
+}
 /* end calculator */
 
 /* start todo */
@@ -248,7 +254,7 @@ table thead tr th{
 }
 
 #todo_button:hover {
-    filter: brightness(.8);
+    filter: brightness(0.8);
 }
 
 .todo ul {
@@ -266,7 +272,7 @@ table thead tr th{
 
 .todo ul li::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -296,7 +302,7 @@ table thead tr th{
     align-items: center;
     color: #555;
     font-size: 18px;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .todo span:hover {
@@ -305,12 +311,12 @@ table thead tr th{
 }
 /* end todo */
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
 @media only screen and (max-width: 600px) {
-    .backup-img{
+    .backup-img {
         height: 150px;
     }
 
