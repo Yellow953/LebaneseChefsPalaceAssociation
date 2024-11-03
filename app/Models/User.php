@@ -9,7 +9,6 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
     protected $fillable = [
@@ -31,5 +30,33 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function can_delete()
+    {
+        return auth()->user()->role == 'admin';
+    }
+
+    // Filter
+    public function scopeFilter($q)
+    {
+        if (request('name')) {
+            $name = request('name');
+            $q->where('name', 'LIKE', "%{$name}%");
+        }
+        if (request('email')) {
+            $email = request('email');
+            $q->where('email', 'LIKE', "%{$email}%");
+        }
+        if (request('phone')) {
+            $phone = request('phone');
+            $q->where('phone', 'LIKE', "%{$phone}%");
+        }
+        if (request('role')) {
+            $role = request('role');
+            $q->where('role', $role);
+        }
+
+        return $q;
     }
 }

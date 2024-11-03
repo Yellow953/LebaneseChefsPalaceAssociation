@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\AppController;
+use App\Http\Controllers\BackupController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LogController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +24,27 @@ Route::middleware(['auth'])->group(function () {
             Route::post('/update/{user}', [UserController::class, 'update'])->name('users.update');
             Route::get('/delete/{user}', [UserController::class, 'destroy'])->name('users.destroy');
             Route::get('/', [UserController::class, 'index'])->name('users');
+        });
+
+        // Profile Routes
+        Route::prefix('profile')->group(function () {
+            Route::post('/save_password', [ProfileController::class, 'save_password'])->name('profile.save_password');
+            Route::post('/update', [ProfileController::class, 'update'])->name('profile.update');
+            Route::get('/', [ProfileController::class, 'show'])->name('profile');
+        });
+
+        // Logs
+        Route::prefix('logs')->group(function () {
+            Route::get('/export', [LogController::class, 'export'])->name('logs.export');
+            Route::get('/fetch', [LogController::class, 'fetch'])->name('logs.fetch');
+            Route::get('/', [LogController::class, 'index'])->name('logs');
+        });
+
+        // Backup
+        Route::prefix('backup')->group(function () {
+            Route::get('/export', [BackupController::class, 'export'])->name('backup.export');
+            Route::post('/import', [BackupController::class, 'import'])->name('backup.import');
+            Route::get('/', [BackupController::class, 'index'])->name('backup');
         });
 
         // App

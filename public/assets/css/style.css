@@ -1,0 +1,320 @@
+.alert {
+    padding: 5px 10px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb .breadcrumb-item, .breadcrumb .breadcrumb-item i {
+    font-size: 1.1rem;
+}
+
+.menu-icon i{
+    font-size: 1.25rem;
+    color: white !important;
+}
+
+.app-sidebar-wrapper .menu .menu-item .menu-link .menu-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.app-sidebar-wrapper .menu .menu-item .menu-link .menu-title:hover {
+    color: #009ef7 !important;
+}
+
+.menu-link.active .menu-icon i, .menu-link.active .menu-title {
+    color: #009ef7 !important;
+}
+
+table thead tr th{
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.5px;
+}
+
+.ml-2{
+    margin-left: 0.5rem !important;
+}
+.mr-2{
+    margin-right: 0.5rem !important;
+}
+
+.card-head{
+    padding: 25px 0;
+}
+
+.form-group{
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.btn-icon i{
+    color: black !important;
+}
+.btn-icon:hover i{
+    color: white !important;
+}
+
+.backup-img{
+    height: 300px;
+}
+
+.user-info-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.user-info-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.user-info-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.user-info-item:last-child {
+    border-bottom: none;
+}
+
+#discount_text:hover{
+    cursor:copy ;
+}
+
+#discount_input{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.bank-note:hover, .product-item:hover{
+    cursor:pointer;
+}
+
+.border{
+    border: 1px solid #cecece !important;
+}
+
+.fs-paragraph{
+    font-size: medium;
+}
+
+/* Scroller */
+#kt_app_body::-webkit-scrollbar-track, .custom_scroller::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    background-color: #1b1b1d;
+}
+
+#kt_app_body::-webkit-scrollbar, .custom_scroller::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1b1b1d;
+}
+
+#kt_app_body::-webkit-scrollbar-thumb, .custom_scroller::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #009EF7;
+}
+
+/* start typeahead */
+.bs-example {
+    font-family: sans-serif;
+    position: relative;
+    margin: 100px;
+}
+
+.typeahead,
+.tt-query,
+.tt-hint {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 35px;
+    line-height: 30px;
+    outline: medium none;
+    padding: 8px 12px;
+    width: auto;
+    color: white;
+}
+
+.typeahead {
+    background-color: transparent;
+}
+
+.typeahead:focus {
+    border: 2px solid #0097CF;
+}
+
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.tt-hint {
+    color: #999999;
+}
+
+.tt-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 422px;
+}
+
+.tt-suggestion {
+    font-size: 22px;
+    padding: 3px 20px;
+}
+
+.tt-suggestion:hover {
+    cursor: pointer;
+    background-color: #0097CF;
+    color: #FFFFFF;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+/* end typeahead */
+
+/* start calculator */
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 450px;
+}
+
+  .calculator-screen {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 4rem;
+  }
+
+  .calculator button {
+    height: 60px;
+    font-size: 2rem!important;
+  }
+
+  .equal-sign {
+    height: 300px !important;
+    grid-area: 2 / 4 / 6 / 5;
+  }
+
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+/* end calculator */
+
+/* start todo */
+.todo {
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+}
+
+#todo_input {
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: #e6e6e6;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+#todo_button {
+    font-size: medium !important;
+    padding: 5px 15px !important;
+    max-height: 50px;
+    border-radius: 0 20px 20px 0;
+}
+
+#todo_button:hover {
+    filter: brightness(.8);
+}
+
+.todo ul {
+    list-style: none;
+}
+
+.todo ul li {
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    margin-top: 5px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.todo ul li::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 0;
+    border: 2px solid #ff5945;
+}
+
+.todo ul .checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.todo ul .checked::before {
+    background-color: #ff5945;
+}
+
+.todo span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 18px;
+    transition: all .2s ease;
+}
+
+.todo span:hover {
+    background-color: red;
+    color: #fff;
+}
+/* end todo */
+
+.text-right{
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .backup-img{
+        height: 150px;
+    }
+
+    .calculator {
+        width: 100%;
+    }
+}
