@@ -115,9 +115,9 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#achievements"
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#certifications"
                                                 data-kt-scroll-toggle="true"
-                                                data-kt-drawer-dismiss="true">Achievements</a>
+                                                data-kt-drawer-dismiss="true">Certifications</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -250,7 +250,11 @@
                         About Us</h3>
                     <!--end::Title-->
                     <!--begin::Text-->
-                    <div class="fs-5 text-muted fw-bold">Setting the gold standard for Lebanese cuisine through professional certification, education, and recognition of exceptional culinary talent.
+                    <div class="text-muted-custom fw-bold fs-5">Setting the gold standard for Lebanese cuisine through professional certification, education, and recognition of exceptional culinary talent.
+                        <br> Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and evaluating chefs or issuing certificates <br>to build professional high standard profiles.
+                        <br>We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates comply with international food <br>safety measures respecting employee rights and accurate profiling.
+                        <br>We protect consumer rights. Our main goal is to enhance and promote healthy and cost efficient hospitality services <br>satisfying Consumers, Employees and Employers
+                        <br>by providing international standard certificates that will rectify the market's fluctuating and low standards.
                     </div>
                     <!--end::Text-->
                 </div>
@@ -258,26 +262,24 @@
                 <!--begin::Row-->
                 <div class="row w-100 gy-10 mb-md-20">
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4 px-5 plate-bg h-400px align-items-center">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
+                        <div class="text-center mb-10 mb-md-0 pt-20">
                             <!--begin::Illustration-->
-                            <img src="assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" />
+                            <!-- <img src="assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" /> -->
                             <!--end::Illustration-->
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
+                            <div class="d-flex flex-center mb-5 pt-20">
                                 <!--begin::Badge-->
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">1</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Jane Miller</div>
+                                <div class="fs-5 fs-lg-3 fw-bold primary-color">QUALITY CONTROL</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
-                                <br />by using single tool for different
-                                <br />amazing and great
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We evaluate food safety standards, kitchen hygiene and service quality through our inspections to ensure excellence in food service establishments.
                             </div>
                             <!--end::Description-->
                         </div>
@@ -285,26 +287,24 @@
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4 plate-bg h-400px px-5">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
+                        <div class="text-center mb-10 mb-md-0 pt-20">
                             <!--begin::Illustration-->
-                            <img src="assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt="" />
+                            <!-- <img src="assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt="" /> -->
                             <!--end::Illustration-->
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
+                            <div class="d-flex flex-center mb-5 pt-20">
                                 <!--begin::Badge-->
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">2</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Setup Your App</div>
+                                <div class="fs-5 fs-lg-3 fw-bold primary-color">COST EFFICIENCY</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
-                                <br />by using single tool for different
-                                <br />amazing and great
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We help restaurants optimize their operations and resources while maintaining quality, ensuring<br>business profitability and fair<br>consumer pricing.
                             </div>
                             <!--end::Description-->
                         </div>
@@ -312,26 +312,24 @@
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5">
+                    <div class="col-md-4 plate-bg h-400px px-5">
                         <!--begin::Story-->
-                        <div class="text-center mb-10 mb-md-0">
+                        <div class="text-center mb-10 mb-md-0 pt-20">
                             <!--begin::Illustration-->
-                            <img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" />
+                            <!-- <img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" /> -->
                             <!--end::Illustration-->
                             <!--begin::Heading-->
-                            <div class="d-flex flex-center mb-5">
+                            <div class="d-flex flex-center mb-5 pt-20">
                                 <!--begin::Badge-->
                                 <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">3</span>
                                 <!--end::Badge-->
                                 <!--begin::Title-->
-                                <div class="fs-5 fs-lg-3 fw-bold text-dark">Enjoy Nautica App</div>
+                                <div class="fs-5 fs-lg-3 fw-bold primary-color">MARKET TRANSPARENCY</div>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
-                                <br />by using single tool for different
-                                <br />amazing and great
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We make pricing information<br>publicly accessible across different establishments to promote<br>informed consumer choices<br>and fair competition.
                             </div>
                             <!--end::Description-->
                         </div>
@@ -340,34 +338,118 @@
                     <!--end::Col-->
                 </div>
                 <!--end::Row-->
-                <!--begin::Product slider-->
+                <!--begin:: Certifications Heading-->
+                <div class="text-center mb-10 mb-md-20">
+                    <!--begin::Title-->
+                    <h3 class="fs-2hx primary-color mb-5" id="certifications" data-kt-scroll-offset="{default: 100, lg: 150}">
+                        Certifications</h3>
+                    <!--end::Title-->
+                </div>
+                <!--end:: Certifications Heading-->
+                <!--begin::Certifications slider-->
                 <div class="tns tns-default">
                     <!--begin::Slider-->
                     <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000"
                         data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true"
-                        data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false"
+                        data-tns-nav="false" data-tns-items="4" data-tns-center="false" data-tns-dots="false"
                         data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
                         <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                            <img src="assets/media/preview/demos/demo1/light-ltr.png"
+                            <img src="{{asset('assets/images/certifications/certification-1.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
                         </div>
                         <!--end::Item-->
                         <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                            <img src="assets/media/preview/demos/demo2/light-ltr.png"
+                            <img src="{{asset('assets/images/certifications/certification-2.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
                         </div>
                         <!--end::Item-->
                         <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                            <img src="assets/media/preview/demos/demo4/light-ltr.png"
+                            <img src="{{asset('assets/images/certifications/certification-3.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
                         </div>
                         <!--end::Item-->
                         <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                            <img src="assets/media/preview/demos/demo5/light-ltr.png"
+                            <img src="{{asset('assets/images/certifications/certification-4.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-5.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-6.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-7.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-8.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item--><!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-9.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-10.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-11.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-12.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item--><!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-13.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-14.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-15.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-16.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-17.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
                         </div>
                         <!--end::Item-->
@@ -406,12 +488,12 @@
             </div>
             <!--end::Container-->
         </div>
-        <!--end::How It Works Section-->
+        <!--end::About Us Section-->
 
         <!--begin::Statistics Section-->
         <div class="mt-sm-n10">
             <!--begin::Curve top-->
-            <div class="landing-curve landing-dark-color">
+            <div class="landing-curve primary-color-curve">
                 <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z"
@@ -420,7 +502,7 @@
             </div>
             <!--end::Curve top-->
             <!--begin::Wrapper-->
-            <div class="pb-15 pt-18 landing-dark-bg">
+            <div class="pb-15 pt-18 achievements-bg">
                 <!--begin::Container-->
                 <div class="container">
                     <!--begin::Heading-->
@@ -571,7 +653,7 @@
             </div>
             <!--end::Wrapper-->
             <!--begin::Curve bottom-->
-            <div class="landing-curve landing-dark-color">
+            <div class="landing-curve primary-color-curve">
                 <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"

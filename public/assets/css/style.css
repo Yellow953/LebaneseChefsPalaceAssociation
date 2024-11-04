@@ -1,6 +1,7 @@
 :root {
     --lighter-primary-color: #06b85f;
     --primary-color: #015229;
+    --darker-primary-color: #00351a;
     --secondary-color: #e5212b;
     --light-color: #ffffff;
     --dark-color: #1b1b1d;
@@ -40,6 +41,19 @@ body{
 
 .landing-light-color{
     color: var(--light-color) !important;
+}
+
+.plate-bg{
+    background-image: url("../images/plate-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text-muted-custom {
+    color: #7a7a7a !important;
+
 }
 
 .alert {
@@ -401,6 +415,21 @@ table thead tr th {
     color: var(--primary-color) !important;
 }
 
+.primary-color-curve{
+    color: var(--darker-primary-color) !important;
+}
+
+.primary-color-bg{
+    background-color: var(--darker-primary-color) !important;
+}
+
+.achievements-bg{
+    background-image: url('../images/achievements-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
 .indicator-label-custom{
     background-color: var(--primary-color) !important;
     color: white !important;
