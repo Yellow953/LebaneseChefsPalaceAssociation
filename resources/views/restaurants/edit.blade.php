@@ -67,7 +67,7 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="form-group">
                             <label class="required form-label">Description</label>
                             <textarea class="form-control" name="description" rows="3"

@@ -80,4 +80,4 @@ Route::middleware(['auth'])->group(function () {
 });
 
 // Landing Page
-Route::get('/', [HomeController::class, 'index'])->name('welcome');
+Route::get('/', [HomeController::class, 'index'])->name('home');
