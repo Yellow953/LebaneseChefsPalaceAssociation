@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Lebanese Chef's Palace Association</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
@@ -43,7 +46,7 @@
         <!--begin::Header Section-->
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
-            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg hero">
+            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-light-bg hero">
                 <!--begin::Header-->
                 <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
                     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
@@ -75,8 +78,8 @@
                                 <a href="../../demo1/dist/landing.html">
                                     <img alt="Logo" src="{{asset('assets/images/favicon.png')}}"
                                         class="logo-default h-50px h-lg-60px" />
-                                    <img alt="Logo" src="assets/media/logos/landing-dark.svg"
-                                        class="logo-sticky h-20px h-lg-25px" />
+                                    <img alt="Logo" src="{{asset('assets/images/favicon.png')}}"
+                                        class="logo-sticky h-50px h-lg-60px" />
                                 </a>
                                 <!--end::Logo image-->
                             </div>
@@ -96,7 +99,7 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body"
+                                            <a class="menu-link nav-link nav-link-custom active py-3 px-4 px-xxl-6" href="#kt_body"
                                                 data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Home</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -104,16 +107,15 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">How it
-                                                Works</a>
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#how-it-works"
+                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">About Us</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#achievements"
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#achievements"
                                                 data-kt-scroll-toggle="true"
                                                 data-kt-drawer-dismiss="true">Achievements</a>
                                             <!--end::Menu link-->
@@ -122,7 +124,7 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#team"
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#team"
                                                 data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Team</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -130,7 +132,7 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#portfolio"
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#portfolio"
                                                 data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Portfolio</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -138,7 +140,7 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing"
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#pricing"
                                                 data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Pricing</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -165,16 +167,16 @@
                     <!--begin::Heading-->
                     <div class="text-start my-5 my-lg-10 py-10 py-lg-20">
                         <!--begin::Title-->
-                        <h1 class="hero-text lh-base fw-bold fs-2x fs-lg-3x mb-15">Lebanese Chef's Palace Associate
+                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15">LEBANESE CHEF'S PALACE ASSOCIATION
                             <br />
-                            <span
-                                style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                                <span id="kt_landing_hero_text">قصر الطهاة اللبنانيين</span>
+                            <span class="hero-text-span">
+                                <span class="hero-text-span-2" id="kt_landing_hero_text">قصر الطهاة اللبناني</span>
                             </span>
                         </h1>
                         <!--end::Title-->
                         <!--begin::Action-->
-                        <a href="../../demo1/dist/index.html" class="btn btn-primary">Try Metronic</a>
+                        <a href="#portfolio" class="btn btn-primary btn-custom mx-5">Who Are We?
+                        </a>
                         <!--end::Action-->
                     </div>
                     <!--end::Heading-->
@@ -228,7 +230,7 @@
             </div>
             <!--end::Wrapper-->
             <!--begin::Curve bottom-->
-            <div class="landing-curve landing-dark-color mb-10 mb-lg-20">
+            <div class="landing-curve landing-light-color mb-10 mb-lg-20">
                 <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"
@@ -239,19 +241,18 @@
         </div>
         <!--end::Header Section-->
 
-        <!--begin::How It Works Section-->
+        <!--begin::About Us Section-->
         <div class="mb-n10 mb-lg-n20 z-index-2">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
                 <div class="text-center mb-17">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        How it Works</h3>
+                    <h3 class="fs-2hx text-dark mb-5" id="about-us" data-kt-scroll-offset="{default: 100, lg: 150}">
+                        About Us</h3>
                     <!--end::Title-->
                     <!--begin::Text-->
-                    <div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool
-                        <br />for different amazing and great useful admin
+                    <div class="fs-5 text-muted fw-bold">Setting the gold standard for Lebanese cuisine through professional certification, education, and recognition of exceptional culinary talent.
                     </div>
                     <!--end::Text-->
                 </div>

@@ -99,8 +99,8 @@
   --bs-link-color: #009ef7;
   --bs-link-color-rgb: 0, 158, 247;
   --bs-link-decoration: none;
-  --bs-link-hover-color: #0095e8;
-  --bs-link-hover-color-rgb: 0, 149, 232;
+  --bs-link-hover-color: #015229;
+  --bs-link-hover-color-rgb: 1, 82, 41;
   --bs-link-hover-decoration: none;
   --bs-code-color: #b93993;
   --bs-highlight-bg: #fff3cd;
@@ -172,9 +172,9 @@
   --bs-dark-border-subtle: #3F4254;
   --bs-heading-color: #FFFFFF;
   --bs-link-color: #009ef7;
-  --bs-link-hover-color: #9ec5fe;
+  --bs-link-hover-color: #015229;
   --bs-link-color-rgb: 0, 158, 247;
-  --bs-link-hover-color-rgb: 158, 197, 254;
+  --bs-link-hover-color-rgb: 1, 82, 41;
   --bs-code-color: #b93993;
   --bs-border-color: #3d3d3d;
   --bs-border-color-translucent: rgba(255, 255, 255, 0.15);

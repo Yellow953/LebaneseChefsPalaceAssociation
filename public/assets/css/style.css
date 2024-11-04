@@ -11,7 +11,23 @@
 }
 
 .hero-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     color: #015229;
+}
+
+.hero-text-span {
+    background: linear-gradient(to right, #015229 20%, #e5212b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text-span-2 {
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.landing-light-color{
+    color: #ffffff !important;
 }
 
 .alert {
@@ -339,4 +355,17 @@ table thead tr th {
     .calculator {
         width: 100%;
     }
+}
+
+.btn-custom{
+    color: white !important;
+    background-color: #015229 !important;
+}
+
+.nav-link-custom{
+    color: #06b85f !important;
+}
+
+.nav-link-custom:hover{
+    color: #015229 !important;
 }
