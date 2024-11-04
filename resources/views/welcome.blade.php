@@ -107,7 +107,7 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#how-it-works"
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#about-us"
                                                 data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">About Us</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -153,7 +153,7 @@
                             <!--begin::Toolbar-->
                             <div class="flex-equal text-end ms-1">
                                 <a href="../../demo1/dist/authentication/layouts/basic/sign-in.html"
-                                    class="btn btn-success">Sign In</a>
+                                    class="btn btn-custom">Sign In</a>
                             </div>
                             <!--end::Toolbar-->
                         </div>
@@ -167,15 +167,13 @@
                     <!--begin::Heading-->
                     <div class="text-start my-5 my-lg-10 py-10 py-lg-20">
                         <!--begin::Title-->
-                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15">LEBANESE CHEF'S PALACE ASSOCIATION
+                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15"><span class="hero-text-span">LEBANESE CHEF'S PALACE ASSOCIATION</span>
                             <br />
-                            <span class="hero-text-span">
-                                <span class="hero-text-span-2" id="kt_landing_hero_text">قصر الطهاة اللبناني</span>
-                            </span>
+                            <span class="hero-text-span-2" id="kt_landing_hero_text">قصر الطهاة اللبناني</span>
                         </h1>
                         <!--end::Title-->
                         <!--begin::Action-->
-                        <a href="#portfolio" class="btn btn-primary btn-custom mx-5">Who Are We?
+                        <a href="#about-us" class="btn btn-custom mx-5">Who Are We?
                         </a>
                         <!--end::Action-->
                     </div>
@@ -248,7 +246,7 @@
                 <!--begin::Heading-->
                 <div class="text-center mb-17">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark mb-5" id="about-us" data-kt-scroll-offset="{default: 100, lg: 150}">
+                    <h3 class="fs-2hx primary-color mb-5" id="about-us" data-kt-scroll-offset="{default: 100, lg: 150}">
                         About Us</h3>
                     <!--end::Title-->
                     <!--begin::Text-->

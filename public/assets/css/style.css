@@ -1,3 +1,15 @@
+:root {
+    --lighter-primary-color: #06b85f;
+    --primary-color: #015229;
+    --secondary-color: #e5212b;
+    --light-color: #ffffff;
+    --dark-color: #1b1b1d;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
 .hero {
     background: linear-gradient(
             90deg,
@@ -13,11 +25,11 @@
 .hero-text {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    color: #015229;
+    color: var(--primary-color);
 }
 
 .hero-text-span {
-    background: linear-gradient(to right, #015229 20%, #e5212b 100%);
+    background: linear-gradient(to right, var(--primary-color) 20%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -27,7 +39,7 @@
 }
 
 .landing-light-color{
-    color: #ffffff !important;
+    color: var(--light-color) !important;
 }
 
 .alert {
@@ -355,17 +367,41 @@ table thead tr th {
     .calculator {
         width: 100%;
     }
+
+    .login-logo{
+        width: 200px !important;
+    }
 }
 
 .btn-custom{
     color: white !important;
-    background-color: #015229 !important;
+    background-color: var(--primary-color) !important;
+}
+
+.btn-custom:hover{
+    color: white !important;
+    background-color: var(--lighter-primary-color) !important;
 }
 
 .nav-link-custom{
-    color: #06b85f !important;
+    color: var(--primary-color) !important;
+    font-size: medium;
 }
 
 .nav-link-custom:hover{
-    color: #015229 !important;
+    color: var(--lighter-primary-color) !important;
+}
+
+.login-card-custom{
+    border: var(--primary-color) 3px solid !important;
+    box-shadow: var(--primary-color) 0px 0px 15px 5px !important;
+}
+
+.primary-color{
+    color: var(--primary-color) !important;
+}
+
+.indicator-label-custom{
+    background-color: var(--primary-color) !important;
+    color: white !important;
 }
