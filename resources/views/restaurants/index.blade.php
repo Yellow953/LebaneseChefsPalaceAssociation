@@ -112,7 +112,8 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                     <!--begin::Col-->
                     <div class="col-md-6">
                         <label class="fs-6 form-label fw-bold text-dark">Type</label>
-                        <select name="type" class="form-control">
+                        <select name="type" class="form-control" data-control="select2"
+                            data-placeholder="Select an option">
                             <option value=""></option>
                             @foreach ($types as $type)
                             <option value="{{ $type }}" {{ request()->query('type') == $type ? 'selected' : '' }}>{{
@@ -125,7 +126,8 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                     <!--begin::Col-->
                     <div class="col-md-6">
                         <label class="fs-6 form-label fw-bold text-dark">Certification Status</label>
-                        <select name="certification_status" class="form-control">
+                        <select name="certification_status" class="form-control" data-control="select2"
+                            data-placeholder="Select an option">
                             <option value=""></option>
                             @foreach ($certification_statuses as $certification_status)
                             <option value="{{ $certification_status }}" {{ request()->query('certification_status') ==
