@@ -11,12 +11,30 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="favicon" href="{{ asset('assets/images/favicon.png') }}" />
 </head>
 
 <body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-white position-relative app-blank">
     <!--begin::Theme mode setup on page load-->
     <script>
-        var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
+        var defaultThemeMode = "light";
+        var themeMode;
+        if (document.documentElement) {
+            if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
+                themeMode = document.documentElement.getAttribute("data-bs-theme-mode");
+            } else {
+                if (localStorage.getItem("data-bs-theme") !== null) {
+                    themeMode = localStorage.getItem("data-bs-theme");
+                } else {
+                    themeMode = defaultThemeMode;
+                }
+            }
+            if (themeMode === "system") {
+                themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            document.documentElement.setAttribute("data-bs-theme", themeMode);
+        }
     </script>
     <!--end::Theme mode setup on page load-->
 
@@ -25,8 +43,7 @@
         <!--begin::Header Section-->
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
-            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg"
-                style="background-image: url(assets/media/svg/illustrations/landing.svg)">
+            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg hero">
                 <!--begin::Header-->
                 <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
                     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
@@ -56,8 +73,8 @@
                                 <!--end::Mobile menu toggle-->
                                 <!--begin::Logo image-->
                                 <a href="../../demo1/dist/landing.html">
-                                    <img alt="Logo" src="assets/media/logos/landing.svg"
-                                        class="logo-default h-25px h-lg-30px" />
+                                    <img alt="Logo" src="{{asset('assets/images/favicon.png')}}"
+                                        class="logo-default h-50px h-lg-60px" />
                                     <img alt="Logo" src="assets/media/logos/landing-dark.svg"
                                         class="logo-sticky h-20px h-lg-25px" />
                                 </a>
@@ -144,15 +161,15 @@
                 </div>
                 <!--end::Header-->
                 <!--begin::Landing hero-->
-                <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
+                <div class="d-flex flex-column w-100 min-h-350px min-h-lg-500px px-9">
                     <!--begin::Heading-->
-                    <div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
+                    <div class="text-start my-5 my-lg-10 py-10 py-lg-20">
                         <!--begin::Title-->
-                        <h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">Build An Outstanding Solutions
-                            <br />with
+                        <h1 class="hero-text lh-base fw-bold fs-2x fs-lg-3x mb-15">Lebanese Chef's Palace Associate
+                            <br />
                             <span
                                 style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-                                <span id="kt_landing_hero_text">The Best Theme Ever</span>
+                                <span id="kt_landing_hero_text">قصر الطهاة اللبنانيين</span>
                             </span>
                         </h1>
                         <!--end::Title-->
