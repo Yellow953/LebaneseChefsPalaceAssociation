@@ -710,27 +710,27 @@
                                     <!--end::Subtitle-->
                                     <!--begin::Link-->
                                     <a href="https://keenthemes.com/faqs"
-                                        class="opacity-50 link-footer fs-5 mb-6">FAQ</a>
+                                        class="opacity-80 link-footer fs-5 mb-6">FAQ</a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://preview.keenthemes.com/html/metronic/docs"
-                                        class="opacity-50 link-footer fs-5 mb-6">Documentaions</a>
+                                        class="opacity-80 link-footer fs-5 mb-6">Documentaions</a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://www.youtube.com/c/KeenThemesTuts/videos"
-                                        class="opacity-50 link-footer fs-5 mb-6">Video Tuts</a>
+                                        class="opacity-80 link-footer fs-5 mb-6">Video Tuts</a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://preview.keenthemes.com/html/metronic/docs/getting-started/changelog"
-                                        class="opacity-50 link-footer fs-5 mb-6">Changelog</a>
+                                        class="opacity-80 link-footer fs-5 mb-6">Changelog</a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://devs.keenthemes.com/"
-                                        class="opacity-50 link-footer fs-5 mb-6">Support Forum</a>
+                                        class="opacity-80 link-footer fs-5 mb-6">Support Forum</a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://keenthemes.com/blog"
-                                        class="opacity-50 link-footer fs-5">Blog</a>
+                                        class="opacity-80 link-footer fs-5">Blog</a>
                                     <!--end::Link-->
                                 </div>
                                 <!--end::Links-->
@@ -743,27 +743,27 @@
                                     <a href="https://www.facebook.com/keenthemes" class="mb-6">
                                         <img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2"
                                             alt="" />
-                                        <span class="link-footer opacity-50 fs-5 mb-6">Facebook</span>
+                                        <span class="link-footer opacity-80 fs-5 mb-6">Facebook</span>
                                     </a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://github.com/KeenthemesHub" class="mb-6">
                                         <img src="assets/media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
-                                        <span class="opacity-50 link-footer fs-5 mb-6">Github</span>
+                                        <span class="opacity-80 link-footer fs-5 mb-6">Github</span>
                                     </a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://twitter.com/keenthemes" class="mb-6">
                                         <img src="assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2"
                                             alt="" />
-                                        <span class="opacity-50 link-footer fs-5 mb-6">Twitter</span>
+                                        <span class="opacity-80 link-footer fs-5 mb-6">Twitter</span>
                                     </a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
                                     <a href="https://dribbble.com/keenthemes" class="mb-6">
                                         <img src="assets/media/svg/brand-logos/dribbble-icon-1.svg" class="h-20px me-2"
                                             alt="" />
-                                        <span class="opacity-50 link-footer fs-5 mb-6">Dribbble</span>
+                                        <span class="opacity-80 link-footer fs-5 mb-6">Dribbble</span>
                                     </a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
@@ -771,7 +771,7 @@
                                         <img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2"
                                             alt="" />
                                         <span
-                                            class="opacity-50 link-footer fs-5 mb-6">Instagram</span>
+                                            class="opacity-80 link-footer fs-5 mb-6">Instagram</span>
                                     </a>
                                     <!--end::Link-->
                                 </div>
@@ -807,13 +807,13 @@
                         <!--begin::Menu-->
                         <ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
                             <li class="menu-item">
-                                <a href="https://keenthemes.com" target="_blank" class="link-footer opacity-50 px-2">About</a>
+                                <a href="https://keenthemes.com" target="_blank" class="link-footer opacity-80 px-2">About</a>
                             </li>
                             <li class="menu-item mx-5">
-                                <a href="https://devs.keenthemes.com" target="_blank" class="link-footer opacity-50 px-2">Support</a>
+                                <a href="https://devs.keenthemes.com" target="_blank" class="link-footer opacity-80 px-2">Support</a>
                             </li>
                             <li class="menu-item">
-                                <a href="" target="_blank" class="link-footer opacity-50 px-2">Purchase</a>
+                                <a href="" target="_blank" class="link-footer opacity-80 px-2">Purchase</a>
                             </li>
                         </ul>
                         <!--end::Menu-->

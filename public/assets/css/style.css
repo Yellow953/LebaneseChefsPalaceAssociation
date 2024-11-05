@@ -406,7 +406,7 @@ table thead tr th {
 }
 
 .nav-link-custom:hover {
-    color: var(--lighter-primary-color) !important;
+    color: var(--secondary-color) !important;
 }
 
 .login-card-custom {
@@ -423,7 +423,7 @@ table thead tr th {
 }
 
 .lighter-primary-color:hover {
-    color: white !important;
+    color: var(--secondary-color) !important;
 }
 
 .primary-color-curve {
@@ -471,7 +471,7 @@ table thead tr th {
 }
 
 .link-footer:hover {
-    color: var(--light-color) !important;
+    color: var(--secondary-color) !important;
 }
 
 .link-footer-card {
@@ -479,5 +479,5 @@ table thead tr th {
 }
 
 .link-footer-card:hover {
-    color: var(--lighter-primary-color) !important;
+    color: var(--secondary-color) !important;
 }
