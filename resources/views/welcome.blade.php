@@ -100,7 +100,7 @@
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link nav-link-custom active py-3 px-4 px-xxl-6" href="#home"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Home</a>
+                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">HOME</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -108,7 +108,7 @@
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#about-us"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">About Us</a>
+                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">ABOUT US</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -117,7 +117,7 @@
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#certifications"
                                                 data-kt-scroll-toggle="true"
-                                                data-kt-drawer-dismiss="true">Certifications</a>
+                                                data-kt-drawer-dismiss="true">CERTIFICATIONS</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -125,7 +125,7 @@
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#testchef"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">TestChef</a>
+                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">TESTCHEF</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -133,23 +133,7 @@
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#institutes"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Institutes</a>
-                                            <!--end::Menu link-->
-                                        </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
-                                        <div class="menu-item">
-                                            <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#portfolio"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Portfolio</a>
-                                            <!--end::Menu link-->
-                                        </div>
-                                        <!--end::Menu item-->
-                                        <!--begin::Menu item-->
-                                        <div class="menu-item">
-                                            <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#pricing"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Pricing</a>
+                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">INSTITUTES</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -161,7 +145,7 @@
                             <!--begin::Toolbar-->
                             <div class="flex-equal text-end ms-1">
                                 <a href=""
-                                    class="btn btn-custom">Sign In</a>
+                                    class="btn btn-custom">SIGN IN</a>
                             </div>
                             <!--end::Toolbar-->
                         </div>
@@ -181,7 +165,7 @@
                         </h1>
                         <!--end::Title-->
                         <!--begin::Action-->
-                        <a href="#about-us" class="btn btn-custom mx-5">Who Are We?
+                        <a href="#about-us" class="btn btn-custom mx-5">WHO ARE WE?
                         </a>
                         <!--end::Action-->
                     </div>
