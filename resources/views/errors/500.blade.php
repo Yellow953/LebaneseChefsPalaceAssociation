@@ -279,7 +279,7 @@
             <p>
                 Uh Oh! Something Went Bad... <br>
                 Please Contact Support About This... <br> <br>
-                <a href="{{ auth()->user() ? route('dashboard') : route('welcome') }}" class="btn-custom">Back to
+                <a href="{{ route('welcome') }}" class="btn-custom">Back to
                     Homepage</a>
             </p>
         </div>
