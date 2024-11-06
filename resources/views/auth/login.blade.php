@@ -50,7 +50,10 @@
         <!--begin::Page bg image-->
         <style>
             body {
-                background: white;
+                background-image: url("{{ asset('assets/images/login-bg.jpg') }}");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
             }
         </style>
         <!--end::Page bg image-->
@@ -61,11 +64,6 @@
             <div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">
                 <!--begin::Aside-->
                 <div class="d-flex flex-center flex-lg-start flex-column">
-                    <!--begin::Logo-->
-                    <a href="{{ route('home') }}" class="mb-7">
-                        <img alt="Logo" src="{{ asset('assets/images/logo.png') }}" class="login-logo" />
-                    </a>
-                    <!--end::Logo-->
                     <!--begin::Title-->
                     <!-- <h2 class="text-white fw-normal m-0">Lebanese Chef's Palace Association</h2> -->
                     <!--end::Title-->
@@ -78,17 +76,21 @@
                 <!--begin::Card-->
                 <div class="card login-card-custom rounded-3 w-md-550px">
                     <!--begin::Card body-->
-                    <div class="card-body d-flex flex-column p-10 p-lg-20 pb-lg-10">
+                    <div class="card-body d-flex flex-column p-15 p-lg-8 pb-lg-8">
                         <!--begin::Wrapper-->
-                        <div class="d-flex flex-center flex-column-fluid pb-15 pb-lg-20">
+                        <div class="d-flex flex-center flex-column-fluid pb-5 pb-lg-8">
                             <!--begin::Form-->
                             <form class="form w-100" id="kt_sign_in_form" method="POST" action="{{ route('login') }}">
+                                <!--begin::Logo-->
+                                <a href="{{ route('home') }}" class="d-flex flex-center">
+                                    <img alt="Logo" src="{{ asset('assets/images/logo.png') }}" class="login-logo" />
+                                </a>
+                                <!--end::Logo-->
                                 @csrf
-
                                 <!--begin::Heading-->
                                 <div class="text-center mb-11">
                                     <!--begin::Title-->
-                                    <h1 class="text-dark fw-bolder mb-3 display-5 primary-color">Sign In</h1>
+                                    <h1 class="text-dark fw-bolder mb-3 display-6 primary-color">Sign In</h1>
                                     <!--end::Title-->
                                 </div>
                                 <!--begin::Heading-->

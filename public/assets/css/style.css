@@ -386,10 +386,13 @@ table thead tr th {
     }
 
     .login-logo {
-        width: 200px !important;
+        width: 50px !important;
     }
 }
 
+.login-logo {
+    width: 100px;
+}
 .btn-custom {
     color: white !important;
     background-color: var(--primary-color) !important;
@@ -480,4 +483,10 @@ table thead tr th {
 
 .link-footer-card:hover {
     color: var(--secondary-color) !important;
+}
+.login-bg {
+    background-image: url("../images/login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
