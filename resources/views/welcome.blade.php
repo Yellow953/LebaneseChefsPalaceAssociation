@@ -766,7 +766,6 @@
                                         class="opacity-80 link-footer fs-5 mb-6">Support Forum</a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
-                                    <a href="https://keenthemes.com/blog" class="opacity-50 link-footer fs-5">Blog</a>
                                     <a href="https://keenthemes.com/blog"
                                         class="opacity-80 link-footer fs-5">Blog</a>
                                     <!--end::Link-->
@@ -808,12 +807,8 @@
                                     <a href="https://www.instagram.com/keenthemes" class="mb-6">
                                         <img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2"
                                             alt="" />
-                                        <<<<<<< HEAD
-                                            <span
+                                        <span
                                             class="opacity-80 link-footer fs-5 mb-6">Instagram</span>
-                                            =======
-                                            <span class="opacity-50 link-footer fs-5 mb-6">Instagram</span>
-                                            >>>>>>> 0f4011cf026f149f90662756ca5384cc07870a94
                                     </a>
                                     <!--end::Link-->
                                 </div>
@@ -849,21 +844,16 @@
                         <!--begin::Menu-->
                         <ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
                             <li class="menu-item">
-                                <a href="https://keenthemes.com" target="_blank" class="link-footer opacity-80 px-2">About</a>
-                            </li>
-                            <li class="menu-item mx-5">
-                                <a href="https://devs.keenthemes.com" target="_blank" class="link-footer opacity-80 px-2">Support</a>
-                                =======
                                 <a href="https://keenthemes.com" target="_blank"
                                     class="link-footer opacity-80 px-2">About</a>
                             </li>
                             <li class="menu-item mx-5">
                                 <a href="https://devs.keenthemes.com" target="_blank"
                                     class="link-footer opacity-80 px-2">Support</a>
-                                >>>>>>> 0f4011cf026f149f90662756ca5384cc07870a94
                             </li>
                             <li class="menu-item">
-                                <a href="" target="_blank" class="link-footer opacity-80 px-2">Purchase</a>
+                                <a href="" target="_blank"
+                                    class="link-footer opacity-80 px-2">Purchase</a>
                             </li>
                         </ul>
                         <!--end::Menu-->
