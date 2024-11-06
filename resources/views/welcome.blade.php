@@ -9,8 +9,12 @@
     <title>Lebanese Chef's Palace Association</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
@@ -46,7 +50,8 @@
         <!--begin::Header Section-->
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
-            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-light-bg hero">
+            <div
+                class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-light-bg hero">
                 <!--begin::Header-->
                 <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
                     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
@@ -75,7 +80,7 @@
                                 </button>
                                 <!--end::Mobile menu toggle-->
                                 <!--begin::Logo image-->
-                                <a href="../../demo1/dist/landing.html">
+                                <a href="{{ route('home') }}">
                                     <img alt="Logo" src="{{asset('assets/images/favicon.png')}}"
                                         class="logo-default h-50px h-lg-60px" />
                                     <img alt="Logo" src="{{asset('assets/images/favicon.png')}}"
@@ -99,24 +104,26 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom active py-3 px-4 px-xxl-6" href="#home"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">HOME</a>
+                                            <a class="menu-link nav-link nav-link-custom active py-3 px-4 px-xxl-6"
+                                                href="#home" data-kt-scroll-toggle="true"
+                                                data-kt-drawer-dismiss="true">HOME</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#about-us"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">ABOUT US</a>
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6"
+                                                href="#about-us" data-kt-scroll-toggle="true"
+                                                data-kt-drawer-dismiss="true">ABOUT US</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#certifications"
-                                                data-kt-scroll-toggle="true"
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6"
+                                                href="#certifications" data-kt-scroll-toggle="true"
                                                 data-kt-drawer-dismiss="true">CERTIFICATIONS</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -124,16 +131,18 @@
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#testchef"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">TESTCHEF</a>
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6"
+                                                href="#testchef" data-kt-scroll-toggle="true"
+                                                data-kt-drawer-dismiss="true">TESTCHEF</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
                                         <!--begin::Menu item-->
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
-                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6" href="#institutes"
-                                                data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">INSTITUTES</a>
+                                            <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6"
+                                                href="#institutes" data-kt-scroll-toggle="true"
+                                                data-kt-drawer-dismiss="true">INSTITUTES</a>
                                             <!--end::Menu link-->
                                         </div>
                                         <!--end::Menu item-->
@@ -144,8 +153,11 @@
                             <!--end::Menu wrapper-->
                             <!--begin::Toolbar-->
                             <div class="flex-equal text-end ms-1">
-                                <a href=""
-                                    class="btn btn-custom">SIGN IN</a>
+                                @auth
+                                <a href="{{ route('custom_logout') }}" class="btn btn-custom">SIGN OUT</a>
+                                @else
+                                <a href="{{ route('login') }}" class="btn btn-custom">SIGN IN</a>
+                                @endauth
                             </div>
                             <!--end::Toolbar-->
                         </div>
@@ -159,7 +171,8 @@
                     <!--begin::Heading-->
                     <div class="text-start my-5 my-lg-10 py-10 py-lg-20">
                         <!--begin::Title-->
-                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15"><span class="hero-text-span">LEBANESE CHEF'S PALACE ASSOCIATION</span>
+                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15"><span class="hero-text-span">LEBANESE CHEF'S
+                                PALACE ASSOCIATION</span>
                             <br />
                             <span class="hero-text-span-2" id="kt_landing_hero_text">قصر الطهاة اللبناني</span>
                         </h1>
@@ -242,11 +255,17 @@
                         About Us</h3>
                     <!--end::Title-->
                     <!--begin::Text-->
-                    <div class="text-muted-custom fw-bold fs-5">Setting the gold standard for Lebanese cuisine through professional certification, education, and recognition of exceptional culinary talent.
-                        <br> Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and evaluating chefs or issuing certificates <br>to build professional high standard profiles.
-                        <br>We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates comply with international food <br>safety measures respecting employee rights and accurate profiling.
-                        <br>We protect consumer rights. Our main goal is to enhance and promote healthy and cost efficient hospitality services <br>satisfying Consumers, Employees and Employers
-                        <br>by providing international standard certificates that will rectify the market's fluctuating and low standards.
+                    <div class="text-muted-custom fw-bold fs-5">Setting the gold standard for Lebanese cuisine through
+                        professional certification, education, and recognition of exceptional culinary talent.
+                        <br> Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and
+                        evaluating chefs or issuing certificates <br>to build professional high standard profiles.
+                        <br>We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates
+                        comply with international food <br>safety measures respecting employee rights and accurate
+                        profiling.
+                        <br>We protect consumer rights. Our main goal is to enhance and promote healthy and cost
+                        efficient hospitality services <br>satisfying Consumers, Employees and Employers
+                        <br>by providing international standard certificates that will rectify the market's fluctuating
+                        and low standards.
                     </div>
                     <!--end::Text-->
                 </div>
@@ -271,7 +290,9 @@
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We evaluate food safety standards, kitchen hygiene and service quality through our inspections to ensure excellence in food service establishments.
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We evaluate food safety standards,
+                                kitchen hygiene and service quality through our inspections to ensure excellence in food
+                                service establishments.
                             </div>
                             <!--end::Description-->
                         </div>
@@ -296,7 +317,9 @@
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We help restaurants optimize their operations and resources while maintaining quality, ensuring<br>business profitability and fair<br>consumer pricing.
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We help restaurants optimize their
+                                operations and resources while maintaining quality, ensuring<br>business profitability
+                                and fair<br>consumer pricing.
                             </div>
                             <!--end::Description-->
                         </div>
@@ -321,7 +344,9 @@
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We make pricing information<br>publicly accessible across different establishments to promote<br>informed consumer choices<br>and fair competition.
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We make pricing
+                                information<br>publicly accessible across different establishments to
+                                promote<br>informed consumer choices<br>and fair competition.
                             </div>
                             <!--end::Description-->
                         </div>
@@ -333,7 +358,8 @@
                 <!--begin:: Certifications Heading-->
                 <div class="text-center mb-10 mb-md-20">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx primary-color mb-5" id="certifications" data-kt-scroll-offset="{default: 100, lg: 150}">
+                    <h3 class="fs-2hx primary-color mb-5" id="certifications"
+                        data-kt-scroll-offset="{default: 100, lg: 150}">
                         Certifications</h3>
                     <!--end::Title-->
                 </div>
@@ -392,7 +418,8 @@
                             <img src="{{asset('assets/images/certifications/certification-8.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
                         </div>
-                        <!--end::Item--><!--begin::Item-->
+                        <!--end::Item-->
+                        <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
                             <img src="{{asset('assets/images/certifications/certification-9.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
@@ -415,7 +442,8 @@
                             <img src="{{asset('assets/images/certifications/certification-12.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
                         </div>
-                        <!--end::Item--><!--begin::Item-->
+                        <!--end::Item-->
+                        <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
                             <img src="{{asset('assets/images/certifications/certification-13.jpg')}}"
                                 class="card-rounded shadow mh-lg-650px mw-100" alt="" />
@@ -498,8 +526,7 @@
                 <!--begin::Container-->
                 <div class="container">
                     <!--begin::Heading-->
-                    <div class="text-center mt-15 mb-18" id="testchef"
-                        data-kt-scroll-offset="{default: 100, lg: 150}">
+                    <div class="text-center mt-15 mb-18" id="testchef" data-kt-scroll-offset="{default: 100, lg: 150}">
                         <!--begin::Title-->
                         <h3 class="fs-2hx text-white fw-bold mb-5 pt-8">Get Your Own Chef Certification</h3>
                         <!--end::Title-->
@@ -514,18 +541,20 @@
                     <!--end::Heading-->
                     <!--begin::TestChef Certificate-->
                     <div class="d-flex flex-center">
-                        <img src="{{asset('assets/images/certifications/testchef-certification.jpg')}}" alt="TestChef Certificate" class="w-50 mb-3">
+                        <img src="{{asset('assets/images/certifications/testchef-certification.jpg')}}"
+                            alt="TestChef Certificate" class="w-50 mb-3">
                     </div>
                     <!--end::TestChef Certificate-->
                     <!--begin::Inspiring Quote-->
                     <div class="fs-2 fw-semibold text-muted text-center mb-3">
-                        <span class="fs-1 lh-1 text-gray-700">“</span>The kitchen is a sacred place <br>where secrets are kept, and magic happens
+                        <span class="fs-1 lh-1 text-gray-700">“</span>The kitchen is a sacred place <br>where secrets
+                        are kept, and magic happens
                         <span class="fs-1 lh-1 text-gray-700">“</span>
                     </div>
                     <!--end::Quote-->
                     <!--begin::Author-->
                     <div class="fs-2 fw-semibold text-muted text-center">
-                        <a href="../../demo1/dist/account/security.html" class="link-primary lighter-primary-color fs-4 fw-bold">Chef Edward Lee,</a>
+                        <a href="#" class="link-primary lighter-primary-color fs-4 fw-bold">Chef Edward Lee,</a>
                         <span class="fs-4 fw-bold text-gray-600">Culinary Expert</span>
                     </div>
                     <!--end::Author-->
@@ -552,11 +581,14 @@
                 <!--begin::Heading-->
                 <div class="text-center mb-12">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark mb-5" id="institutes" data-kt-scroll-offset="{default: 100, lg: 150}">Our Accredited Institutes</h3>
+                    <h3 class="fs-2hx text-dark mb-5" id="institutes" data-kt-scroll-offset="{default: 100, lg: 150}">
+                        Our Accredited Institutes</h3>
                     <!--end::Title-->
                     <!--begin::Sub-title-->
-                    <div class="fs-5 text-muted fw-bold">Our Accredited Institutes are carefully selected centers of excellence across Lebanon
-                        <br>each upholding our rigorous standards in culinary education. With 6 certified institutes nationwide,
+                    <div class="fs-5 text-muted fw-bold">Our Accredited Institutes are carefully selected centers of
+                        excellence across Lebanon
+                        <br>each upholding our rigorous standards in culinary education. With 6 certified institutes
+                        nationwide,
                         <br>we ensure aspiring chefs receive authentic training and certification in
                         <br>Lebanese cuisine from qualified master instructors.
                     </div>
@@ -571,7 +603,8 @@
                             <div class="d-flex flex-stack mb-5">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
-                                        <img src="{{asset('assets/images/ghc/GHC-white.png')}}" alt="Global Hospitality Consultant" class="accredited-logo" />
+                                        <img src="{{asset('assets/images/ghc/GHC-white.png')}}"
+                                            alt="Global Hospitality Consultant" class="accredited-logo" />
                                     </div>
                                 </div>
                             </div>
@@ -584,7 +617,8 @@
                             <div class="d-flex flex-stack mb-5">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
-                                        <img src="{{asset('assets/images/ghi/GHI-white.png')}}" alt="Global Hospitality Institute" class="accredited-logo" />
+                                        <img src="{{asset('assets/images/ghi/GHI-white.png')}}"
+                                            alt="Global Hospitality Institute" class="accredited-logo" />
                                     </div>
                                 </div>
                             </div>
@@ -597,7 +631,8 @@
                             <div class="d-flex flex-stack mb-5">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
-                                        <img src="{{asset('assets/images/global-hospitality-events/global-hospitality-events-white.png')}}" alt="Global Hospitality Events" class="accredited-logo" />
+                                        <img src="{{asset('assets/images/global-hospitality-events/global-hospitality-events-white.png')}}"
+                                            alt="Global Hospitality Events" class="accredited-logo" />
                                     </div>
                                 </div>
                             </div>
@@ -614,7 +649,8 @@
                             <div class="d-flex flex-stack mb-5">
                                 <div class="d-flex align-items-center">
                                     <div class=" me-5">
-                                        <img src="{{asset('assets/images/golden-book/golden-book-white.png')}}" class="accredited-logo" alt="Golden Book" />
+                                        <img src="{{asset('assets/images/golden-book/golden-book-white.png')}}"
+                                            class="accredited-logo" alt="Golden Book" />
                                     </div>
                                 </div>
                             </div>
@@ -627,7 +663,8 @@
                             <div class="d-flex flex-stack mb-5">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
-                                        <img src="{{asset('assets/images/staycare/staycare-white.png')}}" alt="STAYCARE" class="accredited-logo" />
+                                        <img src="{{asset('assets/images/staycare/staycare-white.png')}}" alt="STAYCARE"
+                                            class="accredited-logo" />
                                     </div>
                                 </div>
                             </div>
@@ -640,7 +677,8 @@
                             <div class="d-flex flex-stack mb-5">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
-                                        <img src="{{asset('assets/images/costpitality/costpitality-white.png')}}" alt="Costpitality" class="accredited-logo" />
+                                        <img src="{{asset('assets/images/costpitality/costpitality-white.png')}}"
+                                            alt="Costpitality" class="accredited-logo" />
                                     </div>
                                 </div>
                             </div>
@@ -680,8 +718,7 @@
                                 <!--end::Title-->
                                 <!--begin::Text-->
                                 <span class="fw-normal fs-4 text-gray-700">Email us to
-                                    <a href="https://keenthemes.com/support"
-                                        class="link-footer-card">support@keenthemes.com</a></span>
+                                    <a href="#" class="link-footer-card">support@keenthemes.com</a></span>
                                 <!--end::Text-->
                             </div>
                             <!--end::Block-->
@@ -692,8 +729,8 @@
                                 <!--end::Title-->
                                 <!--begin::Text-->
                                 <span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service.
-                                    <a href="../../demo1/dist/pages/user-profile/overview.html"
-                                        class="link-footer-card text-hover-primary">Click to Get a Quote</a></span>
+                                    <a href="#" class="link-footer-card text-hover-primary">Click to Get a
+                                        Quote</a></span>
                                 <!--end::Text-->
                             </div>
                             <!--end::Block-->
@@ -729,6 +766,7 @@
                                         class="opacity-80 link-footer fs-5 mb-6">Support Forum</a>
                                     <!--end::Link-->
                                     <!--begin::Link-->
+                                    <a href="https://keenthemes.com/blog" class="opacity-50 link-footer fs-5">Blog</a>
                                     <a href="https://keenthemes.com/blog"
                                         class="opacity-80 link-footer fs-5">Blog</a>
                                     <!--end::Link-->
@@ -770,8 +808,12 @@
                                     <a href="https://www.instagram.com/keenthemes" class="mb-6">
                                         <img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2"
                                             alt="" />
-                                        <span
+                                        <<<<<<< HEAD
+                                            <span
                                             class="opacity-80 link-footer fs-5 mb-6">Instagram</span>
+                                            =======
+                                            <span class="opacity-50 link-footer fs-5 mb-6">Instagram</span>
+                                            >>>>>>> 0f4011cf026f149f90662756ca5384cc07870a94
                                     </a>
                                     <!--end::Link-->
                                 </div>
@@ -794,12 +836,12 @@
                         <!--begin::Copyright-->
                         <div class="d-flex align-items-center order-2 order-md-1">
                             <!--begin::Logo-->
-                            <a href="../../demo1/dist/landing.html">
+                            <a href="{{ route('home') }}">
                                 <img alt="Logo" src="{{asset('assets/images/favicon.png')}}" class="h-40px h-md-60px" />
                             </a>
                             <!--end::Logo image-->
                             <!--begin::Logo image-->
-                            <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://keenthemes.com">&copy;
+                            <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="{{route('home')}}">&copy;
                                 2024 Lebanese Chef's Palace Association</span>
                             <!--end::Logo image-->
                         </div>
@@ -811,6 +853,14 @@
                             </li>
                             <li class="menu-item mx-5">
                                 <a href="https://devs.keenthemes.com" target="_blank" class="link-footer opacity-80 px-2">Support</a>
+                                =======
+                                <a href="https://keenthemes.com" target="_blank"
+                                    class="link-footer opacity-80 px-2">About</a>
+                            </li>
+                            <li class="menu-item mx-5">
+                                <a href="https://devs.keenthemes.com" target="_blank"
+                                    class="link-footer opacity-80 px-2">Support</a>
+                                >>>>>>> 0f4011cf026f149f90662756ca5384cc07870a94
                             </li>
                             <li class="menu-item">
                                 <a href="" target="_blank" class="link-footer opacity-80 px-2">Purchase</a>

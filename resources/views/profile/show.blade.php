@@ -101,46 +101,10 @@
                                 <!--end::User-->
                                 <!--begin::Actions-->
                                 <div class="d-flex my-4">
-
                                 </div>
                                 <!--end::Actions-->
                             </div>
                             <!--end::Title-->
-
-                            {{--
-                            <!--begin::Stats-->
-                            <div class="d-flex flex-wrap flex-stack">
-                                <!--begin::Wrapper-->
-                                <div class="d-flex flex-column flex-grow-1 pe-8">
-                                    <!--begin::Stats-->
-                                    <div class="d-flex flex-wrap">
-                                        <!--begin::Stat-->
-                                        <div
-                                            class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
-                                            <!--begin::Number-->
-                                            <div class="d-flex align-items-center">
-                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
-                                                <span class="svg-icon svg-icon-3 svg-icon-success me-2">
-                                                    <i class="fa fa-receipt"></i>
-                                                </span>
-                                                <!--end::Svg Icon-->
-                                                <div class="fs-2 fw-bold" data-kt-countup="true"
-                                                    data-kt-countup-value="{{ $user->orders->count() }}">0</div>
-                                            </div>
-                                            <!--end::Number-->
-                                            <!--begin::Label-->
-                                            <div class="fw-semibold fs-6 text-gray-400">Orders</div>
-                                            <!--end::Label-->
-                                        </div>
-                                        <!--end::Stat-->
-                                    </div>
-                                    <!--end::Stats-->
-                                </div>
-                                <!--end::Wrapper-->
-                            </div>
-                            <!--end::Stats-->
-                            --}}
-
                         </div>
                         <!--end::Info-->
                     </div>
@@ -173,7 +137,7 @@
                         <div class="user-info">
                             <div class="user-info-item d-flex justify-content-between align-items-center">
                                 <span class="fw-bold">Name:</span>
-                                <span>{{ $user->name }}</span>
+                                <span>{{ ucwords($user->name) }}</span>
                             </div>
                             <div class="user-info-item d-flex justify-content-between align-items-center">
                                 <span class="fw-bold">Email:</span>
@@ -185,7 +149,7 @@
                             </div>
                             <div class="user-info-item d-flex justify-content-between align-items-center">
                                 <span class="fw-bold">Role:</span>
-                                <span>{{ $user->role }}</span>
+                                <span>{{ ucwords($user->role) }}</span>
                             </div>
                         </div>
                     </div>
