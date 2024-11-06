@@ -9,6 +9,11 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class LogController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
+
     public function index()
     {
         $logs = Log::select('text', 'created_at')->filter()->orderBy('created_at', 'desc')->paginate(25);

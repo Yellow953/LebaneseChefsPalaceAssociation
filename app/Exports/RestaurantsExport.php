@@ -6,7 +6,7 @@ use App\Models\Restaurant;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 
-class RestaurantsExport implements FromCollection
+class RestaurantsExport implements FromCollection, WithHeadings
 {
     public function collection()
     {
@@ -25,7 +25,6 @@ class RestaurantsExport implements FromCollection
     public function headings(): array
     {
         return [
-
             'Name',
             'Location',
             'Type',

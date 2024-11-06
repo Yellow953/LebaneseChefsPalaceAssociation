@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'users')
+@section('title', 'chefs')
+
+@php
+$ranks = Helper::get_chefs_ranks();
+$groups = Helper::get_groups();
+@endphp
 
 @section('actions')
 <div class="card-toolbar">
@@ -23,7 +28,7 @@
         <!--end::Menu separator-->
         <!--begin::Menu item-->
         <div class="menu-item px-3">
-            <a href="{{ route('users.new') }}" class="menu-link px-3">New User</a>
+            <a href="{{ route('chefs.new') }}" class="menu-link px-3">New Chef</a>
         </div>
         <!--end::Menu item-->
         <!--begin::Menu separator-->
@@ -32,8 +37,7 @@
         <!--begin::Menu item-->
         <div class="menu-item px-3">
             <div class="menu-content px-3 py-3">
-                <a class="btn btn-primary btn-sm px-4" href="{{ route('users.export') }}">Export to
-                    Excell</a>
+                <a class="btn btn-primary btn-sm px-4" href="{{ route('chefs.export') }}">Export to Excell</a>
             </div>
         </div>
         <!--end::Menu item-->
@@ -47,7 +51,7 @@
 <!--begin::filter-->
 <div class="filter border-0 px-0 px-md-3 py-4">
     <!--begin::Form-->
-    <form action="{{ route('users') }}" method="GET" enctype="multipart/form-data" class="form">
+    <form action="{{ route('chefs') }}" method="GET" enctype="multipart/form-data" class="form">
         @csrf
         <div class="pt-0 pt-3 px-2 px-md-4">
             <!--begin::Compact form-->
@@ -88,34 +92,63 @@
                 <!--end::Separator-->
                 <!--begin::Row-->
                 <div class="row g-8 mb-8">
-
-                    <!--begin::Col-->
-                    <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Email</label>
-                        <input type="email" class="form-control" name="email" value="{{ request()->query('email') }}"
-                            placeholder="Enter Email..." />
-                    </div>
-                    <!--end::Col-->
-
                     <!--begin::Col-->
                     <div class="col-md-6">
                         <label class="fs-6 form-label fw-bold text-dark">Phone</label>
-                        <input type="tel" class="form-control" name="phone" value="{{ request()->query('phone') }}"
+                        <input type="text" class="form-control" name="phone" value="{{ request()->query('phone') }}"
                             placeholder="Enter Phone..." />
                     </div>
                     <!--end::Col-->
 
                     <!--begin::Col-->
                     <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Role</label>
-                        <select name="role" class="form-select" data-control="select2" data-placeholder="Select a Role">
+                        <label class="fs-6 form-label fw-bold text-dark">Address</label>
+                        <input type="text" class="form-control" name="address" value="{{ request()->query('address') }}"
+                            placeholder="Enter Address..." />
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Rank</label>
+                        <select name="type" class="form-control" data-control="select2"
+                            data-placeholder="Select an option">
                             <option value=""></option>
-                            @foreach (Helper::get_user_roles() as $role)
-                            <option value="{{ $role }}" {{ request()->query('role') == $role ? 'selected' : '' }}>
-                                {{ ucfirst($role) }}
-                            </option>
+                            @foreach ($ranks as $rank)
+                            <option value="{{ $rank }}" {{ request()->query('rank') == $rank ? 'selected' : '' }}>{{
+                                ucwords($rank) }}</option>
                             @endforeach
                         </select>
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Group</label>
+                        <select name="group_id" class="form-control" data-control="select2"
+                            data-placeholder="Select an option">
+                            <option value=""></option>
+                            @foreach ($groups as $group)
+                            <option value="{{ $group->id }}" {{ request()->query('group_id') == $group->id ? 'selected'
+                                : '' }}>{{
+                                ucwords($group->name) }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Date of Birth</label>
+                        <input type="date" class="form-control" name="dob" value="{{ request()->query('dob') }}" />
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Feedback</label>
+                        <input type="text" class="form-control" name="feedback"
+                            value="{{ request()->query('feedback') }}" placeholder="Enter Feedback..." />
                     </div>
                     <!--end::Col-->
                 </div>
@@ -144,52 +177,43 @@
                     <!--begin::Table head-->
                     <thead>
                         <tr class="text-center">
-                            <th class="col-2 p-3">User</th>
-                            <th class="col-2 p-3">Contact</th>
-                            <th class="col-2 p-3">Role</th>
+                            <th class="col-1 p-3"></th>
+                            <th class="col-2 p-3">Chef</th>
+                            <th class="col-2 p-3">Info</th>
+                            <th class="col-2 p-3">Rank</th>
                             <th class="col-2 p-3">Actions</th>
                         </tr>
                     </thead>
                     <!--end::Table head-->
                     <!--begin::Table body-->
                     <tbody>
-                        @forelse ($users as $user)
+                        @forelse ($chefs as $chef)
                         <tr>
                             <td>
-                                <div class="d-flex align-items-center">
-                                    <!--begin::Avatar-->
-                                    <div class="symbol symbol-45px me-5">
-                                        <img alt="user" src="{{ asset('assets/images/default_profile.png') }}" />
-                                    </div>
-                                    <!--end::Avatar-->
-                                    <!--begin::Name-->
-                                    <div class="d-flex justify-content-start flex-column">
-                                        <a href="#" class="text-dark fw-bold text-hover-primary mb-1 fs-6">{{
-                                            ucwords($user->name) }}</a>
-                                    </div>
-                                    <!--end::Name-->
-                                </div>
+                                <div class="color-circle" style="background-color: {{ $chef->group->color }}"></div>
+                            </td>
+                            <td>
+                                <h3>{{ $chef->name }}</h3>
+                                {{ $chef->phone }}
+                            </td>
+                            <td>
+                                {{ $chef->address }} <br>
+                                {{ $chef->dob }}
                             </td>
                             <td>
                                 <div class="text-center">
-                                    {{ $user->email }} <br>
-                                    {{ $user->phone }}
+                                    {{ $chef->rank }}
                                 </div>
                             </td>
-                            <td class="text-center">
-                                <span
-                                    class="badge {{ $user->role == 'admin' ? 'badge-light-success' : '' }} {{ $user->role == 'user' ? 'badge-light-primary' : '' }}">{{
-                                    ucwords($user->role) }}</span>
-                            </td>
                             <td class="d-flex justify-content-end border-0">
-                                <a href="{{ route('users.edit', $user->id) }}"
+                                <a href="{{ route('chefs.edit', $chef->id) }}"
                                     class="btn btn-icon btn-warning btn-sm me-1">
                                     <i class="bi bi-pen-fill"></i>
                                 </a>
-                                @if($user->can_delete())
-                                <a href="{{ route('users.destroy', $user->id) }}"
+                                @if($chef->can_delete())
+                                <a href="{{ route('chefs.destroy', $chef->id) }}"
                                     class="btn btn-icon btn-danger btn-sm show_confirm" data-toggle="tooltip"
-                                    data-original-title="Delete User">
+                                    data-original-title="Delete Chef">
                                     <i class="bi bi-trash3-fill"></i>
                                 </a>
                                 @endif
@@ -197,8 +221,8 @@
                         </tr>
                         @empty
                         <tr>
-                            <th colspan="4">
-                                <div class="text-center">No Users Yet ...</div>
+                            <th colspan="5">
+                                <div class="text-center">No Chefs Yet ...</div>
                             </th>
                         </tr>
                         @endforelse
@@ -207,10 +231,11 @@
 
                     <tfoot>
                         <tr>
-                            <th colspan="4">
-                                {{ $users->appends(['name' => request()->query('name'), 'email' =>
-                                request()->query('email'), 'phone' => request()->query('phone'), 'role' =>
-                                request()->query('role')])->links() }}
+                            <th colspan="5">
+                                {{ $chefs->appends(['name' => request()->query('name'), 'phone' =>
+                                request()->query('phone'), 'dob' => request()->query('dob'), 'address' =>
+                                request()->query('address'), 'rank' => request()->query('rank'), 'feedback' =>
+                                request()->query('feedback'), 'group_id' => request()->query('group_id')])->links() }}
                             </th>
                         </tr>
                     </tfoot>

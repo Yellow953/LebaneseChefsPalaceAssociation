@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\DB;
 
 class BackupController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
+
     public function index()
     {
         return view('backup.index');

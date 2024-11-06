@@ -10,6 +10,11 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class RestaurantController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
+
     public function index()
     {
         $restaurants = Restaurant::select('id', 'name', 'location', 'type', 'certification_status')->filter()->orderBy('id', 'desc')->paginate(25);
@@ -88,6 +93,6 @@ class RestaurantController extends Controller
 
     public function export()
     {
-        return Excel::download(new UsersExport, 'restaurants.xlsx');
+        return Excel::download(new RestaurantsExport, 'restaurants.xlsx');
     }
 }

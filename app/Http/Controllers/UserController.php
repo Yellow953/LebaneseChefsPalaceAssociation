@@ -11,6 +11,11 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
+
     public function index()
     {
         $users = User::select('id', 'name', 'email', 'role', 'phone')->filter()->orderBy('id', 'desc')->paginate(25);

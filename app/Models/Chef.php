@@ -43,7 +43,7 @@ class Chef extends Model
         }
         if (request('group_id')) {
             $group_id = request('group_id');
-            $q->where('group_id', 'LIKE', "%{$group_id}%");
+            $q->where('group_id', $group_id);
         }
 
         return $q;
