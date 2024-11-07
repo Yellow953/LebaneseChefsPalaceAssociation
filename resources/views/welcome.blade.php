@@ -169,7 +169,7 @@
                 <!--begin::Landing hero-->
                 <div class="d-flex flex-column w-100 min-h-350px min-h-lg-500px px-9">
                     <!--begin::Heading-->
-                    <div class="text-start my-5 my-lg-10 py-10 py-lg-20">
+                    <div class="text-start my-5 my-lg-10 py-10 py-lg-20 m-text-center">
                         <!--begin::Title-->
                         <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15"><span class="hero-text-span">LEBANESE CHEF'S
                                 PALACE ASSOCIATION</span>
@@ -183,51 +183,6 @@
                         <!--end::Action-->
                     </div>
                     <!--end::Heading-->
-                    <!--begin::Clients-->
-                    <div class="d-flex flex-center flex-wrap position-relative px-5">
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-                            <img src="assets/media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
-                            <img src="assets/media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
-                            <img src="assets/media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
-                            <img src="assets/media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
-                            <img src="assets/media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip"
-                            title="AON - Empower Results">
-                            <img src="assets/media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
-                            <img src="assets/media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                        <!--begin::Client-->
-                        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-                            <img src="assets/media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt="" />
-                        </div>
-                        <!--end::Client-->
-                    </div>
-                    <!--end::Clients-->
                 </div>
                 <!--end::Landing hero-->
             </div>
@@ -255,17 +210,11 @@
                         About Us</h3>
                     <!--end::Title-->
                     <!--begin::Text-->
-                    <div class="text-muted-custom fw-bold fs-5">Setting the gold standard for Lebanese cuisine through
-                        professional certification, education, and recognition of exceptional culinary talent.
-                        <br> Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and
-                        evaluating chefs or issuing certificates <br>to build professional high standard profiles.
-                        <br>We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates
-                        comply with international food <br>safety measures respecting employee rights and accurate
-                        profiling.
-                        <br>We protect consumer rights. Our main goal is to enhance and promote healthy and cost
-                        efficient hospitality services <br>satisfying Consumers, Employees and Employers
-                        <br>by providing international standard certificates that will rectify the market's fluctuating
-                        and low standards.
+                    <div class="text-muted-custom fw-bold fs-5 px-20 m-px">Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and
+                        evaluating chefs or issuing certificates to build professional high standard profiles. We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates
+                        comply with international food safety measures respecting employee rights and accurate
+                        profiling. We protect consumer rights. Our main goal is to enhance and promote healthy and cost
+                        efficient hospitality services satisfying Consumers, Employees and Employers by providing international standard certificates.
                     </div>
                     <!--end::Text-->
                 </div>
@@ -290,7 +239,7 @@
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We evaluate food safety standards,
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom m-px-2">We evaluate food safety standards,
                                 kitchen hygiene and service quality through our inspections to ensure excellence in food
                                 service establishments.
                             </div>
@@ -317,7 +266,7 @@
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We help restaurants optimize their
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom m-px-2">We help restaurants optimize their
                                 operations and resources while maintaining quality, ensuring<br>business profitability
                                 and fair<br>consumer pricing.
                             </div>
@@ -344,7 +293,7 @@
                             </div>
                             <!--end::Heading-->
                             <!--begin::Description-->
-                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom">We make pricing
+                            <div class="fw-semibold fs-6 fs-lg-4 text-muted-custom m-px-2">We make pricing
                                 information<br>publicly accessible across different establishments to
                                 promote<br>informed consumer choices<br>and fair competition.
                             </div>
@@ -370,7 +319,114 @@
                     <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000"
                         data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true"
                         data-tns-nav="false" data-tns-items="4" data-tns-center="false" data-tns-dots="false"
-                        data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
+                        data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1" class="m-hidden">
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-1.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-2.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-3.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-4.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-5.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-6.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-7.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-8.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-9.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-10.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-11.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-12.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-13.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-14.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-15.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-16.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                        <!--begin::Item-->
+                        <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                            <img src="{{asset('assets/images/certifications/certification-17.jpg')}}"
+                                class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+                        </div>
+                        <!--end::Item-->
+                    </div>
+                    <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000"
+                        data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true"
+                        data-tns-nav="false" data-tns-items="2" data-tns-center="false" data-tns-dots="false"
+                        data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1" class="desktop-hidden">
                         <!--begin::Item-->
                         <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
                             <img src="{{asset('assets/images/certifications/certification-1.jpg')}}"
@@ -531,7 +587,7 @@
                         <h3 class="fs-2hx text-white fw-bold mb-5 pt-8">Get Your Own Chef Certification</h3>
                         <!--end::Title-->
                         <!--begin::Description-->
-                        <div class="fs-5 text-white fw-bold">Take your culinary expertise to the next level
+                        <div class="fs-5 text-white fw-bold m-px-2">Take your culinary expertise to the next level
                             <br>with official recognition from Lebanon's premier chef certification body.
                             <br>Join our elite community of certified professionals and showcase your mastery
                             <br>of authentic Lebanese cuisine to restaurants and food lovers worldwide.
@@ -542,7 +598,7 @@
                     <!--begin::TestChef Certificate-->
                     <div class="d-flex flex-center">
                         <img src="{{asset('assets/images/certifications/testchef-certification.jpg')}}"
-                            alt="TestChef Certificate" class="w-50 mb-3">
+                            alt="TestChef Certificate" class="w-50 mb-3 mw-60">
                     </div>
                     <!--end::TestChef Certificate-->
                     <!--begin::Inspiring Quote-->
@@ -600,9 +656,9 @@
                     <!--begin::Col-->
                     <div class="col-lg-4">
                         <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5">
+                            <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
-                                    <div class="me-5">
+                                    <div class="mme-0">
                                         <img src="{{asset('assets/images/ghc/GHC-white.png')}}"
                                             alt="Global Hospitality Consultant" class="accredited-logo" />
                                     </div>
@@ -614,7 +670,7 @@
                     <!--begin::Col-->
                     <div class="col-lg-4">
                         <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5">
+                            <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
                                         <img src="{{asset('assets/images/ghi/GHI-white.png')}}"
@@ -628,7 +684,7 @@
                     <!--begin::Col-->
                     <div class="col-lg-4">
                         <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5">
+                            <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
                                         <img src="{{asset('assets/images/global-hospitality-events/global-hospitality-events-white.png')}}"
@@ -646,7 +702,7 @@
                     <!--begin::Col-->
                     <div class="col-lg-4">
                         <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5">
+                            <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
                                     <div class=" me-5">
                                         <img src="{{asset('assets/images/golden-book/golden-book-white.png')}}"
@@ -660,7 +716,7 @@
                     <!--begin::Col-->
                     <div class="col-lg-4">
                         <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5">
+                            <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
                                         <img src="{{asset('assets/images/staycare/staycare-white.png')}}" alt="STAYCARE"
@@ -674,7 +730,7 @@
                     <!--begin::Col-->
                     <div class="col-lg-4">
                         <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5">
+                            <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
                                     <div class="me-5">
                                         <img src="{{asset('assets/images/costpitality/costpitality-white.png')}}"
@@ -712,7 +768,7 @@
                         <!--begin::Col-->
                         <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
                             <!--begin::Block-->
-                            <div class="rounded red-dotted-border white-bg p-9 mb-10 ">
+                            <div class="rounded red-dotted-border white-bg p-9 mb-10 mmx-1">
                                 <!--begin::Title-->
                                 <h2 class="text-dark">Would you need a Custom License?</h2>
                                 <!--end::Title-->
@@ -723,7 +779,7 @@
                             </div>
                             <!--end::Block-->
                             <!--begin::Block-->
-                            <div class="rounded red-dotted-border p-9 white-bg">
+                            <div class="rounded red-dotted-border p-9 white-bg mmx-1">
                                 <!--begin::Title-->
                                 <h2 class="text-dark">How About a Custom Project?</h2>
                                 <!--end::Title-->

@@ -12,14 +12,10 @@ body {
 }
 
 .hero {
-    background: linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 1) 50%,
-            rgba(0, 0, 0, 0)
-        ),
-        url("../images/hero.jpg");
-    background-size: contain;
-    background-position: right;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
+        url("../images/home/home-banner-1.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -178,20 +174,6 @@ table thead tr th {
     text-align: right;
 }
 
-@media only screen and (max-width: 600px) {
-    .backup-img {
-        height: 150px;
-    }
-
-    .calculator {
-        width: 100%;
-    }
-
-    .login-logo {
-        width: 50px !important;
-    }
-}
-
 .login-logo {
     width: 100px;
 }
@@ -322,4 +304,66 @@ table thead tr th {
 .rounded {
     border-radius: 25px;
     overflow: hidden;
+}
+
+.desktop-hidden {
+    display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .backup-img {
+        height: 150px;
+    }
+
+    .calculator {
+        width: 100%;
+    }
+
+    .login-logo {
+        width: 50px !important;
+    }
+
+    .hero-text-span {
+        background: var(--primary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .m-text-center {
+        text-align: center !important;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
+            url("../images/home/home-banner-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .m-px {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .m-px-2 {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+
+    .m-hidden {
+        display: none !important;
+    }
+    .mw-60 {
+        width: 70% !important;
+    }
+
+    .mme-0 {
+        margin-inline-end: 0px !important;
+    }
+
+    .mmx-1 {
+        margin-left: 1.25rem !important;
+        margin-right: 1.25rem !important;
+    }
 }
