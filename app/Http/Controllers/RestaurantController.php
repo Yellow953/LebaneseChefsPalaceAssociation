@@ -72,7 +72,7 @@ class RestaurantController extends Controller
             'text' => $text,
         ]);
 
-        return redirect()->route('restaurants')->with('success', 'Restaurant created successfully!');
+        return redirect()->route('restaurants')->with('success', 'Restaurant updated successfully!');
     }
 
     public function destroy(Restaurant $restaurant)

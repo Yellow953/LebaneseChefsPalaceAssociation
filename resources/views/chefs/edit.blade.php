@@ -15,7 +15,7 @@ $groups = Helper::get_groups();
         <form action="{{ route('chefs.update', $chef->id) }}" method="POST" enctype="multipart/form-data" class="form">
             @csrf
             <div class="card-head">
-                <h1 class="text-center text-primary">New Chef</h1>
+                <h1 class="text-center text-primary">Edit Chef</h1>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -118,5 +118,83 @@ $groups = Helper::get_groups();
             </div>
         </form>
     </div>
+
+    <div class="card mt-5 p-4">
+        <div class="card-head">
+            <h1 class="text-center text-primary">Documents</h1>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-center my-5">Resume</h2>
+
+                    @if(pathinfo($chef->resume, PATHINFO_EXTENSION) === 'pdf')
+                    <embed src="{{ asset($chef->resume) }}" type="application/pdf" width="100%" height="400px">
+                    @else
+                    <div>
+                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
+
+                        <form action="{{ route('chefs.download_file', $chef->id) }}" method="post"
+                            enctype="multipart/form-data">
+                            @csrf
+                            <input type="hidden" name="type" value="resume">
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-3">Download
+                                    Resume</button>
+                            </div>
+                        </form>
+                    </div>
+                    @endif
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center my-5">Certificate</h2>
+
+                    @if(pathinfo($chef->certificate, PATHINFO_EXTENSION) === 'pdf')
+                    <embed src="{{ asset($chef->certificate) }}" type="application/pdf" width="100%" height="400px">
+                    @else
+                    <div>
+                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
+
+                        <form action="{{ route('chefs.download_file', $chef->id) }}" method="post"
+                            enctype="multipart/form-data">
+                            @csrf
+                            <input type="hidden" name="type" value="certificate">
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-3">Download
+                                    Certificate</button>
+                            </div>
+                        </form>
+                    </div>
+                    @endif
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center my-5">Identification</h2>
+
+                    @if(pathinfo($chef->identification, PATHINFO_EXTENSION) === 'pdf')
+                    <embed src="{{ asset($chef->identification) }}" type="application/pdf" width="100%" height="400px">
+                    @else
+                    <div>
+                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
+
+                        <form action="{{ route('chefs.download_file', $chef->id) }}" method="post"
+                            enctype="multipart/form-data">
+                            @csrf
+                            <input type="hidden" name="type" value="identification">
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-3">Download
+                                    Identification</button>
+                            </div>
+                        </form>
+                    </div>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 @endsection
