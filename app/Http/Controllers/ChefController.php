@@ -7,6 +7,7 @@ use App\Models\Log;
 use App\Models\Chef;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\File;
 
 class ChefController extends Controller
 {
@@ -150,7 +151,7 @@ class ChefController extends Controller
             'text' => $text,
         ]);
 
-        return redirect()->route('chefs')->with('success', 'Chef created successfully!');
+        return redirect()->route('chefs')->with('success', 'Chef updated successfully!');
     }
 
     public function destroy(Chef $chef)
@@ -172,5 +173,26 @@ class ChefController extends Controller
     public function export()
     {
         return Excel::download(new ChefsExport, 'chefs.xlsx');
+    }
+
+    public function download_file(Request $request, Chef $chef)
+    {
+        switch ($request->type) {
+            case 'identification':
+                $filePath = public_path($chef->identification);
+                break;
+            case 'certificate':
+                $filePath = public_path($chef->certificate);
+                break;
+            case 'identification':
+                $filePath = public_path($chef->identification);
+                break;
+        }
+
+        if (File::exists($filePath)) {
+            return response()->download($filePath);
+        }
+
+        return redirect()->back()->with('error', 'Identification scan not found.');
     }
 }

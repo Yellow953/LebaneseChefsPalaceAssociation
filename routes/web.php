@@ -37,6 +37,7 @@ Route::middleware(['auth'])->group(function () {
             Route::get('/edit/{chef}', [ChefController::class, 'edit'])->name('chefs.edit');
             Route::post('/update/{chef}', [ChefController::class, 'update'])->name('chefs.update');
             Route::get('/delete/{chef}', [ChefController::class, 'destroy'])->name('chefs.destroy');
+            Route::post('/download_file/{chef}', [ChefController::class, 'download_file'])->name('chefs.download_file');
             Route::get('/', [ChefController::class, 'index'])->name('chefs');
         });
 

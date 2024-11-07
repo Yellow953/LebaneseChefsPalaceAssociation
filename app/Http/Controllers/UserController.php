@@ -85,7 +85,7 @@ class UserController extends Controller
             'text' => $text,
         ]);
 
-        return redirect()->route('users')->with('success', 'User created successfully!');
+        return redirect()->route('users')->with('success', 'User updated successfully!');
     }
 
     public function destroy(User $user)
