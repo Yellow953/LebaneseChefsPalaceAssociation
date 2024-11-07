@@ -77,6 +77,9 @@
 
     {{-- Sweet Alert --}}
     <script src="{{asset('assets/js/sweetalert.min.js')}}"></script>
+
+    {{-- custom JS --}}
+    <script src="{{ asset('assets/js/script.js') }}"></script>
     <!--end::Javascript-->
 </body>
 <!--end::Body-->

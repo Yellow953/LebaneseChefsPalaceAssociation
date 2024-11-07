@@ -53,7 +53,6 @@
                     <!--end:Menu link-->
                 </div>
                 <!--end:Menu item-->
-
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
@@ -91,6 +90,7 @@
                     <!--end:Menu link-->
                 </div>
                 <!--end:Menu item-->
+                <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
                     <a class="menu-link {{ request()->routeIs('logs*') ? 'active' : '' }}" href="{{ route('logs') }}">
@@ -105,12 +105,12 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('backup*') ? 'active' : '' }}"
-                        href="{{ route('backup') }}">
+                    <a class="menu-link {{ request()->routeIs('settings*') ? 'active' : '' }}"
+                        href="{{ route('settings') }}">
                         <span class="menu-icon">
-                            <i class="bi bi-database-fill"></i>
+                            <i class="bi bi-gear-fill"></i>
                         </span>
-                        <span class="menu-title">Backup</span>
+                        <span class="menu-title">Settings</span>
                     </a>
                     <!--end:Menu link-->
                 </div>

@@ -12,4 +12,9 @@ class Group extends Model
     {
         return $this->hasMany(Chef::class);
     }
+
+    public function can_delete()
+    {
+        return auth()->user()->role == 'admin';
+    }
 }

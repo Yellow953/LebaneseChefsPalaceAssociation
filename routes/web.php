@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RestaurantController;
+use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -64,11 +65,21 @@ Route::middleware(['auth'])->group(function () {
             Route::get('/', [LogController::class, 'index'])->name('logs');
         });
 
-        // Backup
-        Route::prefix('backup')->group(function () {
-            Route::get('/export', [BackupController::class, 'export'])->name('backup.export');
-            Route::post('/import', [BackupController::class, 'import'])->name('backup.import');
-            Route::get('/', [BackupController::class, 'index'])->name('backup');
+        // Settings
+        Route::prefix('settings')->group(function () {
+            // Backup
+            Route::prefix('backup')->group(function () {
+                Route::get('/export', [SettingsController::class, 'backup_export'])->name('settings.backup.export');
+                Route::post('/import', [SettingsController::class, 'backup_import'])->name('settings.backup.import');
+            });
+
+            // Groups
+            Route::prefix('groups')->group(function () {
+                Route::post('/create', [SettingsController::class, 'groups_create'])->name('settings.groups.create');
+                Route::get('/destroy/{group}', [SettingsController::class, 'groups_destroy'])->name('settings.groups.destroy');
+            });
+
+            Route::get('/', [SettingsController::class, 'index'])->name('settings');
         });
 
         // App
