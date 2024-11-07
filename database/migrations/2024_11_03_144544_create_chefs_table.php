@@ -18,7 +18,7 @@ return new class extends Migration
 
             $table->text('feedback')->nullable();
             $table->string('resume')->nullable();
-            $table->string('certifcate')->nullable();
+            $table->string('certificate')->nullable();
             $table->string('identification')->nullable();
 
             $table->bigInteger("group_id")->unsigned();

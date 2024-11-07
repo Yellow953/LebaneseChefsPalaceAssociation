@@ -3,7 +3,7 @@
 @section('title', 'settings')
 
 @section('content')
-<div class="container p-4">
+<div class="container px-4">
     <h2 class="mb-5 text-center">Backup</h2>
     <div class="row">
         <div class="col-md-4 my-auto">
@@ -22,7 +22,7 @@
                                 <input type="file" name="file" required class="form-control" id="inputGroupFile">
                             </div>
                             <div class=" col-md-3 my-auto">
-                                <button type="submit" class="text-center btn btn-primary btn-sm">
+                                <button type="submit" class="text-center btn btn-primary btn-sm my-3">
                                     <i class="fas fa-upload mr-2"></i>
                                     Import
                                 </button>

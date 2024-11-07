@@ -121,7 +121,7 @@
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link text-active-primary ms-0 me-10 py-5" data-bs-toggle="tab"
-                                href="#kt_tab_pane_3">Settings</a>
+                                href="#kt_tab_pane_3">Change Password</a>
                         </li>
                     </ul>
                     <!--begin::Navs-->

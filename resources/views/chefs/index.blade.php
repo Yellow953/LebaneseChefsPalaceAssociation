@@ -193,7 +193,7 @@ $groups = Helper::get_groups();
                                 <div class="color-circle" style="background-color: {{ $chef->group->color }}"></div>
                             </td>
                             <td>
-                                <h3>{{ $chef->name }}</h3>
+                                <h3>{{ ucwords($chef->name) }}</h3>
                                 {{ $chef->phone }}
                             </td>
                             <td>
@@ -202,7 +202,7 @@ $groups = Helper::get_groups();
                             </td>
                             <td>
                                 <div class="text-center">
-                                    {{ $chef->rank }}
+                                    {{ ucwords($chef->rank) }}
                                 </div>
                             </td>
                             <td class="d-flex justify-content-end border-0">
