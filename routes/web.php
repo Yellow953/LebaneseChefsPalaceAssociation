@@ -93,3 +93,5 @@ Route::middleware(['auth'])->group(function () {
 
 // Landing Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
+// About Page
+Route::get('/about', [HomeController::class, 'about'])->name('about');

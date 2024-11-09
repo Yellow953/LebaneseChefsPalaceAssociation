@@ -10,9 +10,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        return view('frontend.welcome');
     }
 
+    public function about()
+    {
+        return view('frontend.about');
+    }
     public function custom_logout()
     {
         Session::flush();

@@ -3,6 +3,7 @@
     --primary-color: #015229;
     --darker-primary-color: #00351a;
     --secondary-color: #e5212b;
+    --tertiary-color: #e19025;
     --light-color: #ffffff;
     --dark-color: #1b1b1d;
 }
@@ -11,12 +12,36 @@ body {
     font-family: "Poppins", sans-serif !important;
 }
 
-.hero {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
-        url("../images/home/home-banner-1.jpg");
+.landing-hero {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 20%,
+            rgba(0, 0, 0, 0)
+        ),
+        url("../images/home/home-banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.about-hero {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 20%,
+            rgba(0, 0, 0, 0)
+        ),
+        url("../images/about/about-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-hero-text {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 0px var(--light-color);
 }
 
 .hero-text {
@@ -333,9 +358,17 @@ table thead tr th {
         text-align: center !important;
     }
 
-    .hero {
+    .landing-hero {
         background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
-            url("../images/home/home-banner-1.jpg");
+            url("../images/home/home-banner.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .about-hero {
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
+            url("../images/about/about-banner.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Lebanese Chef's Palace Association</title>
+    <title>About Us - Lebanese Chef's Palace Association</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,10 +48,9 @@
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root" id="kt_app_root">
         <!--begin::Header Section-->
-        <div class="mb-0" id="home">
+        <div class="mb-0">
             <!--begin::Wrapper-->
-            <div
-                class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-light-bg hero">
+            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-light-bg about-hero">
                 <!--begin::Header-->
                 <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
                     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
@@ -105,7 +104,7 @@
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link nav-link-custom active py-3 px-4 px-xxl-6"
-                                                href="#home" data-kt-scroll-toggle="true"
+                                                href="{{route('home')}}" data-kt-scroll-toggle="true"
                                                 data-kt-drawer-dismiss="true">HOME</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -114,7 +113,7 @@
                                         <div class="menu-item">
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link nav-link-custom py-3 px-4 px-xxl-6"
-                                                href="#about-us" data-kt-scroll-toggle="true"
+                                                href="{{route('about')}}" data-kt-scroll-toggle="true"
                                                 data-kt-drawer-dismiss="true">ABOUT US</a>
                                             <!--end::Menu link-->
                                         </div>
@@ -166,57 +165,53 @@
                     <!--end::Container-->
                 </div>
                 <!--end::Header-->
-                <!--begin::Landing hero-->
-                <div class="d-flex flex-column w-100 min-h-350px min-h-lg-500px px-9">
+                <!--begin::About Hero-->
+                <div class="d-flex flex-column w-100 min-h-350px min-h-lg-500px px-9 mb-20">
                     <!--begin::Heading-->
                     <div class="text-start my-5 my-lg-10 py-10 py-lg-20 m-text-center">
-                        <!--begin::Title-->
-                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15"><span class="hero-text-span">LEBANESE CHEF'S
-                                PALACE ASSOCIATION</span>
-                            <br />
-                            <span class="hero-text-span-2" id="kt_landing_hero_text">قصر الطهاة اللبناني</span>
-                        </h1>
-                        <!--end::Title-->
-                        <!--begin::Action-->
-                        <a href="#about-us" class="btn btn-custom mx-5">WHO ARE WE?
-                        </a>
-                        <!--end::Action-->
+                        <!--begin::Row-->
+                        <div class="row">
+                            <!--begin::Col-->
+                            <div class="col-4 col-lg-4">
+                                <!--begin::Title-->
+                                <h1 class="hero-text lh-base fs-4x fs-lg-5x mb-15 pt-20"><span class="hero-text-span">ABOUT US</span>
+                                </h1>
+                                <!--end::Title-->
+                            </div>
+                            <!--end::Col-->
+                            <!--begin::Col-->
+                            <div class="col-8 col-lg-8">
+                                <!--begin::Description-->
+                                <p class="lh-base fs-3 fs-lg-4 mb-15 me-5"><span class="about-hero-text">Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and
+                                        evaluating chefs or issuing certificates to build professional high standard profiles. We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates
+                                        comply with international food safety measures respecting employee rights and accurate
+                                        profiling. We protect consumer rights. Our main goal is to enhance and promote healthy and cost
+                                        efficient hospitality services satisfying Consumers, Employees and Employers by providing international standard certificates.</span>
+                                </p>
+                                <!--end::Description-->
+                            </div>
+                            <!--end::Col-->
+                        </div>
+                        <!--end::Row-->
                     </div>
                     <!--end::Heading-->
                 </div>
-                <!--end::Landing hero-->
+                <!--end::About Hero-->
             </div>
             <!--end::Wrapper-->
-            <!--begin::Curve bottom-->
-            <div class="landing-curve landing-light-color mb-10 mb-lg-20">
-                <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"
-                        fill="currentColor"></path>
-                </svg>
-            </div>
-            <!--end::Curve bottom-->
         </div>
         <!--end::Header Section-->
 
-        <!--begin::About Us Section-->
+        <!--begin::Values Section-->
         <div class="mb-n10 mb-lg-n20 z-index-2">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
                 <div class="text-center mb-17">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx primary-color mb-5" id="about-us" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        About Us</h3>
+                    <h3 class="fs-2hx primary-color mb-5 mt-10" id="about-us" data-kt-scroll-offset="{default: 100, lg: 150}">
+                        OUR VALUES</h3>
                     <!--end::Title-->
-                    <!--begin::Text-->
-                    <div class="text-muted-custom fw-bold fs-5 px-20 m-px">Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and
-                        evaluating chefs or issuing certificates to build professional high standard profiles. We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates
-                        comply with international food safety measures respecting employee rights and accurate
-                        profiling. We protect consumer rights. Our main goal is to enhance and promote healthy and cost
-                        efficient hospitality services satisfying Consumers, Employees and Employers by providing international standard certificates.
-                    </div>
-                    <!--end::Text-->
                 </div>
                 <!--end::Heading-->
                 <!--begin::Row-->
@@ -564,190 +559,7 @@
             </div>
             <!--end::Container-->
         </div>
-        <!--end::About Us Section-->
-
-        <!--begin::TestChef Section-->
-        <div class="mt-sm-n10">
-            <!--begin::Curve top-->
-            <div class="landing-curve primary-color-curve">
-                <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z"
-                        fill="currentColor"></path>
-                </svg>
-            </div>
-            <!--end::Curve top-->
-            <!--begin::Wrapper-->
-            <div class="pb-15 pt-18 achievements-bg">
-                <!--begin::Container-->
-                <div class="container">
-                    <!--begin::Heading-->
-                    <div class="text-center mt-15 mb-18" id="testchef" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        <!--begin::Title-->
-                        <h3 class="fs-2hx text-white fw-bold mb-5 pt-8">Get Your Own Chef Certification</h3>
-                        <!--end::Title-->
-                        <!--begin::Description-->
-                        <div class="fs-5 text-white fw-bold m-px-2">Take your culinary expertise to the next level
-                            <br>with official recognition from Lebanon's premier chef certification body.
-                            <br>Join our elite community of certified professionals and showcase your mastery
-                            <br>of authentic Lebanese cuisine to restaurants and food lovers worldwide.
-                        </div>
-                        <!--end::Description-->
-                    </div>
-                    <!--end::Heading-->
-                    <!--begin::TestChef Certificate-->
-                    <div class="d-flex flex-center">
-                        <img src="{{asset('assets/images/certifications/testchef-certification.jpg')}}"
-                            alt="TestChef Certificate" class="w-50 mb-3 mw-60">
-                    </div>
-                    <!--end::TestChef Certificate-->
-                    <!--begin::Inspiring Quote-->
-                    <div class="fs-2 fw-semibold text-muted text-center mb-3">
-                        <span class="fs-1 lh-1 text-gray-700">“</span>The kitchen is a sacred place <br>where secrets
-                        are kept, and magic happens
-                        <span class="fs-1 lh-1 text-gray-700">“</span>
-                    </div>
-                    <!--end::Quote-->
-                    <!--begin::Author-->
-                    <div class="fs-2 fw-semibold text-muted text-center">
-                        <a href="#" class="link-primary lighter-primary-color fs-4 fw-bold">Chef Edward Lee,</a>
-                        <span class="fs-4 fw-bold text-gray-600">Culinary Expert</span>
-                    </div>
-                    <!--end::Author-->
-                </div>
-                <!--end::Container-->
-            </div>
-            <!--end::Wrapper-->
-            <!--begin::Curve bottom-->
-            <div class="landing-curve primary-color-curve">
-                <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"
-                        fill="currentColor"></path>
-                </svg>
-            </div>
-            <!--end::Curve bottom-->
-        </div>
-        <!--end::TestChef Section-->
-
-        <!--begin::Institutes Section-->
-        <div class="py-10 py-lg-20">
-            <!--begin::Container-->
-            <div class="container">
-                <!--begin::Heading-->
-                <div class="text-center mb-12">
-                    <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark mb-5" id="institutes" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        Our Accredited Institutes</h3>
-                    <!--end::Title-->
-                    <!--begin::Sub-title-->
-                    <div class="fs-5 text-muted fw-bold">Our Accredited Institutes are carefully selected centers of
-                        excellence across Lebanon
-                        <br>each upholding our rigorous standards in culinary education. With 6 certified institutes
-                        nationwide,
-                        <br>we ensure aspiring chefs receive authentic training and certification in
-                        <br>Lebanese cuisine from qualified master instructors.
-                    </div>
-                    <!--end::Sub-title=-->
-                </div>
-                <!--end::Heading-->
-                <!--begin::Row-->
-                <div class="row g-5 g-lg-10">
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5 justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="mme-0">
-                                        <img src="{{asset('assets/images/ghc/GHC-white.png')}}"
-                                            alt="Global Hospitality Consultant" class="accredited-logo" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end::Col-->
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5 justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="me-5">
-                                        <img src="{{asset('assets/images/ghi/GHI-white.png')}}"
-                                            alt="Global Hospitality Institute" class="accredited-logo" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end::Col-->
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5 justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="me-5">
-                                        <img src="{{asset('assets/images/global-hospitality-events/global-hospitality-events-white.png')}}"
-                                            alt="Global Hospitality Events" class="accredited-logo" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end::Col-->
-                </div>
-                <!--end::Row-->
-                <!--begin::Row-->
-                <div class="row g-5 g-lg-10">
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5 justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class=" me-5">
-                                        <img src="{{asset('assets/images/golden-book/golden-book-white.png')}}"
-                                            class="accredited-logo" alt="Golden Book" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end::Col-->
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5 justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="me-5">
-                                        <img src="{{asset('assets/images/staycare/staycare-white.png')}}" alt="STAYCARE"
-                                            class="accredited-logo" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end::Col-->
-                    <!--begin::Col-->
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column h-100">
-                            <div class="d-flex flex-stack mb-5 justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="me-5">
-                                        <img src="{{asset('assets/images/costpitality/costpitality-white.png')}}"
-                                            alt="Costpitality" class="accredited-logo" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end::Col-->
-                </div>
-                <!--end::Row-->
-            </div>
-            <!--end::Container-->
-        </div>
-        <!--end::Institutes Section-->
-
+        <!--end::Values Section-->
         <!--begin::Footer Section-->
         <div class="mb-0">
             <!--begin::Curve top-->
@@ -922,7 +734,7 @@
         </div>
         <!--end::Footer Section-->
     </div>
-    <!--end::Root-->
+    <!--end::root-->
 
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
