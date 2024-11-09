@@ -17,6 +17,40 @@ class HomeController extends Controller
     {
         return view('frontend.about');
     }
+
+    public function institutes()
+    {
+        return view('frontend.institutes.institutes');
+    }
+
+    public function ghi()
+    {
+        return view('frontend.institutes.ghi');
+    }
+    public function ghc()
+    {
+        return view('frontend.institutes.ghc');
+    }
+
+    public function ghe()
+    {
+        return view('frontend.institutes.ghe');
+    }
+
+    public function golden_book()
+    {
+        return view('frontend.institutes.golden-book');
+    }
+
+    public function staycare()
+    {
+        return view('frontend.institutes.staycare');
+    }
+
+    public function costpitality()
+    {
+        return view('frontend.institutes.costpitality');
+    }
     public function custom_logout()
     {
         Session::flush();

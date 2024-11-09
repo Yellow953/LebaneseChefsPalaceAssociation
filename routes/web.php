@@ -95,3 +95,15 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 // About Page
 Route::get('/about', [HomeController::class, 'about'])->name('about');
+//Institutes Pages Group
+Route::prefix('institutes')->group(function () {
+    // Institutes Page
+    Route::get('/', [HomeController::class, 'institutes'])->name('institutes');
+    //Individual Institutes Pages
+    Route::get('/ghi', [HomeController::class, 'ghi'])->name('ghi');
+    Route::get('/ghc', [HomeController::class, 'ghc'])->name('ghc');
+    Route::get('/ghe', [HomeController::class, 'ghe'])->name('ghe');
+    Route::get('/golden-book', [HomeController::class, 'golden_book'])->name('golden_book');
+    Route::get('/staycare', [HomeController::class, 'staycare'])->name('staycare');
+    Route::get('/costpitality', [HomeController::class, 'costpitality'])->name('costpitality');
+});
