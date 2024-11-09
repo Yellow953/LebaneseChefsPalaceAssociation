@@ -48,7 +48,7 @@
 
                 <!--begin::Main-->
                 <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
-                    <main class="m-5">
+                    <main class="m-1">
                         @include('layouts._toolbar')
 
                         @include('layouts._flash')
