@@ -171,14 +171,14 @@
                     <!--begin::Heading-->
                     <div class="text-start my-5 my-lg-10 py-10 py-lg-20 m-text-center">
                         <!--begin::Title-->
-                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15"><span class="hero-text-span">LEBANESE CHEF'S
+                        <h1 class="hero-text lh-base fs-2x fs-lg-3x mb-15"><span class="hero-text-span animate-on-scroll slide-left">LEBANESE CHEF'S
                                 PALACE ASSOCIATION</span>
                             <br />
-                            <span class="hero-text-span-2" id="kt_landing_hero_text">قصر الطهاة اللبناني</span>
+                            <span class="hero-text-span-2 animate-on-scroll slide-left delay-200" id="kt_landing_hero_text">قصر الطهاة اللبناني</span>
                         </h1>
                         <!--end::Title-->
                         <!--begin::Action-->
-                        <a href="{{route('about')}}" class="btn btn-custom mx-5">WHO ARE WE?
+                        <a href="{{route('about')}}" class="btn btn-custom mx-5 animate-on-scroll slide-left delay-400">WHO ARE WE?
                         </a>
                         <!--end::Action-->
                     </div>
@@ -188,7 +188,7 @@
             </div>
             <!--end::Wrapper-->
             <!--begin::Curve bottom-->
-            <div class="landing-curve landing-light-color mb-10 mb-lg-20">
+            <div class="landing-curve light-color-custom mb-10 mb-lg-20">
                 <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"
@@ -204,7 +204,7 @@
             <!--begin::Container-->
             <div class="container">
                 <!--begin:: Certifications Heading-->
-                <div class="text-center mb-10 mb-md-20">
+                <div class="text-center mb-10 mb-md-20 animate-on-scroll slide-up">
                     <!--begin::Title-->
                     <h3 class="fs-2hx primary-color mb-5" id="certifications"
                         data-kt-scroll-offset="{default: 100, lg: 150}">
@@ -213,7 +213,7 @@
                 </div>
                 <!--end:: Certifications Heading-->
                 <!--begin::Certifications slider-->
-                <div class="tns tns-default">
+                <div class="tns tns-default animate-on-scroll slide-up">
                     <!--begin::Slider-->
                     <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000"
                         data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true"
@@ -483,10 +483,10 @@
                     <!--begin::Heading-->
                     <div class="text-center mt-15 mb-18" id="testchef" data-kt-scroll-offset="{default: 100, lg: 150}">
                         <!--begin::Title-->
-                        <h3 class="fs-2hx text-white fw-bold mb-5 pt-8">Get Your Own Chef Certification</h3>
+                        <h3 class="fs-2hx text-tertiary text-shadow-dark fw-bold mb-5 pt-8 animate-on-scroll slide-up">Get Your Own Chef Certification</h3>
                         <!--end::Title-->
                         <!--begin::Description-->
-                        <div class="fs-5 text-white fw-bold m-px-2">Take your culinary expertise to the next level
+                        <div class="fs-5 text-white fw-bold m-px-2 animate-on-scroll slide-up">Take your culinary expertise to the next level
                             <br>with official recognition from Lebanon's premier chef certification body.
                             <br>Join our elite community of certified professionals and showcase your mastery
                             <br>of authentic Lebanese cuisine to restaurants and food lovers worldwide.
@@ -495,20 +495,20 @@
                     </div>
                     <!--end::Heading-->
                     <!--begin::TestChef Certificate-->
-                    <div class="d-flex flex-center">
+                    <div class="d-flex flex-center animate-on-scroll slide-up">
                         <img src="{{asset('assets/images/certifications/testchef-certification.jpg')}}"
                             alt="TestChef Certificate" class="w-50 mb-3 mw-60">
                     </div>
                     <!--end::TestChef Certificate-->
                     <!--begin::Inspiring Quote-->
-                    <div class="fs-2 fw-semibold text-muted text-center mb-3">
+                    <div class="fs-2 fw-semibold text-muted text-center mb-3 animate-on-scroll fade-in">
                         <span class="fs-1 lh-1 text-gray-700">“</span>The kitchen is a sacred place <br>where secrets
                         are kept, and magic happens
                         <span class="fs-1 lh-1 text-gray-700">“</span>
                     </div>
                     <!--end::Quote-->
                     <!--begin::Author-->
-                    <div class="fs-2 fw-semibold text-muted text-center">
+                    <div class="fs-2 fw-semibold text-muted text-center animate-on-scroll fade-in">
                         <a href="#" class="link-primary lighter-primary-color fs-4 fw-bold">Chef Edward Lee,</a>
                         <span class="fs-4 fw-bold text-gray-600">Culinary Expert</span>
                     </div>
@@ -536,11 +536,11 @@
                 <!--begin::Heading-->
                 <div class="text-center mb-12">
                     <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark mb-5" id="institutes" data-kt-scroll-offset="{default: 100, lg: 150}">
+                    <h3 class="fs-2hx text-dark mb-5 animate-on-scroll slide-up" id="institutes" data-kt-scroll-offset="{default: 100, lg: 150}">
                         Our Accredited Institutes</h3>
                     <!--end::Title-->
                     <!--begin::Sub-title-->
-                    <div class="fs-5 text-muted fw-bold">Our Accredited Institutes are carefully selected centers of
+                    <div class="fs-5 text-muted fw-bold animate-on-scroll slide-up">Our Accredited Institutes are carefully selected centers of
                         excellence across Lebanon
                         <br>each upholding our rigorous standards in culinary education. With 6 certified institutes
                         nationwide,
@@ -557,7 +557,7 @@
                         <div class="d-flex flex-column h-100">
                             <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
-                                    <div class="mme-0">
+                                    <div class="me-5 animate-on-scroll slide-up">
                                         <img src="{{asset('assets/images/ghc/GHC-white.png')}}"
                                             alt="Global Hospitality Consultant" class="accredited-logo" />
                                     </div>
@@ -571,7 +571,7 @@
                         <div class="d-flex flex-column h-100">
                             <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
-                                    <div class="me-5">
+                                    <div class="me-5 animate-on-scroll slide-up">
                                         <img src="{{asset('assets/images/ghi/GHI-white.png')}}"
                                             alt="Global Hospitality Institute" class="accredited-logo" />
                                     </div>
@@ -585,7 +585,7 @@
                         <div class="d-flex flex-column h-100">
                             <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
-                                    <div class="me-5">
+                                    <div class="me-5 animate-on-scroll slide-up">
                                         <img src="{{asset('assets/images/global-hospitality-events/global-hospitality-events-white.png')}}"
                                             alt="Global Hospitality Events" class="accredited-logo" />
                                     </div>
@@ -603,7 +603,7 @@
                         <div class="d-flex flex-column h-100">
                             <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
-                                    <div class=" me-5">
+                                    <div class=" me-5 animate-on-scroll slide-up">
                                         <img src="{{asset('assets/images/golden-book/golden-book-white.png')}}"
                                             class="accredited-logo" alt="Golden Book" />
                                     </div>
@@ -617,7 +617,7 @@
                         <div class="d-flex flex-column h-100">
                             <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
-                                    <div class="me-5">
+                                    <div class="me-5 animate-on-scroll slide-up">
                                         <img src="{{asset('assets/images/staycare/staycare-white.png')}}" alt="STAYCARE"
                                             class="accredited-logo" />
                                     </div>
@@ -631,7 +631,7 @@
                         <div class="d-flex flex-column h-100">
                             <div class="d-flex flex-stack mb-5 justify-content-center">
                                 <div class="d-flex align-items-center">
-                                    <div class="me-5">
+                                    <div class="me-5 animate-on-scroll slide-up">
                                         <img src="{{asset('assets/images/costpitality/costpitality-white.png')}}"
                                             alt="Costpitality" class="accredited-logo" />
                                     </div>
@@ -823,6 +823,7 @@
     </div>
     <!--end::Root-->
 
+    <script src="{{asset('assets/js/frontend/animations.js')}}"></script>
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
     <script src="{{ asset('assets/plugins/custom/fslightbox/fslightbox.bundle.js') }}"></script>

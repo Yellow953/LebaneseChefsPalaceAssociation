@@ -12,72 +12,8 @@ body {
     font-family: "Poppins", sans-serif !important;
 }
 
-.landing-hero {
-    background: linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 1) 20%,
-            rgba(0, 0, 0, 0)
-        ),
-        url("../images/home/home-banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.about-hero {
-    background: linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 1) 20%,
-            rgba(0, 0, 0, 0)
-        ),
-        url("../images/about/about-banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.about-hero-text {
-    font-family: "Poppins", sans-serif !important;
-    font-size: 1.55rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-shadow: 1px 1px 0px var(--light-color);
-}
-
-.hero-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
-.hero-text-span {
-    background: linear-gradient(
-        to right,
-        var(--primary-color) 20%,
-        var(--secondary-color) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-text-span-2 {
-    font-family: "Noto Kufi Arabic", sans-serif;
-}
-
-.landing-light-color {
+.light-color-custom {
     color: var(--light-color) !important;
-}
-
-.plate-bg {
-    background-image: url("../images/plate-bg.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.text-muted-custom {
-    color: #7a7a7a !important;
 }
 
 .alert {
@@ -170,55 +106,8 @@ table thead tr th {
     border: 1px solid #cecece !important;
 }
 
-.fs-paragraph {
-    font-size: medium;
-}
-
-/* Scroller */
-#kt_app_body::-webkit-scrollbar-track,
-.custom_scroller::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 7px;
-    background-color: #1b1b1d;
-}
-
-#kt_app_body::-webkit-scrollbar,
-.custom_scroller::-webkit-scrollbar {
-    width: 12px;
-    background-color: #1b1b1d;
-}
-
-#kt_app_body::-webkit-scrollbar-thumb,
-.custom_scroller::-webkit-scrollbar-thumb {
-    border-radius: 7px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #009ef7;
-}
-
-.text-right {
-    text-align: right;
-}
-
 .login-logo {
     width: 100px;
-}
-.btn-custom {
-    color: white !important;
-    background-color: var(--primary-color) !important;
-}
-
-.btn-custom:hover {
-    color: white !important;
-    background-color: var(--lighter-primary-color) !important;
-}
-
-.nav-link-custom {
-    color: var(--primary-color) !important;
-    font-size: large !important;
-}
-
-.nav-link-custom:hover {
-    color: var(--secondary-color) !important;
 }
 
 .login-card-custom {
@@ -226,34 +115,6 @@ table thead tr th {
     box-shadow: var(--primary-color) 0px 0px 15px 5px !important;
 }
 
-.primary-color {
-    color: var(--primary-color) !important;
-}
-
-.lighter-primary-color {
-    color: var(--lighter-primary-color) !important;
-}
-
-.lighter-primary-color:hover {
-    color: var(--secondary-color) !important;
-}
-
-.primary-color-curve {
-    color: var(--darker-primary-color) !important;
-}
-
-.primary-color-bg {
-    background-color: var(--darker-primary-color) !important;
-}
-
-.achievements-bg {
-    background-color: var(--darker-primary-color) !important;
-    background-image: url("../images/achievements-bg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-}
 .indicator-label-custom {
     background-color: var(--primary-color) !important;
     color: white !important;
@@ -272,32 +133,6 @@ table thead tr th {
 
 .red-dotted-top-border {
     border-top: 2px solid var(--lighter-primary-color);
-}
-
-.white-bg {
-    background-color: var(--light-color);
-}
-
-.link-footer {
-    color: var(--lighter-primary-color) !important;
-}
-
-.link-footer:hover {
-    color: var(--secondary-color) !important;
-}
-
-.link-footer-card {
-    color: var(--primary-color) !important;
-}
-
-.link-footer-card:hover {
-    color: var(--secondary-color) !important;
-}
-.login-bg {
-    background-image: url("../images/login-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .color-field {
@@ -334,6 +169,189 @@ table thead tr th {
 .desktop-hidden {
     display: none !important;
 }
+/* -------------------Scroller------------------- */
+
+#kt_app_body::-webkit-scrollbar-track,
+.custom_scroller::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    background-color: #1b1b1d;
+}
+
+#kt_app_body::-webkit-scrollbar,
+.custom_scroller::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1b1b1d;
+}
+
+#kt_app_body::-webkit-scrollbar-thumb,
+.custom_scroller::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #009ef7;
+}
+
+/* -------------------Links & Buttons------------------- */
+
+.link-footer {
+    color: var(--lighter-primary-color) !important;
+}
+
+.link-footer:hover {
+    color: var(--secondary-color) !important;
+}
+
+.link-footer-card {
+    color: var(--primary-color) !important;
+}
+
+.link-footer-card:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-custom {
+    color: white !important;
+    background-color: var(--primary-color) !important;
+}
+
+.btn-custom:hover {
+    color: white !important;
+    background-color: var(--lighter-primary-color) !important;
+}
+
+.nav-link-custom {
+    color: var(--primary-color) !important;
+    font-size: large !important;
+}
+
+.nav-link-custom:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* -------------------Text------------------- */
+
+.about-hero-text {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 0px var(--light-color);
+}
+
+.hero-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.hero-text-span {
+    background: linear-gradient(
+        to right,
+        var(--primary-color) 20%,
+        var(--secondary-color) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text-span-2 {
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.text-muted-custom {
+    color: #7a7a7a !important;
+}
+
+.primary-color {
+    color: var(--primary-color) !important;
+}
+
+.lighter-primary-color {
+    color: var(--lighter-primary-color) !important;
+}
+
+.lighter-primary-color:hover {
+    color: var(--secondary-color) !important;
+}
+
+.primary-color-curve {
+    color: var(--darker-primary-color) !important;
+}
+
+.text-tertiary {
+    color: var(--tertiary-color);
+}
+
+.text-shadow-dark {
+    text-shadow: 1px 1px 2px var(--dark-color);
+}
+
+.text-shadow-light {
+    text-shadow: 1px 1px 2px var(--light-color);
+}
+
+.fs-paragraph {
+    font-size: medium;
+}
+/* -------------------Backgrounds------------------- */
+
+.landing-hero {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 20%,
+            rgba(0, 0, 0, 0)
+        ),
+        url("../images/home/home-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-hero {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 20%,
+            rgba(0, 0, 0, 0)
+        ),
+        url("../images/about/about-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plate-bg {
+    background-image: url("../images/plate-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.login-bg {
+    background-image: url("../images/login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.white-bg {
+    background-color: var(--light-color);
+}
+
+.achievements-bg {
+    background-color: var(--darker-primary-color) !important;
+    background-image: url("../images/achievements-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.primary-color-bg {
+    background-color: var(--darker-primary-color) !important;
+}
+
+/* -------------------Media Queries------------------- */
 
 @media only screen and (max-width: 600px) {
     .backup-img {
@@ -399,4 +417,62 @@ table thead tr th {
         margin-left: 1.25rem !important;
         margin-right: 1.25rem !important;
     }
+}
+
+/* -----------------transitions---------------- */
+
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+/* Different animation classes */
+.fade-in {
+    opacity: 0;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+/* Active states when element is visible */
+.fade-in.active {
+    opacity: 1;
+}
+
+.slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Optional animation delay classes */
+.delay-200 {
+    transition-delay: 200ms;
+}
+.delay-400 {
+    transition-delay: 400ms;
+}
+.delay-600 {
+    transition-delay: 600ms;
 }

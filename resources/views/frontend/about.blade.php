@@ -172,7 +172,7 @@
                         <!--begin::Row-->
                         <div class="row">
                             <!--begin::Col-->
-                            <div class="col-4 col-lg-4">
+                            <div class="col-4 col-lg-4 animate-on-scroll slide-left">
                                 <!--begin::Title-->
                                 <h1 class="hero-text lh-base fs-4x fs-lg-5x mb-15 pt-20"><span class="hero-text-span">ABOUT US</span>
                                 </h1>
@@ -180,7 +180,7 @@
                             </div>
                             <!--end::Col-->
                             <!--begin::Col-->
-                            <div class="col-8 col-lg-8">
+                            <div class="col-8 col-lg-8 animate-on-scroll slide-right">
                                 <!--begin::Description-->
                                 <p class="lh-base fs-3 fs-lg-4 mb-15 me-5"><span class="about-hero-text">Our NGO Lebanese Chef's Palace Association specializes in recruiting employees and
                                         evaluating chefs or issuing certificates to build professional high standard profiles. We issue certificates to improve Restaurants' exposure and effectiveness. Our Certificates
@@ -207,7 +207,7 @@
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Heading-->
-                <div class="text-center mb-17">
+                <div class="text-center mb-17 animate-on-scroll slide-up">
                     <!--begin::Title-->
                     <h3 class="fs-2hx primary-color mb-5 mt-10" id="about-us" data-kt-scroll-offset="{default: 100, lg: 150}">
                         OUR VALUES</h3>
@@ -217,7 +217,7 @@
                 <!--begin::Row-->
                 <div class="row w-100 gy-10 mb-md-20">
                     <!--begin::Col-->
-                    <div class="col-md-4 px-5 plate-bg h-400px align-items-center">
+                    <div class="col-md-4 px-5 plate-bg h-400px align-items-center animate-on-scroll slide-left delay-400">
                         <!--begin::Story-->
                         <div class="text-center mb-10 mb-md-0 pt-20">
                             <!--begin::Illustration-->
@@ -244,7 +244,7 @@
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 plate-bg h-400px px-5">
+                    <div class="col-md-4 plate-bg h-400px px-5 animate-on-scroll slide-left delay-200">
                         <!--begin::Story-->
                         <div class="text-center mb-10 mb-md-0 pt-20">
                             <!--begin::Illustration-->
@@ -271,7 +271,7 @@
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-md-4 plate-bg h-400px px-5">
+                    <div class="col-md-4 plate-bg h-400px px-5 animate-on-scroll slide-left">
                         <!--begin::Story-->
                         <div class="text-center mb-10 mb-md-0 pt-20">
                             <!--begin::Illustration-->
@@ -300,7 +300,7 @@
                 </div>
                 <!--end::Row-->
                 <!--begin:: Certifications Heading-->
-                <div class="text-center mb-10 mb-md-20">
+                <div class="text-center mb-10 mb-md-20 animate-on-scroll slide-up">
                     <!--begin::Title-->
                     <h3 class="fs-2hx primary-color mb-5" id="certifications"
                         data-kt-scroll-offset="{default: 100, lg: 150}">
@@ -309,7 +309,7 @@
                 </div>
                 <!--end:: Certifications Heading-->
                 <!--begin::Certifications slider-->
-                <div class="tns tns-default">
+                <div class="tns tns-default animate-on-scroll slide-up">
                     <!--begin::Slider-->
                     <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000"
                         data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true"
@@ -736,6 +736,7 @@
     </div>
     <!--end::root-->
 
+    <script src="{{asset('assets/js/frontend/animations.js')}}"></script>
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
     <script src="{{ asset('assets/plugins/custom/fslightbox/fslightbox.bundle.js') }}"></script>
