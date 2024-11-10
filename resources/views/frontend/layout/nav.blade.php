@@ -70,11 +70,17 @@
                             <!--begin::Menu link-->
                             <a class="{{Route::is('institutes') ? 'text-secondary' : ''}} nav-link nav-link-custom py-3 px-4 px-xxl-6"
                                 href="{{Route('institutes')}}" data-kt-scroll-toggle="true"
-                                data-kt-drawer-dismiss="true">INSTITUTES</a>
+                                data-kt-drawer-dismiss="true">INSTITUTES <i class="fas fa-chevron-down"></i></a>
                             <!--begin::Submenu link-->
                             <div class="submenu">
+                                <a href="{{Route('ghc')}}" class="nav-link nav-link-custom py-3 px-4 px-xxl-6">Global Hospitality Consultant</a>
                                 <a href="{{Route('ghi')}}" class="nav-link nav-link-custom py-3 px-4 px-xxl-6">Global Hospitality Institute</a>
+                                <a href="{{Route('ghe')}}" class="nav-link nav-link-custom py-3 px-4 px-xxl-6">Global Hospitality Events</a>
+                                <a href="{{Route('golden_book')}}" class="nav-link nav-link-custom py-3 px-4 px-xxl-6">Golden Book</a>
+                                <a href="{{Route('staycare')}}" class="nav-link nav-link-custom py-3 px-4 px-xxl-6">StayCare</a>
+                                <a href="{{Route('costpitality')}}" class="nav-link nav-link-custom py-3 px-4 px-xxl-6">Costpitality</a>
                             </div>
+                            <!--end::Submenu link-->
                             <!--end::Menu link-->
                         </div>
                         <!--end::Menu item-->

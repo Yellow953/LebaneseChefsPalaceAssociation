@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.5 // Trigger when 10% of the element is visible
+        threshold: 0.3 // Trigger when 10% of the element is visible
     });
 
     // Observe all elements with animate-on-scroll class

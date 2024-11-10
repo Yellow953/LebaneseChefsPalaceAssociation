@@ -77,11 +77,6 @@ table thead tr th {
     color: white !important;
 }
 
-.backup-img {
-    width: auto;
-    height: 300px;
-}
-
 .user-info-card {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -150,17 +145,6 @@ table thead tr th {
     border: 1px #a1a1a1 solid;
 }
 
-.groups {
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.groups-img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
 .rounded {
     border-radius: 25px;
     overflow: hidden;
@@ -219,6 +203,10 @@ table thead tr th {
     background-color: var(--lighter-primary-color) !important;
 }
 
+.menu-item {
+    padding: 10px 10px;
+}
+
 .nav-link-custom {
     color: var(--primary-color);
     font-size: large;
@@ -229,6 +217,15 @@ table thead tr th {
     color: var(--secondary-color);
 }
 
+.nav-link-custom i {
+    color: var(--primary-color);
+}
+
+.nav-link-custom:hover i {
+    color: var(--secondary-color);
+    transition: all 0.2s ease;
+}
+
 .institutes-link {
     transition: all 0.3s ease;
 }
@@ -237,29 +234,41 @@ table thead tr th {
     transform: scale(1.05);
 }
 
-.submenu {
+.menu-item .submenu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: fixed;
+    top: 11%;
     background: var(--primary-color);
+    border: var(--light-color) 2px solid;
+    border-radius: 20px;
     min-width: 200px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     list-style: none;
-    padding: 0;
     transition: all 0.3s ease;
+    z-index: 1000;
 }
 
-.nav-link-custom:hover .submenu {
+.menu-item:hover .submenu {
     display: block;
 }
 
 .submenu a {
     padding: 10px 15px;
+    color: var(--light-color) !important;
+    transition: all 0.3s ease;
 }
 
 .submenu a:hover {
-    background: #f5f5f5;
+    background: var(--light-color);
+    color: var(--primary-color) !important;
+}
+
+.submenu a:hover:first-child {
+    border-radius: 17px 17px 0 0;
+}
+
+.submenu a:hover:last-child {
+    border-radius: 0 0 17px 17px;
 }
 
 /* -------------------Text------------------- */
@@ -331,6 +340,36 @@ table thead tr th {
 .fs-paragraph {
     font-size: medium;
 }
+
+/* -------------------Images------------------- */
+
+.backup-img {
+    width: auto;
+    height: 300px;
+}
+
+.groups {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.groups-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.institutes-img {
+    width: 50%;
+    height: auto;
+}
+
+.institutes-description-image {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+}
+
 /* -------------------Backgrounds------------------- */
 
 .landing-hero {
@@ -367,9 +406,9 @@ table thead tr th {
 
 .institutes-individual-hero {
     background: linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 1),
-            rgba(255, 255, 255, 0.2)
+            -90deg,
+            rgba(225, 144, 37, 0.6),
+            rgba(255, 255, 255, 0.4)
         ),
         url("../images/institutes/institutes-individual-banner.jpg");
     background-size: cover;
