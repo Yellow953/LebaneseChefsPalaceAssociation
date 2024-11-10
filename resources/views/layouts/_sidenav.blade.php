@@ -44,7 +44,8 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('app*') ? 'active' : '' }}" href="{{ route('app') }}">
+                    <a class="menu-link px-0 {{ request()->routeIs('app*') ? 'active' : '' }}"
+                        href="{{ route('app') }}">
                         <span class="menu-icon">
                             <i class="bi bi-speedometer"></i>
                         </span>
@@ -56,7 +57,8 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }}" href="{{ route('chefs') }}">
+                    <a class="menu-link px-0 {{ request()->routeIs('chefs*') ? 'active' : '' }}"
+                        href="{{ route('chefs') }}">
                         <span class="menu-icon">
                             <i class="bi bi-person-fill"></i>
                         </span>
@@ -68,7 +70,7 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
+                    <a class="menu-link px-0 {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
                         href="{{ route('restaurants') }}">
                         <span class="menu-icon">
                             <i class="bi bi-building-fill"></i>
@@ -81,7 +83,8 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('users*') ? 'active' : '' }}" href="{{ route('users') }}">
+                    <a class="menu-link px-0 {{ request()->routeIs('users*') ? 'active' : '' }}"
+                        href="{{ route('users') }}">
                         <span class="menu-icon">
                             <i class="bi bi-person-fill"></i>
                         </span>
@@ -93,7 +96,8 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('logs*') ? 'active' : '' }}" href="{{ route('logs') }}">
+                    <a class="menu-link px-0 {{ request()->routeIs('logs*') ? 'active' : '' }}"
+                        href="{{ route('logs') }}">
                         <span class="menu-icon">
                             <i class="bi bi-file-text-fill"></i>
                         </span>
@@ -105,7 +109,7 @@
                 <!--begin:Menu item-->
                 <div class="menu-item">
                     <!--begin:Menu link-->
-                    <a class="menu-link {{ request()->routeIs('settings*') ? 'active' : '' }}"
+                    <a class="menu-link px-0 {{ request()->routeIs('settings*') ? 'active' : '' }}"
                         href="{{ route('settings') }}">
                         <span class="menu-icon">
                             <i class="bi bi-gear-fill"></i>

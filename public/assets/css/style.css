@@ -573,3 +573,7 @@ table thead tr th {
 .delay-600 {
     transition-delay: 600ms;
 }
+
+.paragraph {
+    font-size: 1.2rem;
+}
