@@ -14,7 +14,7 @@
     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px mt-3"
         data-kt-menu="true">
         <!--begin::Menu item-->
-        <div class="menu-item px-3">
+        <div class="menu-item px-3 py-0">
             <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
         </div>
         <!--end::Menu item-->
@@ -22,7 +22,7 @@
         <div class="separator mb-3 opacity-75"></div>
         <!--end::Menu separator-->
         <!--begin::Menu item-->
-        <div class="menu-item px-3">
+        <div class="menu-item px-3 py-0">
             <a href="{{ route('users.new') }}" class="menu-link px-3">New User</a>
         </div>
         <!--end::Menu item-->
@@ -30,7 +30,7 @@
         <div class="separator mt-3 opacity-75"></div>
         <!--end::Menu separator-->
         <!--begin::Menu item-->
-        <div class="menu-item px-3">
+        <div class="menu-item px-3 py-0">
             <div class="menu-content px-3 py-3">
                 <a class="btn btn-primary btn-sm px-4" href="{{ route('users.export') }}">Export to
                     Excell</a>

@@ -1,6 +1,6 @@
 <!--begin::Sidebar-->
 <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar"
-    data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="225px"
+    data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px"
     data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
     <!--begin::Logo-->
     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
@@ -8,6 +8,7 @@
         <a href="{{ route('app') }}" class="d-flex align-items-center justify-content-center">
             <img alt="Logo" src="{{ asset('assets/images/favicon.png') }}" class="h-50px app-sidebar-logo-default" />
             <h1 class="app-sidebar-logo-default mx-4 text-white">LCPA</h1>
+            <img alt="Logo" src="{{ asset('assets/images/favicon.png') }}" class="h-40px app-sidebar-logo-minimize">
         </a>
         <!--end::Logo image-->
         <!--begin::Sidebar toggle-->
@@ -42,10 +43,9 @@
             <div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu"
                 data-kt-menu="true" data-kt-menu-expand="false">
                 <!--begin:Menu item-->
-                <div class="menu-item">
+                <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
-                    <a class="menu-link px-0 {{ request()->routeIs('app*') ? 'active' : '' }}"
-                        href="{{ route('app') }}">
+                    <a class="menu-link {{ request()->routeIs('app*') ? 'active' : '' }}" href="{{ route('app') }}">
                         <span class="menu-icon">
                             <i class="bi bi-speedometer"></i>
                         </span>
@@ -55,10 +55,9 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-                <div class="menu-item">
+                <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
-                    <a class="menu-link px-0 {{ request()->routeIs('chefs*') ? 'active' : '' }}"
-                        href="{{ route('chefs') }}">
+                    <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }}" href="{{ route('chefs') }}">
                         <span class="menu-icon">
                             <i class="bi bi-person-fill"></i>
                         </span>
@@ -68,9 +67,9 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-                <div class="menu-item">
+                <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
-                    <a class="menu-link px-0 {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
+                    <a class="menu-link {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
                         href="{{ route('restaurants') }}">
                         <span class="menu-icon">
                             <i class="bi bi-building-fill"></i>
@@ -81,10 +80,9 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-                <div class="menu-item">
+                <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
-                    <a class="menu-link px-0 {{ request()->routeIs('users*') ? 'active' : '' }}"
-                        href="{{ route('users') }}">
+                    <a class="menu-link {{ request()->routeIs('users*') ? 'active' : '' }}" href="{{ route('users') }}">
                         <span class="menu-icon">
                             <i class="bi bi-person-fill"></i>
                         </span>
@@ -94,10 +92,9 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-                <div class="menu-item">
+                <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
-                    <a class="menu-link px-0 {{ request()->routeIs('logs*') ? 'active' : '' }}"
-                        href="{{ route('logs') }}">
+                    <a class="menu-link {{ request()->routeIs('logs*') ? 'active' : '' }}" href="{{ route('logs') }}">
                         <span class="menu-icon">
                             <i class="bi bi-file-text-fill"></i>
                         </span>
@@ -107,9 +104,9 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-                <div class="menu-item">
+                <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
-                    <a class="menu-link px-0 {{ request()->routeIs('settings*') ? 'active' : '' }}"
+                    <a class="menu-link {{ request()->routeIs('settings*') ? 'active' : '' }}"
                         href="{{ route('settings') }}">
                         <span class="menu-icon">
                             <i class="bi bi-gear-fill"></i>

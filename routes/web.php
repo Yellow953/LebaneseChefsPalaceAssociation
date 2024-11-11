@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\AppController;
-use App\Http\Controllers\BackupController;
 use App\Http\Controllers\ChefController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogController;
@@ -93,8 +92,10 @@ Route::middleware(['auth'])->group(function () {
 
 // Landing Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
 // About Page
 Route::get('/about', [HomeController::class, 'about'])->name('about');
+
 //Institutes Pages Group
 Route::prefix('institutes')->group(function () {
     // Institutes Page
@@ -103,7 +104,7 @@ Route::prefix('institutes')->group(function () {
     Route::get('/ghi', [HomeController::class, 'ghi'])->name('ghi');
     Route::get('/ghc', [HomeController::class, 'ghc'])->name('ghc');
     Route::get('/ghe', [HomeController::class, 'ghe'])->name('ghe');
-    Route::get('/golden-book', [HomeController::class, 'golden_book'])->name('golden_book');
+    Route::get('/golden_book', [HomeController::class, 'golden_book'])->name('golden_book');
     Route::get('/staycare', [HomeController::class, 'staycare'])->name('staycare');
     Route::get('/costpitality', [HomeController::class, 'costpitality'])->name('costpitality');
 });

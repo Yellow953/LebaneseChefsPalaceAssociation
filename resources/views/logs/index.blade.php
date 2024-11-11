@@ -14,7 +14,7 @@
     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px mt-3"
         data-kt-menu="true">
         <!--begin::Menu item-->
-        <div class="menu-item px-3">
+        <div class="menu-item px-3 py-0">
             <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
         </div>
         <!--end::Menu item-->
@@ -22,7 +22,7 @@
         <div class="separator mt-3 opacity-75"></div>
         <!--end::Menu separator-->
         <!--begin::Menu item-->
-        <div class="menu-item px-3">
+        <div class="menu-item px-3 py-0">
             <div class="menu-content px-3 py-3">
                 <a class="btn btn-primary btn-sm px-4" href="{{ route('logs.export') }}">Export to
                     Excell</a>
@@ -86,14 +86,14 @@
                         <!--begin::Row-->
                         <div class="row g-8 mb-8">
                             <!--begin::Col-->
-                            <div class="col-xxl-4">
+                            <div class="col-md-6">
                                 <label class="fs-6 form-label fw-bold text-dark">Date From</label>
                                 <input type="date" class="form-control form-control form-control-solid" name="startDate"
                                     value="{{ request()->query('startDate') }}" />
                             </div>
                             <!--end::Col-->
                             <!--begin::Col-->
-                            <div class="col-xxl-4">
+                            <div class="col-md-6">
                                 <label class="fs-6 form-label fw-bold text-dark">Date To</label>
                                 <input type="date" class="form-control form-control form-control-solid" name="EndDate"
                                     value="{{ request()->query('endDate') }}" />
