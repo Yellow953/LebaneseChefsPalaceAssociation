@@ -38,13 +38,13 @@
 <!--end::Header Section-->
 
 <!--begin::About Us Section-->
-<div class="mb-n10 mb-lg-n20 z-index-2">
+<div class="mb-n10 mb-lg-n20 mt-10 mt-lg-20 z-index-2">
     <!--begin::Container-->
     <div class="container">
         <!--begin:: Certifications Heading-->
-        <div class="text-center mb-10 mb-md-20 animate-on-scroll slide-up">
+        <div class="text-center my-10 mb-md-20 animate-on-scroll slide-up">
             <!--begin::Title-->
-            <h3 class="fs-2hx primary-color mb-5" id="certifications"
+            <h3 class="fs-2hx primary-color my-5" id="certifications"
                 data-kt-scroll-offset="{default: 100, lg: 150}">
                 Certifications</h3>
             <!--end::Title-->
@@ -319,7 +319,7 @@
         <!--begin::Container-->
         <div class="container">
             <!--begin::Heading-->
-            <div class="text-center mt-15 mb-18" id="testchef" data-kt-scroll-offset="{default: 100, lg: 150}">
+            <div class="text-center mt-5 mt-lg-15 mb-10 mb-lg-20" id="testchef" data-kt-scroll-offset="{default: 100, lg: 150}">
                 <!--begin::Title-->
                 <h3 class="fs-2hx text-tertiary text-shadow-dark fw-bold mb-5 pt-8 animate-on-scroll slide-up">Get Your Own Chef Certification</h3>
                 <!--end::Title-->

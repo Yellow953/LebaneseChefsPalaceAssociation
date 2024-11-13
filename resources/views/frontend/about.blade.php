@@ -51,7 +51,7 @@
 <!--end::Header Section-->
 
 <!--begin::Values Section-->
-<div class="mb-n10 mb-lg-n20 z-index-2">
+<div class="mb-10 mb-lg-20 z-index-2">
     <!--begin::Container-->
     <div class="container">
         <!--begin::Heading-->
@@ -147,6 +147,67 @@
             <!--end::Col-->
         </div>
         <!--end::Row-->
+    </div>
+    <!--end:: Container-->
+</div>
+<!--end:: Values Section-->
+<!--begin:: Videos Section-->
+<div class="mb-10 mb-lg-20 z-index-2">
+    <!--begin:: Container-->
+    <div class="container">
+        <!--begin:: Videos Heading-->
+        <div class="text-center mb-10 mb-md-20 animate-on-scroll slide-up">
+            <!--begin::Title-->
+            <h3 class="fs-2hx primary-color mb-5" id="certifications"
+                data-kt-scroll-offset="{default: 100, lg: 150}">
+                Dive in</h3>
+            <!--end::Title-->
+        </div>
+        <!--end:: Videos Heading-->
+        <!--begin::Row-->
+        <div class="row w-100 gy-5 mb-md-10">
+            <!--begin::Col-->
+            <div class="col-md-6 animate-on-scroll slide-up p-10 align-text-center">
+                <iframe width="495.25" height="280.5" src="https://www.youtube.com/embed/KNkEuHb10jQ?si=tpWH2ma7uz02DVSX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-4"></iframe>
+            </div>
+            <!--end::Col-->
+            <!--begin::Col-->
+            <div class="col-md-6 animate-on-scroll slide-up p-10 align-text-center">
+                <iframe width="495.25" height="280.5" src="https://www.youtube.com/embed/HIbPt1LHQmE?si=oWE17XDraUd8jTmZ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-4"></iframe>
+            </div>
+            <!--end::Col-->
+        </div>
+        <!--end::Row-->
+        <!--begin::Row-->
+        <div class="row w-100 gy-5 mb-md-10">
+            <!--begin::Col-->
+            <div class="col-md-6 animate-on-scroll slide-up p-10 align-text-center">
+                <iframe width="495.25" height="280.5" src="https://www.youtube.com/embed/iQw8B2ZP3Qw?si=CliA5J35PzR5-4-I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-4"></iframe>
+            </div>
+            <!--end::Col-->
+            <!--begin::Col-->
+            <div class="col-md-6 animate-on-scroll slide-up p-10 align-text-center">
+                <iframe width="495.25" height="280.5" src="https://www.youtube.com/embed/FeXqixoOfmA?si=pGiTNT4wUXweFVJl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-4"></iframe>
+            </div>
+            <!--end::Col-->
+        </div>
+        <!--end::Row-->
+    </div>
+    <!--end:: Container-->
+</div>
+<!--end::Videos Section-->
+<!--begin:: Certifications Section-->
+<div class="mb-n10 mb-lg-n20 z-index-2">
+    <!--begin:: Container-->
+    <div class="container">
         <!--begin:: Certifications Heading-->
         <div class="text-center mb-10 mb-md-20 animate-on-scroll slide-up">
             <!--begin::Title-->
@@ -407,5 +468,5 @@
     </div>
     <!--end::Container-->
 </div>
-<!--end::Values Section-->
+<!--end::Certifications Section-->
 @endsection
