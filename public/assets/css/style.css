@@ -514,6 +514,23 @@ table thead tr th {
         margin-left: 1.25rem !important;
         margin-right: 1.25rem !important;
     }
+    .timeline-line {
+        left: 30px;
+    }
+
+    .timeline-dot {
+        left: 30px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 60px !important;
+    }
+
+    .timeline-content::after {
+        left: -10px !important;
+        right: auto !important;
+    }
 }
 
 /* -----------------transitions---------------- */
@@ -576,4 +593,107 @@ table thead tr th {
 
 .paragraph {
     font-size: 1.2rem;
+}
+
+/* -----------------Timeline---------------- */
+.timeline-vertical {
+    position: relative;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #ccc;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 40px 0;
+    width: 100%;
+    min-height: 120px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--lighter-primary-color);
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 2px var(--lighter-primary-color);
+    transition: all 0.3s ease;
+}
+
+.timeline-content {
+    position: relative;
+    width: calc(50% - 30px); /* 50% minus spacing */
+    padding: 20px;
+    background: #d8d8d8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Left side items */
+.timeline-item.left .timeline-content {
+    margin-right: calc(50% + 30px);
+}
+
+.timeline-item.left .timeline-content::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #d8d8d8;
+    transform: rotate(45deg);
+}
+
+/* Right side items */
+.timeline-item.right .timeline-content {
+    margin-left: calc(50% + 30px);
+}
+
+.timeline-item.right .timeline-content::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #d8d8d8;
+    transform: rotate(45deg);
+}
+
+/* Content styling */
+.timeline-content h3 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+
+.timeline-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--tertiary-color);
+}
+
+/* Hover effects */
+.timeline-item:hover .timeline-dot {
+    background: var(--primary-color);
+    transform: translateX(-50%) scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }

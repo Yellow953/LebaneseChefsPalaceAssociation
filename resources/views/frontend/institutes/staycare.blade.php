@@ -69,4 +69,49 @@
     <!--end::Container-->
 </div>
 <!--end::Description Section-->
+<!--begin::Timeline Section-->
+<div class="d-flex flex-column w-100 min-h-350px min-h-lg-500px px-9">
+    <!--begin::Container-->
+    <div class="my-5 my-lg-10 py-10 py-lg-20">
+        <!--begin::Heading-->
+        <div class="d-flex flex-center text-center animate-on-scroll slide-up">
+            <h1 class="fs-2hx primary-color mb-20">"Himaya" Program</h1>
+        </div>
+        <!--end::Heading-->
+        <!--begin::Timeline-->
+        <div class="timeline-vertical">
+            <div class="timeline-line"></div>
+            <!--begin::Timeline item-->
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Healthy Chef</h3>
+                    <p>The Healthy Chef program provides chefs with comprehensive healthcare services at a reasonable price, ensuring their well-being and peace of mind.</p>
+                </div>
+            </div>
+            <!--end::Timeline item-->
+            <!--begin::Timeline item-->
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Live More Chef</h3>
+                    <p>The Live More Chef Program provides chefs with life insurance plans, ensuring their financial stability and peace of mind.</p>
+                </div>
+            </div>
+            <!--end::Timeline item-->
+            <!--begin::Timeline item-->
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Save Me</h3>
+                    <p>The Save Me program provides the chef with health insurance for work incidents, ensuring their well-being and peace of mind.</p>
+                </div>
+            </div>
+            <!--end::Timeline item-->
+        </div>
+        <!--end::Timeline-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::Timeline Section-->
 @endsection
