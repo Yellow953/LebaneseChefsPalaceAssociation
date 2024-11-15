@@ -19,7 +19,7 @@
             <div class="my-5 my-lg-10 py-10 py-lg-20">
                 <!--begin::Institution Logo-->
                 <div class="d-flex flex-center animate-on-scroll slide-up">
-                    <img src="{{asset('assets/images/ghc/ghc-white.png')}}" alt="Global Hospitality Consultant"
+                    <img src="{{asset('assets/images/ghc/GHC-white.png')}}" alt="Global Hospitality Consultant"
                         class="institutes-img" />
                 </div>
                 <!--end::Institution Logo-->
@@ -47,20 +47,31 @@
             <div class="col-lg-7">
                 <!--begin::Description-->
                 <div class="text-start">
-                    <p class="fs-3 fw-bold text-tertiary lh-lg animate-on-scroll slide-up">The "Global Hospitality Consultant" committee is a specialized consulting body in the field of global hospitality, offering a wide range of consulting services to improve and develop services and operations in the hospitality industry. The committee's services include:</p>
+                    <p class="fs-3 fw-bold text-tertiary lh-lg animate-on-scroll slide-up">The "Global Hospitality
+                        Consultant" committee is a specialized consulting body in the field of global hospitality,
+                        offering a wide range of consulting services to improve and develop services and operations in
+                        the hospitality industry. The committee's services include:</p>
                     <ul>
                         <li class="fs-3 text-muted-custom lh-lg animate-on-scroll slide-left">
-                            <span class="fw-bold text-tertiary">Kitchen Operations Consulting:</span> Providing advice and strategies to improve the efficiency and effectiveness of kitchen operations, including work organization, quality improvement, and inventory management.
+                            <span class="fw-bold text-tertiary">Kitchen Operations Consulting:</span> Providing advice
+                            and strategies to improve the efficiency and effectiveness of kitchen operations, including
+                            work organization, quality improvement, and inventory management.
                         </li>
                         <li class="fs-3 text-muted-custom lh-lg animate-on-scroll slide-left">
-                            <span class="fw-bold text-tertiary">Marketing and Promotion Consulting:</span> Offering innovative marketing strategies to increase brand awareness and attract more customers, including the use of social media and launching effective advertising campaigns.
+                            <span class="fw-bold text-tertiary">Marketing and Promotion Consulting:</span> Offering
+                            innovative marketing strategies to increase brand awareness and attract more customers,
+                            including the use of social media and launching effective advertising campaigns.
                         </li>
                         <li class="fs-3 text-muted-custom lh-lg animate-on-scroll slide-left">
-                            <span class="fw-bold text-tertiary">Space Design Consulting:</span> Providing advice and guidance for designing and improving interior and exterior spaces of restaurants, hotels, and hospitality facilities, ensuring a comfortable and attractive experience for customers.
+                            <span class="fw-bold text-tertiary">Space Design Consulting:</span> Providing advice and
+                            guidance for designing and improving interior and exterior spaces of restaurants, hotels,
+                            and hospitality facilities, ensuring a comfortable and attractive experience for customers.
                         </li>
                     </ul>
                     <p class="fs-3 fw-bold text-tertiary lh-lg animate-on-scroll slide-up">
-                        The committee aims to support and enhance the hospitality industry in Lebanon by providing professional and specialized solutions and guidance that help hospitality establishments achieve success and excellence.
+                        The committee aims to support and enhance the hospitality industry in Lebanon by providing
+                        professional and specialized solutions and guidance that help hospitality establishments achieve
+                        success and excellence.
                     </p>
                 </div>
                 <!--end::Description-->
@@ -68,7 +79,8 @@
             <!--end::Col-->
             <!--begin::Col-->
             <div class="col-lg-5 animate-on-scroll slide-right">
-                <img src="{{asset('assets/images/ghi/ghi-description-img.png')}}" alt="Golden Hospitality Institute" class="institutes-description-image" />
+                <img src="{{asset('assets/images/ghi/ghi-description-img.png')}}" alt="Golden Hospitality Institute"
+                    class="institutes-description-image" />
             </div>
             <!--end::Col-->
         </div>
