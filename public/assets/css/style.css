@@ -406,9 +406,8 @@ table thead tr th {
 
 .institutes-individual-hero {
     background: linear-gradient(
-            -90deg,
-            rgba(225, 144, 37, 0.6),
-            rgba(255, 255, 255, 0.4)
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0.3)
         ),
         url("../images/institutes/institutes-individual-banner.jpg");
     background-size: cover;
@@ -489,6 +488,24 @@ table thead tr th {
         background-repeat: no-repeat;
     }
 
+    .institutes-hero {
+        background: linear-gradient(
+                rgba(255, 255, 255, 1),
+                rgba(200, 200, 200, 0.4)
+            ),
+            url("../images/institutes/institutes-banner.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .m-py {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .m-px-1 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
     .m-px {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
@@ -530,6 +547,30 @@ table thead tr th {
     .timeline-content::after {
         left: -10px !important;
         right: auto !important;
+    }
+
+    .institutes-img {
+        width: 70%;
+    }
+
+    .institutes-description-image {
+        width: 100%;
+        margin-top: 20px !important;
+        border-radius: 20px;
+    }
+
+    .about-hero-text {
+        font-size: 1.3rem;
+    }
+
+    .m-slide-up {
+        opacity: 0;
+        transform: translateY(100px) !important;
+    }
+
+    .m-slide-up.active {
+        opacity: 1;
+        transform: translateY(0) !important;
     }
 }
 
@@ -696,4 +737,46 @@ table thead tr th {
 .timeline-content:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .timeline-line {
+        left: 30px;
+    }
+
+    .timeline-dot {
+        left: 30px;
+    }
+
+    .timeline-item {
+        margin: 50px 0;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 60px !important;
+    }
+
+    .timeline-content::after {
+        left: -10px !important;
+        right: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-item {
+        margin: 40px 0;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 50px !important;
+        padding: 15px;
+    }
+
+    .timeline-content::after {
+        top: 15px;
+    }
 }

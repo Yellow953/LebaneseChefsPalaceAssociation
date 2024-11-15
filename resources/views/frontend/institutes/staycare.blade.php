@@ -14,7 +14,7 @@
 
         @section('content')
         <!--begin::Landing hero-->
-        <div class="d-flex flex-column w-100 min-h-350px min-h-lg-500px px-9">
+        <div class="d-flex flex-column w-100 min-h-250px min-h-lg-500px px-9">
             <!--begin::Heading-->
             <div class="my-5 my-lg-10 py-10 py-lg-20">
                 <!--begin::Institution Logo-->
@@ -59,8 +59,8 @@
             </div>
             <!--end::Col-->
             <!--begin::Col-->
-            <div class="col-lg-5 animate-on-scroll slide-right">
-                <img src="{{asset('assets/images/ghi/ghi-description-img.png')}}" alt="Golden Hospitality Institute" class="institutes-description-image" />
+            <div class="col-lg-5 animate-on-scroll slide-right m-slide-up">
+                <img src="{{asset('assets/images/staycare/staycare-description-img.jpg')}}" alt="StayCare" class="institutes-description-image" />
             </div>
             <!--end::Col-->
         </div>
@@ -82,7 +82,7 @@
         <div class="timeline-vertical">
             <div class="timeline-line"></div>
             <!--begin::Timeline item-->
-            <div class="timeline-item left">
+            <div class="timeline-item left animate-on-scroll slide-left m-slide-up">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h3>Healthy Chef</h3>
@@ -91,7 +91,7 @@
             </div>
             <!--end::Timeline item-->
             <!--begin::Timeline item-->
-            <div class="timeline-item right">
+            <div class="timeline-item right animate-on-scroll slide-right m-slide-up">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h3>Live More Chef</h3>
@@ -100,7 +100,7 @@
             </div>
             <!--end::Timeline item-->
             <!--begin::Timeline item-->
-            <div class="timeline-item left">
+            <div class="timeline-item left animate-on-scroll slide-left m-slide-up">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h3>Save Me</h3>

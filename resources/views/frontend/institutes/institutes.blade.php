@@ -20,17 +20,17 @@
                 <!--begin::Row-->
                 <div class="row">
                     <!--begin::Col-->
-                    <div class="col-5 col-lg-5 animate-on-scroll slide-left">
+                    <div class="col-12 col-lg-5 animate-on-scroll slide-left">
                         <!--begin::Title-->
-                        <h1 class="hero-text lh-base fs-3x fs-lg-4x mb-15 pt-20"><span class="hero-text-span">OUR INSTITUTES</span>
+                        <h1 class="hero-text lh-base fs-4x fs-lg-4x mb-15 pt-20"><span class="hero-text-span">OUR INSTITUTES</span>
                         </h1>
                         <!--end::Title-->
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-7 col-lg-7 animate-on-scroll slide-right">
+                    <div class="col-12 col-lg-7 animate-on-scroll slide-right">
                         <!--begin::Description-->
-                        <p class="lh-base fs-3 fs-lg-4 mb-15 me-5"><span class="about-hero-text">Our Accredited Institutes are carefully selected centers of
+                        <p class="lh-base fs-2 fs-lg-4 mb-15 me-5 m-px-2"><span class="about-hero-text">Our Accredited Institutes are carefully selected centers of
                                 excellence across Lebanon
                                 <br>each upholding our rigorous standards in culinary education. With 6 certified institutes
                                 nationwide,
