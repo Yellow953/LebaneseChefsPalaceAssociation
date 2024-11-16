@@ -20,6 +20,14 @@ class Restaurant extends Model
             $name = request('name');
             $q->where('name', 'LIKE', "%{$name}%");
         }
+        if (request('phone')) {
+            $phone = request('phone');
+            $q->where('phone', 'LIKE', "%{$phone}%");
+        }
+        if (request('owner')) {
+            $owner = request('owner');
+            $q->where('owner', 'LIKE', "%{$owner}%");
+        }
         if (request('location')) {
             $location = request('location');
             $q->where('location', 'LIKE', "%{$location}%");

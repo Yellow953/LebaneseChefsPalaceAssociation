@@ -195,6 +195,5 @@ $groups = Helper::get_groups();
             </div>
         </div>
     </div>
-
 </div>
 @endsection

@@ -13,6 +13,8 @@ class RestaurantsExport implements FromCollection, WithHeadings
         return Restaurant::all()->map(function ($restaurant) {
             return [
                 'name' => $restaurant->name,
+                'phone' => $restaurant->phone,
+                'owner' => $restaurant->owner,
                 'location' => $restaurant->location,
                 'type' => $restaurant->type,
                 'certification status' => $restaurant->certification_status,
@@ -26,6 +28,8 @@ class RestaurantsExport implements FromCollection, WithHeadings
     {
         return [
             'Name',
+            'Phone',
+            'Owner',
             'Location',
             'Type',
             'Certification Status',

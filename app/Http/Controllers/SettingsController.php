@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Group;
+use App\Models\InsuranceType;
 use App\Models\Log;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -17,7 +18,10 @@ class SettingsController extends Controller
     public function index()
     {
         $groups = Group::select('id', 'name', 'color')->orderBy('id', 'desc')->get();
-        return view('setting.index', compact('groups'));
+        $insurance_types = InsuranceType::select('id', 'name', 'image', 'description')->orderBy('id', 'desc')->get();
+
+        $data = compact('groups', 'insurance_types');
+        return view('setting.index', $data);
     }
 
     public function groups_create(Request $request)
@@ -46,6 +50,48 @@ class SettingsController extends Controller
             $group->delete();
 
             return redirect()->back()->with('success', 'Group Deleted Successfully...');
+        } else {
+            return redirect()->back()->with('danger', 'Unauthorized Access...');
+        }
+    }
+
+    public function insurance_types_create(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+        ]);
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $ext;
+            $file->move('uploads/insurance/', $filename);
+            $insurance_path = '/uploads/insurance/' . $filename;
+        }
+
+        InsuranceType::create([
+            'name' => $request->name,
+            'image' => $insurance_path ?? 'assets/images/no_img.png',
+            'description' => $request->description
+        ]);
+
+        Log::create([
+            'text' => ucwords(auth()->user()->name) . ' create new Insurance Type: ' . ucwords($request->name) . ', datetime: ' . now()
+        ]);
+
+        return redirect()->back()->with('success', 'Insurance Type Created Successfully...');
+    }
+
+    public function insurance_types_destroy(InsuranceType $insurance_type)
+    {
+        if ($insurance_type->can_delete()) {
+            Log::create([
+                'text' => ucwords(auth()->user()->name) . ' deleted Insurance Type: ' . ucwords($insurance_type->name) . ', datetime: ' . now()
+            ]);
+
+            $insurance_type->delete();
+
+            return redirect()->back()->with('success', 'Insurance Type Deleted Successfully...');
         } else {
             return redirect()->back()->with('danger', 'Unauthorized Access...');
         }

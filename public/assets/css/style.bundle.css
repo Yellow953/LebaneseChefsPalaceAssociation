@@ -133,7 +133,7 @@
 [data-bs-theme=dark] {
   --bs-body-color: #FFFFFF;
   --bs-body-color-rgb: 255, 255, 255;
-  --bs-body-bg: #1e1e2d;
+  --bs-body-bg: #000000;
   --bs-body-bg-rgb: 30, 30, 45;
   --bs-emphasis-color: #F9F9F9;
   --bs-emphasis-color-rgb: 249, 249, 249;
@@ -28241,7 +28241,7 @@ textarea.form-control-lg {
   --bs-tooltip-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
   --bs-card-box-shadow: ;
   --bs-table-striped-bg: rgba(27, 27, 41, 0.75);
-  --bs-dropdown-bg: #1e1e2d;
+  --bs-dropdown-bg: #000000;
   --bs-dropdown-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
   --bs-code-bg: #2B2B40;
   --bs-code-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.08);
@@ -28259,10 +28259,10 @@ textarea.form-control-lg {
   --bs-scrolltop-icon-color: #ffffff;
   --bs-scrolltop-icon-color-hover: #ffffff;
   --bs-drawer-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  --bs-drawer-bg-color: #1e1e2d;
+  --bs-drawer-bg-color: #000000;
   --bs-drawer-overlay-bg-color: rgba(0, 0, 0, 0.4);
   --bs-menu-dropdown-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
-  --bs-menu-dropdown-bg-color: #1e1e2d;
+  --bs-menu-dropdown-bg-color: #000000;
   --bs-menu-heading-color: #565674;
   --bs-menu-link-color-hover: #009ef7;
   --bs-menu-link-color-show: #009ef7;
@@ -46728,12 +46728,12 @@ body[data-kt-sticky-landing-header=on] {
 [data-bs-theme=dark] {
   --bs-app-bg-color: #151521;
   --bs-app-blank-bg-color: #151521;
-  --bs-app-header-base-bg-color: #1e1e2d;
+  --bs-app-header-base-bg-color: #000000;
   --bs-app-header-base-box-shadow: none;
   --bs-app-toolbar-base-bg-color: #1a1a27;
   --bs-app-toolbar-base-box-shadow: none;
   --bs-app-toolbar-base-border-top: 0;
-  --bs-app-footer-bg-color: #1e1e2d;
+  --bs-app-footer-bg-color: #000000;
   --bs-app-footer-box-shadow: none;
 }
 
@@ -48491,7 +48491,7 @@ body,
   --bs-app-header-light-separator-color: #2B2B40;
   --bs-app-sidebar-base-toggle-btn-box-shadow: none;
   --bs-app-sidebar-base-toggle-btn-bg-color: #2A2A3C;
-  --bs-app-sidebar-light-bg-color: #1e1e2d;
+  --bs-app-sidebar-light-bg-color: #000000;
   --bs-app-sidebar-light-box-shadow: none;
   --bs-app-sidebar-light-separator-color: #2B2B40;
   --bs-app-sidebar-light-scrollbar-color: #2B2B40;
@@ -48605,7 +48605,7 @@ body,
   }
 }
 [data-kt-app-layout=dark-sidebar] .app-sidebar {
-  background-color: #1e1e2d;
+  background-color: #000000;
   border-right: 0 !important;
 }
 [data-kt-app-layout=dark-sidebar] .app-sidebar .hover-scroll-overlay-y {
@@ -48817,7 +48817,7 @@ body,
 
 @media (min-width: 992px) {
   [data-kt-app-layout=dark-sidebar] .app-sidebar .menu-sub-lg-dropdown {
-    background-color: #1e1e2d;
+    background-color: #000000;
   }
 }
 [data-kt-app-layout=light-sidebar] .app-sidebar {
@@ -49258,7 +49258,7 @@ body,
   }
 }
 [data-kt-app-layout=dark-header] .app-header {
-  background-color: #1e1e2d;
+  background-color: #000000;
   border-bottom: 0 !important;
 }
 [data-kt-app-layout=dark-header] .app-header .btn-custom {

@@ -30,13 +30,29 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
 
                     <div class="col-md-6">
                         <div class="form-group">
+                            <label class="required form-label">Owner</label>
+                            <input type="text" class="form-control" name="owner" placeholder="Enter Owner's Name..."
+                                value="{{ $restaurant->owner }}" required />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="required form-label">Phone</label>
+                            <input type="tel" class="form-control" name="phone" placeholder="Enter Phone Number..."
+                                value="{{ $restaurant->phone }}" required />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
                             <label class="required form-label">Location</label>
                             <input type="text" class="form-control" name="location" placeholder="Enter Location..."
                                 value="{{ $restaurant->location }}" required />
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label class="required form-label">Type</label>
                             <select class="form-select" data-control="select2" data-placeholder="Select an option"
@@ -51,7 +67,7 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label class="required form-label">Certification Status</label>
                             <select class="form-select" data-control="select2" data-placeholder="Select an option"
@@ -64,6 +80,13 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                                     }}</option>
                                 @endforeach
                             </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Legal Paper</label>
+                            <input type="file" class="form-control" name="legal_paper" />
                         </div>
                     </div>
 
@@ -85,6 +108,37 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                 </div>
             </div>
         </form>
+    </div>
+
+    <div class="card mt-5 p-4">
+        <div class="card-head">
+            <h1 class="text-center text-primary">Documents</h1>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <div class="offset-md-4 col-md-4">
+                    <h2 class="text-center my-5">Legal Paper</h2>
+
+                    @if(pathinfo($chef->legal_paper, PATHINFO_EXTENSION) === 'pdf')
+                    <embed src="{{ asset($chef->legal_paper) }}" type="application/pdf" width="100%" height="400px">
+                    @else
+                    <div>
+                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
+
+                        <form action="{{ route('restaurants.download_file', $restaurant->id) }}" method="post"
+                            enctype="multipart/form-data">
+                            @csrf
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-3">Download
+                                    Legal Paper</button>
+                            </div>
+                        </form>
+                    </div>
+                    @endif
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

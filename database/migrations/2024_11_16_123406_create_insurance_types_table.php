@@ -8,15 +8,10 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('restaurants', function (Blueprint $table) {
+        Schema::create('insurance_types', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('phone');
-            $table->string('owner');
-            $table->string('location');
-            $table->string('type');
-            $table->string('certification_status');
-            $table->string('legal_paper')->nullable();
+            $table->string('image')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });
@@ -24,6 +19,6 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('restaurants');
+        Schema::dropIfExists('insurance_types');
     }
 };

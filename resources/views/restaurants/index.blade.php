@@ -8,43 +8,12 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
 @endphp
 
 @section('actions')
-<div class="card-toolbar">
-    <!--begin::Menu-->
-    <button type="button" class="btn btn-primary px-4 d-flex align-items-center" data-kt-menu-trigger="hover"
-        data-kt-menu-placement="bottom-end">
-        Actions
-        <span class="ml-2"><i class="bi bi-grid-fill"></i></span>
-    </button>
-    <!--begin::Menu 2-->
-    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px mt-3"
-        data-kt-menu="true">
-        <!--begin::Menu item-->
-        <div class="menu-item px-3 py-0">
-            <div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
-        </div>
-        <!--end::Menu item-->
-        <!--begin::Menu separator-->
-        <div class="separator mb-3 opacity-75"></div>
-        <!--end::Menu separator-->
-        <!--begin::Menu item-->
-        <div class="menu-item px-3 py-0">
-            <a href="{{ route('restaurants.new') }}" class="menu-link px-3">New Restaurant</a>
-        </div>
-        <!--end::Menu item-->
-        <!--begin::Menu separator-->
-        <div class="separator mt-3 opacity-75"></div>
-        <!--end::Menu separator-->
-        <!--begin::Menu item-->
-        <div class="menu-item px-3 py-0">
-            <div class="menu-content px-3 py-3">
-                <a class="btn btn-primary btn-sm px-4" href="{{ route('restaurants.export') }}">Export to Excell</a>
-            </div>
-        </div>
-        <!--end::Menu item-->
-    </div>
-    <!--end::Menu 2-->
-    <!--end::Menu-->
-</div>
+<a href="{{ route('restaurants.new') }}" class="btn btn-sm fw-bold btn-primary">
+    New Restaurant
+</a>
+<a href="{{ route('restaurants.export') }}" class="btn btn-sm fw-bold btn-primary">
+    Export Restaurants
+</a>
 @endsection
 
 @section('filter')
@@ -92,6 +61,21 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                 <!--end::Separator-->
                 <!--begin::Row-->
                 <div class="row g-8 mb-8">
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Owner</label>
+                        <input type="text" class="form-control" name="owner" value="{{ request()->query('owner') }}"
+                            placeholder="Enter Owner's Name..." />
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Phone</label>
+                        <input type="text" class="form-control" name="phone" value="{{ request()->query('phone') }}"
+                            placeholder="Enter Phone Number..." />
+                    </div>
+                    <!--end::Col-->
 
                     <!--begin::Col-->
                     <div class="col-md-6">
@@ -164,6 +148,7 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                     <thead>
                         <tr class="text-center">
                             <th class="col-2 p-3">Restaurant</th>
+                            <th class="col-2 p-3">Contact</th>
                             <th class="col-2 p-3">Location</th>
                             <th class="col-2 p-3">Type</th>
                             <th class="col-2 p-3">Actions</th>
@@ -182,6 +167,12 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                                             ucwords($restaurant->name) }}</a>
                                     </div>
                                     <!--end::Name-->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <b>{{ ucwords($restaurant->owner) }}</b> <br>
+                                    {{ $restaurant->phone }}
                                 </div>
                             </td>
                             <td>
@@ -211,7 +202,7 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                         </tr>
                         @empty
                         <tr>
-                            <th colspan="4">
+                            <th colspan="5">
                                 <div class="text-center">No Restaurants Yet ...</div>
                             </th>
                         </tr>
@@ -221,8 +212,10 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
 
                     <tfoot>
                         <tr>
-                            <th colspan="4">
-                                {{ $restaurants->appends(['name' => request()->query('name'), 'location' =>
+                            <th colspan="5">
+                                {{ $restaurants->appends(['name' => request()->query('name'), 'owner' =>
+                                request()->query('owner'), 'phone' =>
+                                request()->query('phone'), 'location' =>
                                 request()->query('location'), 'type' => request()->query('type'), 'certification_status'
                                 => request()->query('certification_status'), 'description' =>
                                 request()->query('description')])->links() }}
