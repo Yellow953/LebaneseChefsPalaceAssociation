@@ -1,0 +1,160 @@
+/*----------------------------root variables---------------------------*/
+
+:root,
+[data-bs-theme="light"] {
+    --lighter-primary-color: #06b85f;
+    --primary-color: #015229;
+    --darker-primary-color: #00351a;
+    --darkest-primary-color: #002210;
+    --secondary-color: #e5212b;
+    --tertiary-color: #e19025;
+    --lighter-tertiary-color: #f0af5a;
+    --light-color: #ffffff;
+    --dark-color: #1b1b1d;
+    --darker-color: #111111;
+}
+
+[data-bs-theme="dark"] {
+    --lighter-primary-color: #06b85f;
+    --primary-color: #015229;
+    --darker-primary-color: #00351a;
+    --darkest-primary-color: #002210;
+    --secondary-color: #e5212b;
+    --tertiary-color: #e19025;
+    --lighter-tertiary-color: #f0af5a;
+    --light-color: #ffffff;
+    --dark-color: #1b1b1d;
+    --darker-color: #111111;
+}
+
+[data-bs-theme="dark"] body {
+    background-color: var(--dark-color) !important;
+}
+
+.alert {
+    padding: 5px 10px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------------------header style---------------------------*/
+
+.app-header {
+    background-color: var(--primary-color) !important;
+}
+
+/*----------------------------sidebar style---------------------------*/
+
+[data-bs-theme="light"] .app-sidebar {
+    background-color: var(--darkest-primary-color) !important;
+}
+
+[data-bs-theme="dark"] .app-sidebar {
+    background-color: var(--darkest-primary-color) !important;
+}
+
+[data-bs-theme="light"] .menu-link.active {
+    background-color: var(--darker-primary-color) !important;
+}
+
+.menu-link:hover {
+    background-color: var(--darker-primary-color) !important;
+}
+
+.app-sidebar-wrapper .menu .menu-item .menu-link:hover .menu-icon i {
+    color: var(--lighter-tertiary-color) !important;
+}
+.app-sidebar-wrapper .menu .menu-item .menu-link .menu-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--tertiary-color) !important;
+}
+.app-sidebar-wrapper .menu .menu-item .menu-link .menu-title:hover {
+    color: var(--lighter-tertiary-color) !important;
+}
+
+.menu-link.active .menu-icon i {
+    color: var(--lighter-tertiary-color) !important;
+}
+
+.menu-link.active .menu-title {
+    color: var(--lighter-primary-color) !important;
+}
+
+.menu-title:hover {
+    color: var(--lighter-primary-color) !important;
+}
+
+.svg-icon.active {
+    color: var(--lighter-primary-color) !important;
+}
+.svg-icon:hover {
+    color: var(--lighter-primary-color) !important;
+}
+
+/*----------------------------other style---------------------------*/
+.breadcrumb .breadcrumb-item,
+.breadcrumb .breadcrumb-item i {
+    font-size: 1.1rem;
+}
+
+table thead tr th {
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.5px;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--darker-color) !important;
+}
+
+.card-head {
+    padding: 25px 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.btn-icon i {
+    color: var(--dark-color) !important;
+}
+.btn-icon:hover span {
+    color: var(--lighter-primary-color) !important;
+}
+
+.app-navbar-item .show.dropdown-menu {
+    color: var(--lighter-primary-color) !important;
+}
+
+.user-info-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.user-info-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.user-info-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.user-info-item:last-child {
+    border-bottom: none;
+}
+
+[data-bs-theme="dark"] .timeline-line {
+    background-color: var(--darker-color) !important;
+}
+
+[data-bs-theme="dark"] .timeline-content {
+    background-color: var(--dark-color) !important;
+}
