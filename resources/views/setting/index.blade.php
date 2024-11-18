@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-4 my-auto">
             <div class="card animate-on-scroll slide-left">
-                <img src="{{ asset('assets/images/insurance.png') }}" alt="Insurance" class="groups-img">
+                <img src="{{ asset('assets/images/insurance.jpg') }}" alt="Insurance" class="groups-img">
             </div>
         </div>
         <div class="col-md-8 animate-on-scroll slide-right">
@@ -91,7 +91,7 @@
     <div class="row">
         <div class="col-md-4 my-auto animate-on-scroll slide-left delay-200">
             <div class="card">
-                <img src="{{ asset('assets/images/groups.png') }}" alt="Groups" class="groups-img">
+                <img src="{{ asset('assets/images/groups.jpg') }}" alt="Groups" class="groups-img">
             </div>
         </div>
         <div class="col-md-8 animate-on-scroll slide-right delay-200">
@@ -158,7 +158,7 @@
     <div class="row">
         <div class="col-md-4 my-auto animate-on-scroll slide-left delay-200">
             <div class="card">
-                <img src="{{ asset('assets/images/backup.png') }}" alt="Backup" class="groups-img">
+                <img src="{{ asset('assets/images/backup.jpg') }}" alt="Backup" class="groups-img">
             </div>
         </div>
         <div class="col-md-8 animate-on-scroll slide-right delay-200">
