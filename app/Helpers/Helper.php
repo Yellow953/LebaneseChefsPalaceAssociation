@@ -120,4 +120,20 @@ class Helper
             'Bottles'
         ];
     }
+
+    public static function get_event_statuses()
+    {
+        return [
+            'Scheduled',
+            'Confirmed',
+            'Pending Approval',
+            'Ongoing',
+            'Completed',
+            'Cancelled',
+            'Postponed',
+            'Rescheduled',
+            'Draft',
+            'Closed',
+        ];
+    }
 }
