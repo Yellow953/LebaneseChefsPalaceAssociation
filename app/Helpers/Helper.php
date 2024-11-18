@@ -94,4 +94,30 @@ class Helper
     {
         return ['active', 'expired', 'canceled'];
     }
+
+    public static function get_record_categories()
+    {
+        return ['Food', 'Hotels', 'Hospitality'];
+    }
+
+    public static function get_units()
+    {
+        return [
+            'Square Feet',
+            'Square Meters',
+            'Feet',
+            'Meters',
+            'People',
+            'Meals',
+            'Stars',
+            'Seconds',
+            'Minutes',
+            'Hours',
+            'Days',
+            'Dollars',
+            'Kilograms',
+            'Liters',
+            'Bottles'
+        ];
+    }
 }

@@ -100,8 +100,8 @@ $statuses = Helper::get_insurance_statuses();
         </div>
 
         <div class="card-body">
-            <div class="row">
-                <div class="offset-md-4 col-md-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
                     <h2 class="text-center my-5">Document</h2>
 
                     @if(pathinfo($insurance->document, PATHINFO_EXTENSION) === 'pdf')

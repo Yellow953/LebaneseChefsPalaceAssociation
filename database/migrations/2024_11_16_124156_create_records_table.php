@@ -8,11 +8,11 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('world_records', function (Blueprint $table) {
+        Schema::create('records', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("chef_id")->unsigned();
             $table->string('title');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->string('category');
             $table->decimal('achievement_value', 10, 2)->nullable();
             $table->string('unit')->nullable();
