@@ -8,6 +8,11 @@ class Event extends Model
 {
     protected $guarded = [];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     public function can_delete()
     {
         return auth()->user()->role == 'admin';

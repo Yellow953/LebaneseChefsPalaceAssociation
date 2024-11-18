@@ -142,10 +142,10 @@ $groups = Helper::get_groups();
             <!--begin::Table container-->
             <div class="table-responsive">
                 <!--begin::Table-->
-                <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+                <table class="table table-row-dashed table-row-gray-300 align-middle text-center gs-0 gy-4">
                     <!--begin::Table head-->
                     <thead>
-                        <tr class="text-center">
+                        <tr>
                             <th class="col-1 p-3"></th>
                             <th class="col-2 p-3">Chef</th>
                             <th class="col-2 p-3">Info</th>
@@ -170,9 +170,7 @@ $groups = Helper::get_groups();
                                 {{ $chef->dob }}
                             </td>
                             <td>
-                                <div class="text-center">
-                                    {{ ucwords($chef->rank) }}
-                                </div>
+                                {{ ucwords($chef->rank) }}
                             </td>
                             <td class="d-flex justify-content-end border-0">
                                 <a href="{{ route('chefs.edit', $chef->id) }}"
@@ -190,9 +188,7 @@ $groups = Helper::get_groups();
                         </tr>
                         @empty
                         <tr>
-                            <th colspan="5">
-                                <div class="text-center">No Chefs Yet ...</div>
-                            </th>
+                            <th colspan="5">No Chefs Yet ...</th>
                         </tr>
                         @endforelse
                     </tbody>

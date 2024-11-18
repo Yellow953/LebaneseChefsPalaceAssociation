@@ -32,6 +32,11 @@ class User extends Authenticatable
         ];
     }
 
+    public function events()
+    {
+        return $this->hasMany(Event::class);
+    }
+
     public function can_delete()
     {
         return auth()->user()->role == 'admin';

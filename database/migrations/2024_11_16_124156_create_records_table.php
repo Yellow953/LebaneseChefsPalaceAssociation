@@ -6,20 +6,25 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
-        Schema::create('records', function (Blueprint $table) {
+        Schema::create('world_records', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger("chef_id")->unsigned();
+            $table->string('title');
+            $table->text('description');
+            $table->string('category');
+            $table->decimal('achievement_value', 10, 2)->nullable();
+            $table->string('unit')->nullable();
+            $table->date('achieved_on');
+            $table->string('location')->nullable();
+            $table->string('certificate')->nullable();
             $table->timestamps();
+
+            $table->foreign('chef_id')->references('id')->on('chefs');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('records');

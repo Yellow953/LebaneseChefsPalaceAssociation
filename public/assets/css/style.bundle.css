@@ -42849,7 +42849,7 @@ code:not([class*=language-]) {
   transform: translate(50%);
   border-left-width: 1px;
   border-left-style: dashed;
-  border-left-color: var(--bs-gray-300);
+  border-left-color: black;
 }
 .timeline .timeline-icon {
   z-index: 1;

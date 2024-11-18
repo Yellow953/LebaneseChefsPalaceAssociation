@@ -160,7 +160,7 @@
 
                 <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click"
-                    class="menu-item px-0 py-1 here {{ request()->routeIs('chefs*') ? 'show' : '' }} {{ request()->routeIs('restaurants*') ? 'show' : '' }} {{ request()->routeIs('courses*') ? 'show' : '' }} menu-accordion">
+                    class="menu-item px-0 py-1 here {{ request()->routeIs('chefs*') ? 'show' : '' }} {{ request()->routeIs('restaurants*') ? 'show' : '' }} {{ request()->routeIs('courses*') ? 'show' : '' }} {{ request()->routeIs('enrollments*') ? 'show' : '' }} menu-accordion">
                     <!--begin:Menu link-->
                     <span class="menu-link">
                         <span class="menu-icon">
@@ -205,6 +205,19 @@
                                         <i class="bi bi-book-half"></i>
                                     </span>
                                     <span class="menu-title">Courses</span>
+                                </a>
+                                <!--end:Menu link-->
+                            </div>
+                            <!--end:Menu item-->
+                            <!--begin:Menu item-->
+                            <div class="menu-item px-0 py-1">
+                                <!--begin:Menu link-->
+                                <a class="menu-link {{ request()->routeIs('enrollments*') ? 'active' : '' }}"
+                                    href="{{ route('enrollments') }}">
+                                    <span class="menu-icon">
+                                        <i class="bi bi-clipboard2-plus-fill"></i>
+                                    </span>
+                                    <span class="menu-title">Enrollments</span>
                                 </a>
                                 <!--end:Menu link-->
                             </div>

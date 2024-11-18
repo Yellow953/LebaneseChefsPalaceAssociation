@@ -108,10 +108,10 @@
             <!--begin::Table container-->
             <div class="table-responsive">
                 <!--begin::Table-->
-                <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+                <table class="table table-row-dashed table-row-gray-300 align-middle text-center gs-0 gy-4">
                     <!--begin::Table head-->
                     <thead>
-                        <tr class="text-center">
+                        <tr>
                             <th class="col-2 p-3">User</th>
                             <th class="col-2 p-3">Contact</th>
                             <th class="col-2 p-3">Role</th>
@@ -139,12 +139,10 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="text-center">
-                                    {{ $user->email }} <br>
-                                    {{ $user->phone }}
-                                </div>
+                                {{ $user->email }} <br>
+                                {{ $user->phone }}
                             </td>
-                            <td class="text-center">
+                            <td>
                                 <span
                                     class="badge {{ $user->role == 'admin' ? 'badge-light-success' : '' }} {{ $user->role == 'user' ? 'badge-light-primary' : '' }}">{{
                                     ucwords($user->role) }}</span>
@@ -165,9 +163,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <th colspan="4">
-                                <div class="text-center">No Users Yet ...</div>
-                            </th>
+                            <th colspan="4">No Users Yet ...</th>
                         </tr>
                         @endforelse
                     </tbody>

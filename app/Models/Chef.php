@@ -13,6 +13,16 @@ class Chef extends Model
         return $this->belongsTo(Group::class);
     }
 
+    public function insurances()
+    {
+        return $this->hasMany(Insurance::class);
+    }
+
+    public function records()
+    {
+        return $this->hasMany(Record::class);
+    }
+
     public function can_delete()
     {
         return auth()->user()->role == 'admin';

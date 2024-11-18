@@ -6,20 +6,29 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('insurances', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger("insurance_type_id")->unsigned();
+            $table->bigInteger("chef_id")->unsigned();
+            $table->bigInteger("restaurant_id")->unsigned();
+
+            $table->string('policy_number')->unique();
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->enum('status', ['active', 'expired', 'canceled'])->default('active');
+
+            $table->string('document')->nullable();
+            $table->text('remarks')->nullable();
             $table->timestamps();
+
+            $table->foreign('insurance_type_id')->references('id')->on('insurance_types');
+            $table->foreign('chef_id')->references('id')->on('chefs');
+            $table->foreign('restaurant_id')->references('id')->on('restaurants');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('insurances');

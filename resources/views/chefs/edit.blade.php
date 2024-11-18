@@ -9,6 +9,12 @@ $ranks = Helper::get_chefs_ranks();
 $groups = Helper::get_groups();
 @endphp
 
+@section('actions')
+<a href="{{ url()->previous() }}" class="btn btn-secondary btn-sm fw-bold">
+    Back
+</a>
+@endsection
+
 @section('content')
 <div class="container mt-5">
     <div class="card">
@@ -119,13 +125,15 @@ $groups = Helper::get_groups();
         </form>
     </div>
 
+    @if( $chef->resume || $chef->certificate || $chef->identification)
     <div class="card mt-5 p-4">
         <div class="card-head">
             <h1 class="text-center text-primary">Documents</h1>
         </div>
 
         <div class="card-body">
-            <div class="row">
+            <div class="row justify-content-center">
+                @if($chef->resume)
                 <div class="col-md-4">
                     <h2 class="text-center my-5">Resume</h2>
 
@@ -133,7 +141,7 @@ $groups = Helper::get_groups();
                     <embed src="{{ asset($chef->resume) }}" type="application/pdf" width="100%" height="400px">
                     @else
                     <div>
-                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
+                        <img src="{{ asset($chef->resume) }}" class="img-fluid" height="400">
 
                         <form action="{{ route('chefs.download_file', $chef->id) }}" method="post"
                             enctype="multipart/form-data">
@@ -148,6 +156,8 @@ $groups = Helper::get_groups();
                     </div>
                     @endif
                 </div>
+                @endif
+                @if($chef->certificate)
                 <div class="col-md-4">
                     <h2 class="text-center my-5">Certificate</h2>
 
@@ -155,7 +165,7 @@ $groups = Helper::get_groups();
                     <embed src="{{ asset($chef->certificate) }}" type="application/pdf" width="100%" height="400px">
                     @else
                     <div>
-                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
+                        <img src="{{ asset($chef->certificate) }}" class="img-fluid" height="400">
 
                         <form action="{{ route('chefs.download_file', $chef->id) }}" method="post"
                             enctype="multipart/form-data">
@@ -170,6 +180,8 @@ $groups = Helper::get_groups();
                     </div>
                     @endif
                 </div>
+                @endif
+                @if($chef->identification)
                 <div class="col-md-4">
                     <h2 class="text-center my-5">Identification</h2>
 
@@ -177,7 +189,7 @@ $groups = Helper::get_groups();
                     <embed src="{{ asset($chef->identification) }}" type="application/pdf" width="100%" height="400px">
                     @else
                     <div>
-                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
+                        <img src="{{ asset($chef->identification) }}" class="img-fluid" height="400">
 
                         <form action="{{ route('chefs.download_file', $chef->id) }}" method="post"
                             enctype="multipart/form-data">
@@ -192,8 +204,10 @@ $groups = Helper::get_groups();
                     </div>
                     @endif
                 </div>
+                @endif
             </div>
         </div>
     </div>
+    @endif
 </div>
 @endsection

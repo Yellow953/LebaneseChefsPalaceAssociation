@@ -8,6 +8,11 @@ class Course extends Model
 {
     protected $guarded = [];
 
+    public function enrollments()
+    {
+        return $this->hasMany(CourseEnrollment::class);
+    }
+
     public function can_delete()
     {
         return auth()->user()->role == 'admin';

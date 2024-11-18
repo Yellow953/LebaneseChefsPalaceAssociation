@@ -9,6 +9,12 @@ $ranks = Helper::get_chefs_ranks();
 $groups = Helper::get_groups();
 @endphp
 
+@section('actions')
+<a href="{{ url()->previous() }}" class="btn btn-secondary btn-sm fw-bold">
+    Back
+</a>
+@endsection
+
 @section('content')
 <div class="container mt-5">
     <div class="card">
