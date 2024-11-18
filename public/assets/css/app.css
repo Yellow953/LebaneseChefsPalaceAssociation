@@ -66,10 +66,10 @@
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 1px;
-    color: var(--tertiary-color) !important;
+    color: var(--light-color) !important;
 }
-.app-sidebar-wrapper .menu .menu-item .menu-link .menu-title:hover {
-    color: var(--lighter-tertiary-color) !important;
+.app-sidebar-wrapper .menu .menu-item .menu-link:hover .menu-title {
+    color: var(--tertiary-color) !important;
 }
 
 .menu-link.active .menu-icon i {
