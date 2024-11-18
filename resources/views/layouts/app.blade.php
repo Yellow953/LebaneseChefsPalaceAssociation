@@ -95,6 +95,9 @@
 
     {{-- custom JS --}}
     <script src="{{ asset('assets/js/script.js') }}"></script>
+
+    {{--Animation JS--}}
+    <script src="{{asset('assets/js/frontend/animations.js')}}"></script>
     <!--end::Javascript-->
 </body>
 <!--end::Body-->

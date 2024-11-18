@@ -4,14 +4,14 @@
 
 @section('content')
 <div class="container px-4">
-    <h2 class="mb-5 text-center">Insurance Types</h2>
+    <h2 class="mb-5 text-center animate-on-scroll slide-up">Insurance Types</h2>
     <div class="row">
         <div class="col-md-4 my-auto">
-            <div class="card">
+            <div class="card animate-on-scroll slide-left">
                 <img src="{{ asset('assets/images/insurance.png') }}" alt="Insurance" class="groups-img">
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 animate-on-scroll slide-right">
             <div class="card p-4 mb-5">
                 <div class="new">
                     <form action="{{ route('settings.insurance_types.create') }}" method="post"
@@ -87,14 +87,14 @@
 
     <br><br>
 
-    <h2 class="mb-5 text-center">Groups</h2>
+    <h2 class="mb-5 text-center animate-on-scroll slide-up">Groups</h2>
     <div class="row">
-        <div class="col-md-4 my-auto">
+        <div class="col-md-4 my-auto animate-on-scroll slide-left delay-200">
             <div class="card">
                 <img src="{{ asset('assets/images/groups.png') }}" alt="Groups" class="groups-img">
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 animate-on-scroll slide-right delay-200">
             <div class="card p-4 mb-5">
                 <div class="new">
                     <form action="{{ route('settings.groups.create') }}" method="post" enctype="multipart/form-data">
@@ -154,14 +154,14 @@
 
     <br><br>
 
-    <h2 class="mb-5 text-center">Backup</h2>
+    <h2 class="mb-5 text-center animate-on-scroll slide-up">Backup</h2>
     <div class="row">
-        <div class="col-md-4 my-auto">
+        <div class="col-md-4 my-auto animate-on-scroll slide-left delay-200">
             <div class="card">
                 <img src="{{ asset('assets/images/backup.png') }}" alt="Backup" class="groups-img">
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 animate-on-scroll slide-right delay-200">
             <div class="card p-4 mb-5">
                 <div class="import">
                     <h3 class="mb-4">Import Database</h3>

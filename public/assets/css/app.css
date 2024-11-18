@@ -59,10 +59,6 @@
     background-color: var(--darker-primary-color) !important;
 }
 
-.menu-link:hover {
-    background-color: var(--darker-primary-color) !important;
-}
-
 .app-sidebar-wrapper .menu .menu-item .menu-link:hover .menu-icon i {
     color: var(--lighter-tertiary-color) !important;
 }
@@ -157,4 +153,16 @@ table thead tr th {
 
 [data-bs-theme="dark"] .timeline-content {
     background-color: var(--dark-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-broccoli {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../images/app/broccoli-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

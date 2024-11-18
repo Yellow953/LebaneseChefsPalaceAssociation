@@ -11,10 +11,10 @@
         <!--begin::Menu-->
         <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
             <li class="menu-item">
-                <a href="https://yellowtech.dev/about" target="_blank" class="menu-link px-2">About</a>
+                <a href="https://yellowtech.dev/about" target="_blank" class="menu-link px-2 rounded">About</a>
             </li>
             <li class="menu-item">
-                <a href="https://yellowtech.dev/contact" target="_blank" class="menu-link px-2">Contact</a>
+                <a href="https://yellowtech.dev/contact" target="_blank" class="menu-link px-2 rounded">Contact</a>
             </li>
         </ul>
         <!--end::Menu-->
