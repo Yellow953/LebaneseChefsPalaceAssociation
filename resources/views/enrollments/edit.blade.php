@@ -17,8 +17,8 @@ $statuses = Helper::get_enrollment_statuses();
 @section('content')
 <div class="container mt-5">
     <div class="card">
-        <form action="{{ route('enrollments.updated', $enrollment->id) }}" method="POST" enctype="multipart/form-data"
-            class="form">
+        <form action="{{ route('enrollments.update', $course_enrollment->id) }}" method="POST"
+            enctype="multipart/form-data" class="form">
             @csrf
             <div class="card-head">
                 <h1 class="text-center text-primary">Edit Enrollment</h1>
@@ -29,7 +29,7 @@ $statuses = Helper::get_enrollment_statuses();
                         <div class="form-group">
                             <label class="required form-label">Enrolled At</label>
                             <input type="date" class="form-control" name="enrolled_at"
-                                value="{{ $enrollment->enrolled_at }}" required />
+                                value="{{ $course_enrollment->enrolled_at }}" required />
                         </div>
                     </div>
 
@@ -37,7 +37,7 @@ $statuses = Helper::get_enrollment_statuses();
                         <div class="form-group">
                             <label class="form-label">Completed At</label>
                             <input type="date" class="form-control" name="completed_at"
-                                value="{{ $enrollment->completed_at }}" />
+                                value="{{ $course_enrollment->completed_at }}" />
                         </div>
                     </div>
 
@@ -48,7 +48,8 @@ $statuses = Helper::get_enrollment_statuses();
                                 required name="status">
                                 <option value=""></option>
                                 @foreach ($statuses as $status)
-                                <option value="{{ $status }}" {{ $enrollment->status==$status ? 'selected' : '' }}>
+                                <option value="{{ $status }}" {{ $course_enrollment->status==$status ? 'selected' : ''
+                                    }}>
                                     {{ $status }}
                                 </option>
                                 @endforeach

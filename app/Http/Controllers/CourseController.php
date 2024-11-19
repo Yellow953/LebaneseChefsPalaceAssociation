@@ -17,7 +17,7 @@ class CourseController extends Controller
 
     public function index()
     {
-        $courses = Course::select('id', 'title', 'description', 'taught_by', 'duration', 'level', 'fee', 'location', 'status')->filter()->orderBy('id', 'desc')->paginate(25);
+        $courses = Course::select('id', 'title', 'description', 'taught_by', 'duration', 'level', 'fee', 'status')->filter()->orderBy('id', 'desc')->paginate(25);
 
         $data = compact('courses');
         return view('courses.index', $data);
@@ -36,7 +36,6 @@ class CourseController extends Controller
             'duration' => 'required|string|max:255',
             'level' => 'required|string|max:255',
             'status' => 'required|string|max:255',
-            'location' => 'required|string|max:255',
             'fee' => 'required|numeric|min:0',
         ]);
 
@@ -46,7 +45,6 @@ class CourseController extends Controller
             'taught_by' => $request->taught_by,
             'duration' => $request->duration,
             'level' => $request->level,
-            'location' => $request->location,
             'status' => $request->status,
             'fee' => $request->fee,
         ]);
@@ -72,7 +70,6 @@ class CourseController extends Controller
             'duration' => 'required|string|max:255',
             'level' => 'required|string|max:255',
             'status' => 'required|string|max:255',
-            'location' => 'required|string|max:255',
             'fee' => 'required|numeric|min:0',
         ]);
 
@@ -82,7 +79,6 @@ class CourseController extends Controller
             'taught_by' => $request->taught_by,
             'duration' => $request->duration,
             'level' => $request->level,
-            'location' => $request->location,
             'status' => $request->status,
             'fee' => $request->fee,
         ]);

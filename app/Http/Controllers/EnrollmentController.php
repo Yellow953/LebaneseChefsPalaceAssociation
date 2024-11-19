@@ -47,57 +47,57 @@ class EnrollmentController extends Controller
 
         $enrollment = CourseEnrollment::create([
             'course_id' => $request->course_id,
-            'user_id' => $request->user_id,
+            'chef_id' => $request->chef_id,
             'status' => $request->status,
             'enrolled_at' => $request->enrolled_at,
-            'finished_at' => $request->finished_at,
+            'completed_at' => $request->completed_at,
         ]);
 
-        $text = ucwords(auth()->user()->name) . " created Enrollemnet for Chef: " . $enrollment->chef->name . " in Course: " . $enrollment->course->title . ", datetime :   " . now();
+        $text = ucwords(auth()->user()->name) . " created Enrollment for Chef: " . $enrollment->chef->name . " in Course: " . $enrollment->course->title . ", datetime :   " . now();
         Log::create([
             'text' => $text,
         ]);
 
-        return redirect()->route('chefs')->with('success', 'Enrollemnet Created successfully!');
+        return redirect()->route('enrollments')->with('success', 'Enrollment Created successfully!');
     }
 
-    public function edit(CourseEnrollment $enrollment)
+    public function edit(CourseEnrollment $course_enrollment)
     {
-        $data = compact('enrollment');
+        $data = compact('course_enrollment');
         return view('enrollments.edit', $data);
     }
 
-    public function update(CourseEnrollment $enrollment, Request $request)
+    public function update(Request $request, CourseEnrollment $course_enrollment)
     {
         $request->validate([
             'enrolled_at' => 'required|date',
             'status' => 'required|string',
         ]);
 
-        $enrollment->update([
+        $course_enrollment->update([
             'status' => $request->status,
             'enrolled_at' => $request->enrolled_at,
-            'finished_at' => $request->finished_at,
+            'completed_at' => $request->completed_at,
         ]);
 
-        $text = ucwords(auth()->user()->name) . ' updated Enrollment: ' . $enrollment->id . ", datetime :   " . now();
+        $text = ucwords(auth()->user()->name) . ' updated Enrollment: ' . $course_enrollment->id . ", datetime :   " . now();
 
         Log::create([
             'text' => $text,
         ]);
 
-        return redirect()->route('chefs')->with('success', 'Enrollment Updated Successfully!');
+        return redirect()->route('enrollments')->with('success', 'Enrollment Updated Successfully!');
     }
 
-    public function destroy(CourseEnrollment $enrollment)
+    public function destroy(CourseEnrollment $course_enrollment)
     {
-        if ($enrollment->can_delete()) {
-            $text = ucwords(auth()->user()->name) . " deleted Enrollment : " . $enrollment->id . ", datetime :   " . now();
+        if ($course_enrollment->can_delete()) {
+            $text = ucwords(auth()->user()->name) . " deleted Enrollment : " . $course_enrollment->id . ", datetime :   " . now();
 
             Log::create([
                 'text' => $text,
             ]);
-            $enrollment->delete();
+            $course_enrollment->delete();
 
             return redirect()->back()->with('error', 'Enrollment Deleted Successfully!');
         } else {

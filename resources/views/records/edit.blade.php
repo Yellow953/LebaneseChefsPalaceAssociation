@@ -61,7 +61,7 @@ $units = Helper::get_units();
                             <label class="required form-label">Achivement Value</label>
                             <input type="number" class="form-control" name="achievement_value"
                                 placeholder="Enter Achievement Value..." value="{{ $record->achievement_value }}"
-                                required />
+                                min="0" step="any" required />
                         </div>
                     </div>
 
@@ -76,6 +76,14 @@ $units = Helper::get_units();
                                     $unit }}</option>
                                 @endforeach
                             </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="required form-label">Location</label>
+                            <input type="text" class="form-control" name="location" placeholder="Enter Location..."
+                                value="{{ $record->location }}" required />
                         </div>
                     </div>
 

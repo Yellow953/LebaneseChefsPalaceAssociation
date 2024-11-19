@@ -19,6 +19,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     // end delete confirmation
 
+    // start auto dismiss
+    function addAutoDismiss(alert) {
+        setTimeout(function () {
+            alert.style.display = "none";
+        }, 5000);
+    }
+
+    var autoDismissAlerts = document.querySelectorAll(".auto-dismiss");
+    autoDismissAlerts.forEach(function (alert) {
+        addAutoDismiss(alert);
+        alert.querySelector("button").addEventListener("click", function () {
+            alert.style.display = "none";
+        });
+    });
+
+    document.body.addEventListener("DOMNodeInserted", function (event) {
+        if (
+            event.target.classList &&
+            event.target.classList.contains("auto-dismiss")
+        ) {
+            addAutoDismiss(event.target);
+        }
+    });
+    // end auto dismisss
+
     // start reset
     const filterForms = document.querySelectorAll(".form");
 

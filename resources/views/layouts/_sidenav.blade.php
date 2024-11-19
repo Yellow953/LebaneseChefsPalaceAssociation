@@ -134,15 +134,6 @@
                     <div class="menu-sub menu-sub-accordion">
                         <!--begin:Menu item-->
                         <div class="menu-item px-0 py-1">
-                            <!--begin:Menu link-->
-                            <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }} "
-                                href="{{ route('chefs') }}">
-                                <span class="menu-icon">
-                                    <i class="bi bi-person-fill"></i>
-                                </span>
-                                <span class="menu-title">Chefs</span>
-                            </a>
-                            <!--end:Menu link-->
                             <!--begin:Menu item-->
                             <div class="menu-item px-0 py-1">
                                 <!--begin:Menu link-->

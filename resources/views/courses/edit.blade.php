@@ -28,9 +28,9 @@ $levels = Helper::get_course_levels();
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="required form-label">Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="Enter Name..."
-                                value="{{ $course->name }}" required />
+                            <label class="required form-label">Title</label>
+                            <input type="text" class="form-control" name="title" placeholder="Enter Title..."
+                                value="{{ $course->title }}" required />
                         </div>
                     </div>
 

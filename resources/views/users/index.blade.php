@@ -144,7 +144,7 @@
                             </td>
                             <td>
                                 <span
-                                    class="badge {{ $user->role == 'admin' ? 'badge-light-success' : '' }} {{ $user->role == 'user' ? 'badge-light-primary' : '' }}">{{
+                                    class="badge text-white {{ $user->role == 'admin' ? 'bg-success' : 'bg-dark' }}">{{
                                     ucwords($user->role) }}</span>
                             </td>
                             <td class="d-flex justify-content-end border-0">

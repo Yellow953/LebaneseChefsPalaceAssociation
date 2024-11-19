@@ -62,21 +62,6 @@ $statuses = Helper::get_enrollment_statuses();
                 <div class="row g-8 mb-8">
                     <!--begin::Col-->
                     <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Status</label>
-                        <select name="status" class="form-control" data-control="select2"
-                            data-placeholder="Select an option">
-                            <option value=""></option>
-                            @foreach ($statuses as $status)
-                            <option value="{{ $status }}" {{ request()->query('status') == $status ? 'selected' : ''
-                                }}>{{
-                                ucwords($status) }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <!--end::Col-->
-
-                    <!--begin::Col-->
-                    <div class="col-md-6">
                         <label class="fs-6 form-label fw-bold text-dark">Course</label>
                         <select name="course_id" class="form-control" data-control="select2"
                             data-placeholder="Select an option">
@@ -106,7 +91,22 @@ $statuses = Helper::get_enrollment_statuses();
                     <!--end::Col-->
 
                     <!--begin::Col-->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <label class="fs-6 form-label fw-bold text-dark">Status</label>
+                        <select name="status" class="form-control" data-control="select2"
+                            data-placeholder="Select an option">
+                            <option value=""></option>
+                            @foreach ($statuses as $status)
+                            <option value="{{ $status }}" {{ request()->query('status') == $status ? 'selected' : ''
+                                }}>{{
+                                ucwords($status) }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-4">
                         <label class="fs-6 form-label fw-bold text-dark">From</label>
                         <input type="date" class="form-control" name="start_date"
                             value="{{ request()->query('start_date') }}" />
@@ -114,7 +114,7 @@ $statuses = Helper::get_enrollment_statuses();
                     <!--end::Col-->
 
                     <!--begin::Col-->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="fs-6 form-label fw-bold text-dark">To</label>
                         <input type="date" class="form-control" name="end_date"
                             value="{{ request()->query('end_date') }}" />

@@ -69,25 +69,25 @@ $categories = Helper::get_record_categories();
                             @endforeach
                         </select>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="fs-6 form-label fw-bold text-dark">From</label>
                         <input type="date" class="form-control" name="start_date"
                             value="{{ request()->query('start_date') }}" />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="fs-6 form-label fw-bold text-dark">To</label>
                         <input type="date" class="form-control" name="end_date"
                             value="{{ request()->query('end_date') }}" />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="fs-6 form-label fw-bold text-dark">Location</label>
                         <input type="text" class="form-control" name="location"
                             value="{{ request()->query('location') }}" placeholder="Enter Location..." />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label class="fs-6 form-label fw-bold text-dark">Description</label>
-                        <input type="text" class="form-control" name="description"
-                            value="{{ request()->query('description') }}" placeholder="Enter Description..." />
+                        <textarea type="text" rows="3" class="form-control" name="description"
+                            placeholder="Enter Description...">{{ request()->query('description') }}</textarea>
                     </div>
                 </div>
             </div>

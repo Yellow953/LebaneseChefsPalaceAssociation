@@ -14,9 +14,14 @@ class CourseEnrollment extends Model
         return $this->belongsTo(Course::class);
     }
 
-    public function user()
+    public function chef()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Chef::class);
+    }
+
+    public function can_delete()
+    {
+        return auth()->user()->role == 'admin';
     }
 
     // Filter

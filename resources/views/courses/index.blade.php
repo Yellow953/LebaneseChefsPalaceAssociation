@@ -29,8 +29,8 @@ $statuses = Helper::get_course_statuses();
                     <span class="svg-icon svg-icon-3 svg-icon-gray-500 position-absolute top-50 translate-middle ms-6">
                         <i class="fas fa-search"></i>
                     </span>
-                    <input type="text" class="form-control ps-10" name="name" value="{{ request()->query('name') }}"
-                        placeholder="Search By Name..." />
+                    <input type="text" class="form-control ps-10" name="title" value="{{ request()->query('title') }}"
+                        placeholder="Search By Title..." />
                 </div>
                 <div class="d-flex align-items-center">
                     <button type="submit" class="btn btn-primary me-5 px-3 py-2 d-flex align-items-center">
@@ -120,7 +120,7 @@ $statuses = Helper::get_course_statuses();
                     <tbody>
                         @forelse ($courses as $course)
                         <tr>
-                            <td>{{ ucwords($course->name) }}</td>
+                            <td>{{ ucwords($course->title) }}</td>
                             <td>{{ ucwords($course->taught_by) }}</td>
                             <td>
                                 <span
@@ -130,7 +130,6 @@ $statuses = Helper::get_course_statuses();
                             </td>
                             <td>
                                 Duration: {{$course->duration}} <br>
-                                Location: {{$course->location}} <br>
                                 Level: {{$course->level}} <br>
                                 Fee: {{$course->fee}}
                             </td>
@@ -155,7 +154,7 @@ $statuses = Helper::get_course_statuses();
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th colspan="5">{{ $courses->appends(['name' => request()->query('name'), 'taught_by' =>
+                            <th colspan="5">{{ $courses->appends(['title' => request()->query('title'), 'taught_by' =>
                                 request()->query('taught_by'), 'status' => request()->query('status'), 'description' =>
                                 request()->query('description'), 'duration' => request()->query('duration'),
                                 'level' => request()->query('level'), 'location' =>
