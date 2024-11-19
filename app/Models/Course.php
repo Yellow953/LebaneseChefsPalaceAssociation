@@ -17,4 +17,37 @@ class Course extends Model
     {
         return auth()->user()->role == 'admin';
     }
+
+    // Filter
+    public function scopeFilter($q)
+    {
+        if (request('name')) {
+            $name = request('name');
+            $q->where('name', 'LIKE', "%{$name}%");
+        }
+        if (request('description')) {
+            $description = request('description');
+            $q->where('description', 'LIKE', "%{$description}%");
+        }
+        if (request('location')) {
+            $location = request('location');
+            $q->where('location', 'LIKE', "%{$location}%");
+        }
+        if (request('duration')) {
+            $duration = request('duration');
+            $q->where('duration', 'LIKE', "%{$duration}%");
+        }
+        if (request('status')) {
+            $status = request('status');
+            $q->where('status', 'LIKE', "%{$status}%");
+        }
+        if (request('level')) {
+            $level = request('level');
+            $q->where('level', 'LIKE', "%{$level}%");
+        }
+        if (request('taught_by')) {
+            $taught_by = request('taught_by');
+            $q->where('taught_by', 'LIKE', "%{$taught_by}%");
+        }
+    }
 }

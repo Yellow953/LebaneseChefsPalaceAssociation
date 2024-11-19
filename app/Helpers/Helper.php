@@ -136,4 +136,30 @@ class Helper
             'Closed',
         ];
     }
+
+    public static function get_course_statuses()
+    {
+        return [
+            'Planned',
+            'Active',
+            'Completed',
+            'Cancelled',
+            'Archived',
+            'Draft',
+            'Upcoming',
+            'On Hold',
+        ];
+    }
+
+    public static function get_course_levels()
+    {
+        return [
+            'Beginner',
+            'Intermediate',
+            'Advanced',
+            'Expert',
+            'Professional',
+            'Masterclass',
+        ];
+    }
 }
