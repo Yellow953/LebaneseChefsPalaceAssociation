@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/errors.css') }}">
-    <title>YellowPOS | 500</title>
+    <title>LCPA | 500</title>
 </head>
 
 <body class="body-500">
