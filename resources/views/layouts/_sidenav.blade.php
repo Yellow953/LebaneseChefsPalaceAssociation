@@ -256,6 +256,7 @@
                 </div>
                 <!--end:Menu item-->
 
+                @if (Auth::user()->role == 'admin')
                 <!--begin:Menu item-->
                 <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
@@ -295,6 +296,7 @@
                     <!--end:Menu link-->
                 </div>
                 <!--end:Menu item-->
+                @endif
             </div>
             <!--end::Menu-->
         </div>
