@@ -97,8 +97,8 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                     <div class="col-md-12">
                         <div class="form-group">
                             <label class="form-label">Description</label>
-                            <textarea class="form-control" name="description" rows="3" value="{{ old('description') }}"
-                                placeholder="Enter Description..."></textarea>
+                            <textarea class="form-control" name="description" rows="3"
+                                placeholder="Enter Description...">{{ old('description') }}</textarea>
                         </div>
                     </div>
                 </div>

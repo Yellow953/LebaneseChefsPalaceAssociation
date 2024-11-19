@@ -100,7 +100,7 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                         <div class="form-group">
                             <label class="form-label">Description</label>
                             <textarea class="form-control" name="description" rows="3"
-                                value="{{ $restaurant->description }}" placeholder="Enter Description..."></textarea>
+                                placeholder="Enter Description...">{{ $restaurant->description }}</textarea>
                         </div>
                     </div>
                 </div>

@@ -148,8 +148,8 @@ $groups = Helper::get_groups();
                         <tr>
                             <th class="col-1 p-3"></th>
                             <th class="col-2 p-3">Chef</th>
-                            <th class="col-2 p-3">Info</th>
                             <th class="col-2 p-3">Rank</th>
+                            <th class="col-2 p-3">Info</th>
                             <th class="col-2 p-3">Actions</th>
                         </tr>
                     </thead>
@@ -162,15 +162,15 @@ $groups = Helper::get_groups();
                                 <div class="color-circle" style="background-color: {{ $chef->group->color }}"></div>
                             </td>
                             <td>
-                                <h3>{{ ucwords($chef->name) }}</h3>
+                                <b>{{ ucwords($chef->name) }}</b> <br>
                                 {{ $chef->phone }}
+                            </td>
+                            <td>
+                                {{ ucwords($chef->rank) }}
                             </td>
                             <td>
                                 {{ $chef->address }} <br>
                                 {{ $chef->dob }}
-                            </td>
-                            <td>
-                                {{ ucwords($chef->rank) }}
                             </td>
                             <td class="d-flex justify-content-end border-0">
                                 <a href="{{ route('chefs.edit', $chef->id) }}"
