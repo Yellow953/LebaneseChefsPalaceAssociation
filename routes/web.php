@@ -164,3 +164,6 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 // Landing Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+//Certificate Page
+Route::get('/certificate', [HomeController::class, 'certificate'])->name('certificate');

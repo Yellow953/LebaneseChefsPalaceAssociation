@@ -18,6 +18,10 @@ class HomeController extends Controller
         return view('frontend.about');
     }
 
+    public function certificate()
+    {
+        return view('certificates.testchef');
+    }
     public function institutes()
     {
         return view('frontend.institutes.institutes');
