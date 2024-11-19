@@ -12,7 +12,6 @@ class LogsExport implements FromCollection, WithHeadings
     {
         return Log::all()->map(function ($log) {
             return [
-
                 'log' => $log->text,
                 'created_at' => $log->created_at,
             ];
@@ -23,10 +22,8 @@ class LogsExport implements FromCollection, WithHeadings
     public function headings(): array
     {
         return [
-
             'Log',
             'Created At',
-
         ];
     }
 }
