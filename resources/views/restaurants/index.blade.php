@@ -79,22 +79,6 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
 
                     <!--begin::Col-->
                     <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Location</label>
-                        <input type="text" class="form-control" name="location"
-                            value="{{ request()->query('location') }}" placeholder="Enter Location..." />
-                    </div>
-                    <!--end::Col-->
-
-                    <!--begin::Col-->
-                    <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Description</label>
-                        <input type="text" class="form-control" name="description"
-                            value="{{ request()->query('description') }}" placeholder="Enter Description..." />
-                    </div>
-                    <!--end::Col-->
-
-                    <!--begin::Col-->
-                    <div class="col-md-6">
                         <label class="fs-6 form-label fw-bold text-dark">Type</label>
                         <select name="type" class="form-control" data-control="select2"
                             data-placeholder="Select an option">
@@ -121,6 +105,22 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                         </select>
                     </div>
                     <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Location</label>
+                        <input type="text" class="form-control" name="location"
+                            value="{{ request()->query('location') }}" placeholder="Enter Location..." />
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Description</label>
+                        <input type="text" class="form-control" name="description"
+                            value="{{ request()->query('description') }}" placeholder="Enter Description..." />
+                    </div>
+                    <!--end::Col-->
                 </div>
                 <!--end::Row-->
             </div>
@@ -143,10 +143,10 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
             <!--begin::Table container-->
             <div class="table-responsive">
                 <!--begin::Table-->
-                <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+                <table class="table table-row-dashed table-row-gray-300 align-middle text-center gs-0 gy-4">
                     <!--begin::Table head-->
                     <thead>
-                        <tr class="text-center">
+                        <tr>
                             <th class="col-2 p-3">Restaurant</th>
                             <th class="col-2 p-3">Contact</th>
                             <th class="col-2 p-3">Location</th>
@@ -170,21 +170,15 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                                 </div>
                             </td>
                             <td>
-                                <div class="text-center">
-                                    <b>{{ ucwords($restaurant->owner) }}</b> <br>
-                                    {{ $restaurant->phone }}
-                                </div>
+                                <b>{{ ucwords($restaurant->owner) }}</b> <br>
+                                {{ $restaurant->phone }}
                             </td>
                             <td>
-                                <div class="text-center">
-                                    {{ $restaurant->location }}
-                                </div>
+                                {{ $restaurant->location }}
                             </td>
                             <td>
-                                <div class="text-center">
-                                    {{ $restaurant->type }} <br>
-                                    {{ $restaurant->certification_status }}
-                                </div>
+                                {{ $restaurant->type }} <br>
+                                {{ $restaurant->certification_status }}
                             </td>
                             <td class="d-flex justify-content-end border-0">
                                 <a href="{{ route('restaurants.edit', $restaurant->id) }}"
@@ -202,9 +196,7 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
                         </tr>
                         @empty
                         <tr>
-                            <th colspan="5">
-                                <div class="text-center">No Restaurants Yet ...</div>
-                            </th>
+                            <th colspan="5">No Restaurants Yet ...</th>
                         </tr>
                         @endforelse
                     </tbody>

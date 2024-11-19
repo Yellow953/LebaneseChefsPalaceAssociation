@@ -8,13 +8,12 @@ class Helper
 {
     public static function get_user_roles()
     {
-        $roles = ['user', 'admin'];
-        return $roles;
+        return ['user', 'admin'];
     }
 
     public static function get_restaurants_types()
     {
-        $restaurantTypes = [
+        return [
             'Fine Dining',
             'Casual Dining',
             'Fast Food',
@@ -46,12 +45,11 @@ class Helper
             'Canteen',
             'Drive-In',
         ];
-        return $restaurantTypes;
     }
 
     public static function get_restaurants_certification_statuses()
     {
-        $certificationStatuses = [
+        return [
             'Not Certified',
             'Certified',
             'Pending Certification',
@@ -63,12 +61,11 @@ class Helper
             'Awaiting Renewal',
             'Certified with Distinction',
         ];
-        return $certificationStatuses;
     }
 
     public static function get_chefs_ranks()
     {
-        $chefRanks = [
+        return [
             'Executive Chef',
             'Head Chef',
             'Sous Chef',
@@ -86,11 +83,83 @@ class Helper
             'Butcher',
             'Apprentice Chef',
         ];
-        return $chefRanks;
     }
 
     public static function get_groups()
     {
         return Group::select('id', 'name')->get();
+    }
+
+    public static function get_insurance_statuses()
+    {
+        return ['active', 'expired', 'canceled'];
+    }
+
+    public static function get_record_categories()
+    {
+        return ['Food', 'Hotels', 'Hospitality'];
+    }
+
+    public static function get_units()
+    {
+        return [
+            'Square Feet',
+            'Square Meters',
+            'Feet',
+            'Meters',
+            'People',
+            'Meals',
+            'Stars',
+            'Seconds',
+            'Minutes',
+            'Hours',
+            'Days',
+            'Dollars',
+            'Kilograms',
+            'Liters',
+            'Bottles'
+        ];
+    }
+
+    public static function get_event_statuses()
+    {
+        return [
+            'Scheduled',
+            'Confirmed',
+            'Pending Approval',
+            'Ongoing',
+            'Completed',
+            'Cancelled',
+            'Postponed',
+            'Rescheduled',
+            'Draft',
+            'Closed',
+        ];
+    }
+
+    public static function get_course_statuses()
+    {
+        return [
+            'Planned',
+            'Active',
+            'Completed',
+            'Cancelled',
+            'Archived',
+            'Draft',
+            'Upcoming',
+            'On Hold',
+        ];
+    }
+
+    public static function get_course_levels()
+    {
+        return [
+            'Beginner',
+            'Intermediate',
+            'Advanced',
+            'Expert',
+            'Professional',
+            'Masterclass',
+        ];
     }
 }

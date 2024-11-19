@@ -3,6 +3,7 @@
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\ChefController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InsuranceController;
@@ -87,6 +88,17 @@ Route::middleware(['auth'])->group(function () {
             Route::post('/update/{course}', [CourseController::class, 'update'])->name('courses.update');
             Route::get('/delete/{course}', [CourseController::class, 'destroy'])->name('courses.destroy');
             Route::get('/', [CourseController::class, 'index'])->name('courses');
+        });
+
+        // Enrollments
+        Route::prefix('enrollments')->group(function () {
+            Route::get('/export', [EnrollmentController::class, 'export'])->name('enrollments.export');
+            Route::get('/new', [EnrollmentController::class, 'new'])->name('enrollments.new');
+            Route::post('/create', [EnrollmentController::class, 'create'])->name('enrollments.create');
+            Route::get('/edit/{course_enrollment}', [EnrollmentController::class, 'edit'])->name('enrollments.edit');
+            Route::post('/update/{course_enrollment}', [EnrollmentController::class, 'update'])->name('enrollments.update');
+            Route::get('/delete/{course_enrollment}', [EnrollmentController::class, 'destroy'])->name('enrollments.destroy');
+            Route::get('/', [EnrollmentController::class, 'index'])->name('enrollments');
         });
 
         // Records

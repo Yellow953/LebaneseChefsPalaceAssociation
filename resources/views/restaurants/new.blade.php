@@ -9,6 +9,12 @@ $types = Helper::get_restaurants_types();
 $certification_statuses = Helper::get_restaurants_certification_statuses();
 @endphp
 
+@section('actions')
+<a href="{{ url()->previous() }}" class="btn btn-secondary btn-sm fw-bold">
+    Back
+</a>
+@endsection
+
 @section('content')
 <div class="container mt-5">
     <div class="card">
@@ -90,9 +96,9 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
 
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label class="required form-label">Description</label>
+                            <label class="form-label">Description</label>
                             <textarea class="form-control" name="description" rows="3" value="{{ old('description') }}"
-                                required placeholder="Enter Description..."></textarea>
+                                placeholder="Enter Description..."></textarea>
                         </div>
                     </div>
                 </div>

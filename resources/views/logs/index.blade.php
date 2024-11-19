@@ -68,7 +68,7 @@
                             <!--begin::Col-->
                             <div class="col-md-6">
                                 <label class="fs-6 form-label fw-bold text-dark">Date To</label>
-                                <input type="date" class="form-control form-control form-control-solid" name="EndDate"
+                                <input type="date" class="form-control form-control form-control-solid" name="endDate"
                                     value="{{ request()->query('endDate') }}" />
                             </div>
                             <!--end::Col-->
@@ -159,13 +159,13 @@
                         <!--begin::Timeline item-->
                         <div class="timeline-item">
                             <!--begin::Timeline line-->
-                            <div class="timeline-line w-40px"></div>
+                            <div class="timeline-line bg-white w-40px"></div>
                             <!--end::Timeline line-->
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
                                     <!--begin::Svg Icon | path: icons/duotune/communication/com009.svg-->
-                                    <span class="svg-icon svg-icon-2 svg-icon-gray-500">
+                                    <span class="svg-icon svg-icon-2 svg-icon-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
                                             <path
@@ -203,13 +203,13 @@
                         <!--begin::Timeline item-->
                         <div class="timeline-item">
                             <!--begin::Timeline line-->
-                            <div class="timeline-line w-40px"></div>
+                            <div class="timeline-line bg-white w-40px"></div>
                             <!--end::Timeline line-->
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
                                     <!--begin::Svg Icon | path: icons/duotune/communication/com009.svg-->
-                                    <span class="svg-icon svg-icon-2 svg-icon-gray-500">
+                                    <span class="svg-icon svg-icon-2 svg-icon-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
                                             <path

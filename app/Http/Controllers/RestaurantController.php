@@ -54,7 +54,7 @@ class RestaurantController extends Controller
             'location' => $request->location,
             'type' => $request->type,
             'certification_status' => $request->certification_status,
-            'logal_paper' => $legal_paper_path ?? null,
+            'legal_paper' => $legal_paper_path ?? null,
         ]);
 
         $text = ucwords(auth()->user()->name) . " created Restaurant : " . $request->name . ", datetime :   " . now();
@@ -96,7 +96,7 @@ class RestaurantController extends Controller
             'location' => $request->location,
             'type' => $request->type,
             'certification_status' => $request->certification_status,
-            'logal_paper' => $legal_paper_path ?? null,
+            'legal_paper' => $legal_paper_path ?? null,
         ]);
 
         if ($restaurant->name != trim($request->name)) {

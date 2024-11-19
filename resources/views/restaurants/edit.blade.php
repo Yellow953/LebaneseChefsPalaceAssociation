@@ -9,6 +9,12 @@ $types = Helper::get_restaurants_types();
 $certification_statuses = Helper::get_restaurants_certification_statuses();
 @endphp
 
+@section('actions')
+<a href="{{ url()->previous() }}" class="btn btn-secondary btn-sm fw-bold">
+    Back
+</a>
+@endsection
+
 @section('content')
 <div class="container mt-5">
     <div class="card">
@@ -92,10 +98,9 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
 
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label class="required form-label">Description</label>
+                            <label class="form-label">Description</label>
                             <textarea class="form-control" name="description" rows="3"
-                                value="{{ $restaurant->description }}" required
-                                placeholder="Enter Description..."></textarea>
+                                value="{{ $restaurant->description }}" placeholder="Enter Description..."></textarea>
                         </div>
                     </div>
                 </div>
@@ -110,35 +115,29 @@ $certification_statuses = Helper::get_restaurants_certification_statuses();
         </form>
     </div>
 
+    @if ($restaurant->legal_paper)
     <div class="card mt-5 p-4">
         <div class="card-head">
             <h1 class="text-center text-primary">Documents</h1>
         </div>
 
         <div class="card-body">
-            <div class="row">
-                <div class="offset-md-4 col-md-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
                     <h2 class="text-center my-5">Legal Paper</h2>
 
-                    @if(pathinfo($chef->legal_paper, PATHINFO_EXTENSION) === 'pdf')
-                    <embed src="{{ asset($chef->legal_paper) }}" type="application/pdf" width="100%" height="400px">
+                    @if(pathinfo($restaurant->legal_paper, PATHINFO_EXTENSION) === 'pdf')
+                    <embed src="{{ asset($restaurant->legal_paper) }}" type="application/pdf" width="100%"
+                        height="400px">
                     @else
                     <div>
-                        <img src="{{ asset('assets/images/file.png') }}" class="img-fluid">
-
-                        <form action="{{ route('restaurants.download_file', $restaurant->id) }}" method="post"
-                            enctype="multipart/form-data">
-                            @csrf
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary mt-3">Download
-                                    Legal Paper</button>
-                            </div>
-                        </form>
+                        <img src="{{ asset($restaurant->legal_paper) }}" class="img-fluid" height="400">
                     </div>
                     @endif
                 </div>
             </div>
         </div>
     </div>
+    @endif
 </div>
 @endsection
