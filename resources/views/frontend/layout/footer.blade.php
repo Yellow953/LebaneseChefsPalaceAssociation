@@ -14,30 +14,35 @@
         <!--begin::Container-->
         <div class="container">
             <!--begin::Row-->
-            <div class="row py-10 py-lg-20">
+            <div class="row py-5 py-lg-10">
                 <!--begin::Col-->
                 <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
                     <!--begin::Block-->
-                    <div class="rounded red-dotted-border white-bg p-9 mb-10 mmx-1">
-                        <!--begin::Title-->
-                        <h2 class="text-dark">Would you need a Custom License?</h2>
-                        <!--end::Title-->
-                        <!--begin::Text-->
-                        <span class="fw-normal fs-4 text-gray-700">Email us to
-                            <a href="#" class="link-footer-card">support@keenthemes.com</a></span>
-                        <!--end::Text-->
-                    </div>
-                    <!--end::Block-->
-                    <!--begin::Block-->
-                    <div class="rounded red-dotted-border p-9 white-bg mmx-1">
-                        <!--begin::Title-->
-                        <h2 class="text-dark">How About a Custom Project?</h2>
-                        <!--end::Title-->
-                        <!--begin::Text-->
-                        <span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service.
-                            <a href="#" class="link-footer-card text-hover-primary">Click to Get a
-                                Quote</a></span>
-                        <!--end::Text-->
+                    <div class="d-flex flex-column mb-10">
+                        <!--begin::Contact Us-->
+                        <div class="d-flex flex-column mb-10 m-text-center">
+                            <!--begin::Subtitle-->
+                            <h4 class="fw-bold text-gray-400 fs-2 mb-6">Contact Us</h4>
+                            <!--end::Subtitle-->
+                            <!--begin::Link-->
+                            <span class="text-gray-400 fs-4 mb-6">
+                                <i class="bi bi-telephone fs-4 me-3"></i>Call Us:
+                                <a href="tel:+96176669898" class="opacity-80 link-footer fs-5 mb-6">+961 76669898</a>
+                            </span>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <span class="text-gray-400 fs-4 mb-6">
+                                <i class="bi bi-envelope fs-4 me-3"></i>Email:
+                                <a href="mailto:info@lebanesechefpalace.org"
+                                    class="opacity-80 link-footer fs-5 mb-6">info@lebanesechefpalace.org</a>
+                            </span>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <span class="text-gray-400 fs-4 mb-6"><i class="bi bi-geo-alt fs-4 me-3"></i>Address:
+                                <a href="https://maps.app.goo.gl/vL2tAK9gUSF7ZxJ37" class="opacity-80 link-footer fs-5 mb-6">Jounieh, Lebanon</a></span>
+                            <!--end::Link-->
+                        </div>
+                        <!--end::Contact Us-->
                     </div>
                     <!--end::Block-->
                 </div>
@@ -49,74 +54,39 @@
                         <!--begin::Links-->
                         <div class="d-flex fw-semibold flex-column me-20">
                             <!--begin::Subtitle-->
-                            <h4 class="fw-bold text-gray-400 mb-6">More for Metronic</h4>
+                            <h4 class="fw-bold text-gray-400 fs-2 mb-6">Stay Connected</h4>
                             <!--end::Subtitle-->
                             <!--begin::Link-->
-                            <a href="https://keenthemes.com/faqs"
-                                class="opacity-80 link-footer fs-5 mb-6">FAQ</a>
-                            <!--end::Link-->
-                            <!--begin::Link-->
-                            <a href="https://preview.keenthemes.com/html/metronic/docs"
-                                class="opacity-80 link-footer fs-5 mb-6">Documentaions</a>
-                            <!--end::Link-->
-                            <!--begin::Link-->
-                            <a href="https://www.youtube.com/c/KeenThemesTuts/videos"
-                                class="opacity-80 link-footer fs-5 mb-6">Video Tuts</a>
-                            <!--end::Link-->
-                            <!--begin::Link-->
-                            <a href="https://preview.keenthemes.com/html/metronic/docs/getting-started/changelog"
-                                class="opacity-80 link-footer fs-5 mb-6">Changelog</a>
-                            <!--end::Link-->
-                            <!--begin::Link-->
-                            <a href="https://devs.keenthemes.com/"
-                                class="opacity-80 link-footer fs-5 mb-6">Support Forum</a>
-                            <!--end::Link-->
-                            <!--begin::Link-->
-                            <a href="https://keenthemes.com/blog"
-                                class="opacity-80 link-footer fs-5">Blog</a>
-                            <!--end::Link-->
-                        </div>
-                        <!--end::Links-->
-                        <!--begin::Links-->
-                        <div class="d-flex fw-semibold flex-column ms-lg-20">
-                            <!--begin::Subtitle-->
-                            <h4 class="fw-bold text-gray-400 mb-6">Stay Connected</h4>
-                            <!--end::Subtitle-->
-                            <!--begin::Link-->
-                            <a href="https://www.facebook.com/keenthemes" class="mb-6">
-                                <img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2"
-                                    alt="" />
+                            <a href="https://www.facebook.com/share/19No2TWon9/" class="mb-6">
+                                <i class="bi bi-facebook fs-4 me-3"></i>
                                 <span class="link-footer opacity-80 fs-5 mb-6">Facebook</span>
                             </a>
                             <!--end::Link-->
                             <!--begin::Link-->
-                            <a href="https://github.com/KeenthemesHub" class="mb-6">
-                                <img src="assets/media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
-                                <span class="opacity-80 link-footer fs-5 mb-6">Github</span>
+                            <a href="https://www.instagram.com/costpitality/profilecard/?igsh=cTdneGE2MW11Z2x5" class="mb-6">
+                                <i class="bi bi-instagram fs-4 me-3"></i>
+                                <span class="opacity-80 link-footer fs-5 mb-6">Instagram</span>
                             </a>
                             <!--end::Link-->
                             <!--begin::Link-->
-                            <a href="https://twitter.com/keenthemes" class="mb-6">
-                                <img src="assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2"
-                                    alt="" />
-                                <span class="opacity-80 link-footer fs-5 mb-6">Twitter</span>
+                            <a href="https://www.tiktok.com/@costpitality?_t=8rWnNoH758h&_r=1" class="mb-6">
+                                <i class="bi bi-tiktok fs-4 me-3"></i>
+                                <span class="opacity-80 link-footer fs-5 mb-6">TikTok</span>
                             </a>
                             <!--end::Link-->
+                        </div>
+                        <!--end::Links-->
+                        <!--begin::Links-->
+                        <div class="d-flex fw-semibold flex-column">
+                            <!--begin::Subtitle-->
+                            <h4 class="fw-bold text-gray-400 fs-2 mb-6">Follow Our Founder</h4>
+                            <!--end::Subtitle-->
                             <!--begin::Link-->
-                            <a href="https://dribbble.com/keenthemes" class="mb-6">
-                                <img src="assets/media/svg/brand-logos/dribbble-icon-1.svg" class="h-20px me-2"
-                                    alt="" />
-                                <span class="opacity-80 link-footer fs-5 mb-6">Dribbble</span>
+                            <a href="https://www.youtube.com/@costpitality" class="mb-6">
+                                <img src="{{asset('assets/images/chef-nizar.jpg')}}" alt="" class="chef-nizar">
                             </a>
                             <!--end::Link-->
-                            <!--begin::Link-->
-                            <a href="https://www.instagram.com/keenthemes" class="mb-6">
-                                <img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2"
-                                    alt="" />
-                                <span
-                                    class="opacity-80 link-footer fs-5 mb-6">Instagram</span>
-                            </a>
-                            <!--end::Link-->
+
                         </div>
                         <!--end::Links-->
                     </div>
@@ -134,35 +104,58 @@
         <div class="container">
             <!--begin::Wrapper-->
             <div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
-                <!--begin::Copyright-->
-                <div class="d-flex align-items-center order-2 order-md-1">
-                    <!--begin::Logo-->
-                    <a href="{{ route('home') }}">
-                        <img alt="Logo" src="{{asset('assets/images/favicon.png')}}" class="h-40px h-md-60px" />
-                    </a>
-                    <!--end::Logo image-->
-                    <!--begin::Logo image-->
-                    <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="{{route('home')}}">&copy;
-                        2024 Lebanese Chef's Palace Association</span>
-                    <!--end::Logo image-->
+                <!--begin::row-->
+                <div class="row">
+                    <!--begin::Col-->
+                    <div class="col-lg-6 m-align-items-center">
+                        <!--begin::Copyright-->
+                        <div class="d-flex align-items-center order-2 order-md-1">
+                            <!--begin::Logo-->
+                            <a href="{{ route('home') }}">
+                                <img alt="Logo" src="{{asset('assets/images/favicon.png')}}" class="h-40px h-md-60px" />
+                            </a>
+                            <!--end::Logo image-->
+                            <!--begin::Logo image-->
+                            <span class="me-5 fs-6 fw-semibold text-gray-600">&copy;
+                                {{ date('Y') }} Lebanese Chef's Palace Association</span>
+                            <!--end::Logo image-->
+                        </div>
+                        <!--end::Copyright-->
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-lg-5">
+                        <!--begin::Powered By-->
+                        <div class="d-flex align-items-center order-1">
+                            <!--begin::Logo image-->
+                            <span class="fs-6 fw-semibold text-gray-600 pt-6">Powered by <a href="https://yellowtech.dev" class="opacity-80 link-footer fs-5 mb-6" target="_blank">YellowTech</a></span>
+                            <!--end::Logo image-->
+                        </div>
+                        <!--end::Powered By-->
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-lg-1">
+                        <!--begin::Menu-->
+                        <ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 pt-2 mb-4 mb-md-0">
+                            <li class="menu-item">
+                                <a href="{{route('home')}}" target="_blank"
+                                    class="link-footer opacity-80 px-2">HOME</a>
+                            </li>
+                            <li class="menu-item mx-5">
+                                <a href="{{route('about')}}" target="_blank"
+                                    class="link-footer opacity-80 px-2">ABOUT</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{route('institutes')}}" target="_blank"
+                                    class="link-footer opacity-80 px-2">INSTITUTES</a>
+                            </li>
+                        </ul>
+                        <!--end::Menu-->
+                    </div>
+                    <!--end::Col-->
                 </div>
-                <!--end::Copyright-->
-                <!--begin::Menu-->
-                <ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
-                    <li class="menu-item">
-                        <a href="https://keenthemes.com" target="_blank"
-                            class="link-footer opacity-80 px-2">About</a>
-                    </li>
-                    <li class="menu-item mx-5">
-                        <a href="https://devs.keenthemes.com" target="_blank"
-                            class="link-footer opacity-80 px-2">Support</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" target="_blank"
-                            class="link-footer opacity-80 px-2">Purchase</a>
-                    </li>
-                </ul>
-                <!--end::Menu-->
+                <!--end::row-->
             </div>
             <!--end::Wrapper-->
         </div>

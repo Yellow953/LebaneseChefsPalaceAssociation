@@ -301,6 +301,14 @@ body {
     margin-bottom: 20px;
 }
 
+.chef-nizar {
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 20px;
+    border-radius: 100px;
+}
+
 /* -------------------Backgrounds------------------- */
 
 .landing-hero {
@@ -403,6 +411,9 @@ body {
         text-align: center !important;
     }
 
+    .m-align-items-center {
+        align-items: center !important;
+    }
     .landing-hero {
         background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
             url("../images/home/home-banner.jpg");
