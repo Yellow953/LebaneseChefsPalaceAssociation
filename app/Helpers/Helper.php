@@ -162,4 +162,18 @@ class Helper
             'Masterclass',
         ];
     }
+
+    public static function get_enrollment_statuses()
+    {
+        return [
+            'Pending',
+            'Approved',
+            'Rejected',
+            'Waitlisted',
+            'Withdrawn',
+            'Completed',
+            'In Progress',
+            'Cancelled',
+        ];
+    }
 }

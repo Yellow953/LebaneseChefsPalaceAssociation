@@ -11,8 +11,8 @@ return new class extends Migration
         Schema::create('insurances', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("insurance_type_id")->unsigned();
-            $table->bigInteger("chef_id")->unsigned();
-            $table->bigInteger("restaurant_id")->unsigned();
+            $table->bigInteger("chef_id")->unsigned()->nullable();
+            $table->bigInteger("restaurant_id")->unsigned()->nullable();
 
             $table->string('policy_number')->unique();
             $table->date('start_date');

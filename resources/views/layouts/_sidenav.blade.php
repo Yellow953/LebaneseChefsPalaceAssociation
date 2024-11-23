@@ -56,6 +56,33 @@
                 <!--end:Menu item-->
 
                 <!--begin:Menu item-->
+                <div class="menu-item px-0 py-1">
+                    <!--begin:Menu link-->
+                    <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }}" href="{{ route('chefs') }}">
+                        <span class="menu-icon">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <span class="menu-title">Chefs</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+
+                <!--begin:Menu item-->
+                <div class="menu-item px-0 py-1">
+                    <!--begin:Menu link-->
+                    <a class="menu-link {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
+                        href="{{ route('restaurants') }}">
+                        <span class="menu-icon">
+                            <i class="bi bi-building-fill"></i>
+                        </span>
+                        <span class="menu-title">Restaurants</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+
+                <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click"
                     class="menu-item px-0 py-1 here {{ request()->routeIs('insurances*') ? 'show' : '' }} menu-accordion">
                     <!--begin:Menu link-->
@@ -71,28 +98,6 @@
                     <div class="menu-sub menu-sub-accordion">
                         <!--begin:Menu item-->
                         <div class="menu-item px-0 py-1">
-                            <!--begin:Menu link-->
-                            <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }}"
-                                href="{{ route('chefs') }}">
-                                <span class="menu-icon">
-                                    <i class="bi bi-person-fill"></i>
-                                </span>
-                                <span class="menu-title">Chefs</span>
-                            </a>
-                            <!--end:Menu link-->
-                            <!--begin:Menu item-->
-                            <div class="menu-item px-0 py-1">
-                                <!--begin:Menu link-->
-                                <a class="menu-link {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
-                                    href="{{ route('restaurants') }}">
-                                    <span class="menu-icon">
-                                        <i class="bi bi-building-fill"></i>
-                                    </span>
-                                    <span class="menu-title">Restaurants</span>
-                                </a>
-                                <!--end:Menu link-->
-                            </div>
-                            <!--end:Menu item-->
                             <!--begin:Menu item-->
                             <div class="menu-item px-0 py-1">
                                 <!--begin:Menu link-->
@@ -129,15 +134,6 @@
                     <div class="menu-sub menu-sub-accordion">
                         <!--begin:Menu item-->
                         <div class="menu-item px-0 py-1">
-                            <!--begin:Menu link-->
-                            <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }} "
-                                href="{{ route('chefs') }}">
-                                <span class="menu-icon">
-                                    <i class="bi bi-person-fill"></i>
-                                </span>
-                                <span class="menu-title">Chefs</span>
-                            </a>
-                            <!--end:Menu link-->
                             <!--begin:Menu item-->
                             <div class="menu-item px-0 py-1">
                                 <!--begin:Menu link-->
@@ -160,7 +156,7 @@
 
                 <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click"
-                    class="menu-item px-0 py-1 here {{ request()->routeIs('chefs*') ? 'show' : '' }} {{ request()->routeIs('restaurants*') ? 'show' : '' }} {{ request()->routeIs('courses*') ? 'show' : '' }} {{ request()->routeIs('enrollments*') ? 'show' : '' }} menu-accordion">
+                    class="menu-item px-0 py-1 here {{ request()->routeIs('courses*') ? 'show' : '' }} {{ request()->routeIs('enrollments*') ? 'show' : '' }} menu-accordion">
                     <!--begin:Menu link-->
                     <span class="menu-link">
                         <span class="menu-icon">
@@ -174,28 +170,6 @@
                     <div class="menu-sub menu-sub-accordion">
                         <!--begin:Menu item-->
                         <div class="menu-item px-0 py-1">
-                            <!--begin:Menu link-->
-                            <a class="menu-link {{ request()->routeIs('chefs*') ? 'active' : '' }}"
-                                href="{{ route('chefs') }}">
-                                <span class="menu-icon">
-                                    <i class="bi bi-person-fill"></i>
-                                </span>
-                                <span class="menu-title">Chefs</span>
-                            </a>
-                            <!--end:Menu link-->
-                            <!--begin:Menu item-->
-                            <div class="menu-item px-0 py-1">
-                                <!--begin:Menu link-->
-                                <a class="menu-link {{ request()->routeIs('restaurants*') ? 'active' : '' }}"
-                                    href="{{ route('restaurants') }}">
-                                    <span class="menu-icon">
-                                        <i class="bi bi-building-fill"></i>
-                                    </span>
-                                    <span class="menu-title">Restaurants</span>
-                                </a>
-                                <!--end:Menu link-->
-                            </div>
-                            <!--end:Menu item-->
                             <!--begin:Menu item-->
                             <div class="menu-item px-0 py-1">
                                 <!--begin:Menu link-->
@@ -229,6 +203,7 @@
                 </div>
                 <!--end:Menu item-->
 
+                {{--
                 <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click" class="menu-item px-0 py-1 here menu-accordion">
                     <!--begin:Menu link-->
@@ -246,6 +221,7 @@
                     <!--end:Menu sub-->
                 </div>
                 <!--end:Menu item-->
+                --}}
 
                 <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click"
@@ -280,6 +256,7 @@
                 </div>
                 <!--end:Menu item-->
 
+                @if (Auth::user()->role == 'admin')
                 <!--begin:Menu item-->
                 <div class="menu-item px-0 py-1">
                     <!--begin:Menu link-->
@@ -319,6 +296,7 @@
                     <!--end:Menu link-->
                 </div>
                 <!--end:Menu item-->
+                @endif
             </div>
             <!--end::Menu-->
         </div>

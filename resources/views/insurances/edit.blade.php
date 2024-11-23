@@ -50,7 +50,7 @@ $statuses = Helper::get_insurance_statuses();
                     </div>
 
                     <!-- Start Date -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label class="required form-label">Start Date</label>
                             <input type="date" class="form-control" name="start_date" placeholder="Enter Start Date..."
@@ -59,7 +59,7 @@ $statuses = Helper::get_insurance_statuses();
                     </div>
 
                     <!-- End Date -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label class="form-label">End Date</label>
                             <input type="date" class="form-control" name="end_date" placeholder="Enter End Date..."

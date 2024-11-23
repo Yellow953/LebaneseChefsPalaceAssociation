@@ -72,24 +72,18 @@ class InsuranceController extends Controller
             'text' => $text,
         ]);
 
-        return redirect()->route('insurances')->with('success', 'Insurance created successfully!');
+        return redirect()->route('insurances')->with('success', 'Insurance Created Successfully!');
     }
 
     public function edit(Insurance $insurance)
     {
-        $insuranceTypes = InsuranceType::select('id', 'name')->get();
-        $restaurants = Restaurant::select('id', 'name')->get();
-        $chefs = Chef::select('id', 'name')->get();
-
-        $data = compact('insuranceTypes', 'restaurants', 'chefs', 'insurance');
-        return view('insurances.edit', $data);
+        return view('insurances.edit', compact('insurance'));
     }
 
     public function update(Insurance $insurance, Request $request)
     {
         $request->validate([
             'policy_number' => 'required|max:255|unique:insurances,policy_number,' . $insurance->id,
-            'insurance_type_id' => 'required|exists:insurance_types,id',
             'start_date' => 'required|date',
             'status' => 'required|in:active,expired,canceled',
         ]);
@@ -105,7 +99,6 @@ class InsuranceController extends Controller
 
         $insurance->update([
             'policy_number' => $request->policy_number,
-            'insurance_type_id' => $request->insurance_type_id,
             'start_date' => $request->start_date,
             'end_date' => $request->end_date,
             'status' => $request->status,

@@ -26,7 +26,8 @@
                 <div class="col-md-8 card h-lg-100 bg-broccoli my-auto">
                     <!--begin::Body-->
                     <div class="card-body animate-on-scroll slide-right">
-                        <h1 class="text-center mt-1 mb-10 heading text-shadow-dark text-white">Lebanese Chefs Palace</h1>
+                        <h1 class="text-center mt-1 mb-10 heading text-shadow-dark text-white">Lebanese Chefs Palace
+                        </h1>
                         <p class="text-center text-white paragraph text-shadow-dark">
                             The Lebanese Chef's Palace Association (LCPA) operates five specialized committees
                             focused on quality control, cost efficiency, public transparency, and fair pricing in
@@ -49,7 +50,7 @@
                 <!--begin::Col -->
                 <div class="col-md-3">
                     <!--begin::Card widget 3-->
-                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary animate-on-scroll slide-up">
+                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary">
                         <!--begin::Header-->
                         <div class="card-header pt-5 d-flex justify-content-center">
                             <!--begin::Icon-->
@@ -83,7 +84,7 @@
                 <!-- start::Col -->
                 <div class="col-md-3">
                     <!--begin::Card widget 3-->
-                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary animate-on-scroll slide-up">
+                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary">
                         <!--begin::Header-->
                         <div class="card-header pt-5 d-flex justify-content-center">
                             <!--begin::Icon-->
@@ -117,7 +118,7 @@
                 <!-- start::Col -->
                 <div class="col-md-3">
                     <!--begin::Card widget 3-->
-                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary animate-on-scroll slide-up">
+                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary">
                         <!--begin::Header-->
                         <div class="card-header pt-5 d-flex justify-content-center">
                             <!--begin::Icon-->
@@ -151,7 +152,7 @@
                 <!-- start::Col -->
                 <div class="col-md-3">
                     <!--begin::Card widget 3-->
-                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary animate-on-scroll slide-up">
+                    <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100 bg-primary">
                         <!--begin::Header-->
                         <div class="card-header pt-5 d-flex justify-content-center">
                             <!--begin::Icon-->

@@ -1,18 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'chefs')
+@section('title', 'enrollments')
 
 @php
-$ranks = Helper::get_chefs_ranks();
-$groups = Helper::get_groups();
+$statuses = Helper::get_enrollment_statuses();
 @endphp
 
 @section('actions')
-<a href="{{ route('chefs.new') }}" class="btn btn-sm fw-bold btn-primary">
-    New Chef
+<a href="{{ route('enrollments.new') }}" class="btn btn-sm fw-bold btn-primary">
+    New Enrollment
 </a>
-<a href="{{ route('chefs.export') }}" class="btn btn-sm fw-bold btn-primary">
-    Export Chefs
+<a href="{{ route('enrollments.export') }}" class="btn btn-sm fw-bold btn-primary">
+    Export Enrollments
 </a>
 @endsection
 
@@ -20,7 +19,7 @@ $groups = Helper::get_groups();
 <!--begin::filter-->
 <div class="filter border-0 px-0 px-md-3 py-4">
     <!--begin::Form-->
-    <form action="{{ route('chefs') }}" method="GET" enctype="multipart/form-data" class="form">
+    <form action="{{ route('enrollments') }}" method="GET" enctype="multipart/form-data" class="form">
         @csrf
         <div class="pt-0 pt-3 px-2 px-md-4">
             <!--begin::Compact form-->
@@ -38,8 +37,8 @@ $groups = Helper::get_groups();
                         </svg>
                     </span>
                     <!--end::Svg Icon-->
-                    <input type="text" class="form-control ps-10" name="name" value="{{ request()->query('name') }}"
-                        placeholder="Search By Name..." />
+                    <input type="number" class="form-control ps-10" name="id" value="{{ request()->query('id') }}"
+                        step="1" min="0" placeholder="Search By ID..." />
                 </div>
                 <!--end::Input group-->
                 <!--begin:Action-->
@@ -63,29 +62,14 @@ $groups = Helper::get_groups();
                 <div class="row g-8 mb-8">
                     <!--begin::Col-->
                     <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Phone</label>
-                        <input type="text" class="form-control" name="phone" value="{{ request()->query('phone') }}"
-                            placeholder="Enter Phone..." />
-                    </div>
-                    <!--end::Col-->
-
-                    <!--begin::Col-->
-                    <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Address</label>
-                        <input type="text" class="form-control" name="address" value="{{ request()->query('address') }}"
-                            placeholder="Enter Address..." />
-                    </div>
-                    <!--end::Col-->
-
-                    <!--begin::Col-->
-                    <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Rank</label>
-                        <select name="type" class="form-control" data-control="select2"
+                        <label class="fs-6 form-label fw-bold text-dark">Course</label>
+                        <select name="course_id" class="form-control" data-control="select2"
                             data-placeholder="Select an option">
                             <option value=""></option>
-                            @foreach ($ranks as $rank)
-                            <option value="{{ $rank }}" {{ request()->query('rank') == $rank ? 'selected' : '' }}>{{
-                                ucwords($rank) }}</option>
+                            @foreach ($courses as $course)
+                            <option value="{{ $course->id }}" {{ request()->query('course_id') == $course->id ?
+                                'selected' : '' }}>{{
+                                ucwords($course->title) }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -93,31 +77,47 @@ $groups = Helper::get_groups();
 
                     <!--begin::Col-->
                     <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Group</label>
-                        <select name="group_id" class="form-control" data-control="select2"
+                        <label class="fs-6 form-label fw-bold text-dark">Chef</label>
+                        <select name="chef_id" class="form-control" data-control="select2"
                             data-placeholder="Select an option">
                             <option value=""></option>
-                            @foreach ($groups as $group)
-                            <option value="{{ $group->id }}" {{ request()->query('group_id') == $group->id ? 'selected'
-                                : '' }}>{{
-                                ucwords($group->name) }}</option>
+                            @foreach ($chefs as $chef)
+                            <option value="{{ $chef->id }}" {{ request()->query('chef_id') == $chef->id ?
+                                'selected' : '' }}>{{
+                                ucwords($chef->title) }}</option>
                             @endforeach
                         </select>
                     </div>
                     <!--end::Col-->
 
                     <!--begin::Col-->
-                    <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Date of Birth</label>
-                        <input type="date" class="form-control" name="dob" value="{{ request()->query('dob') }}" />
+                    <div class="col-md-4">
+                        <label class="fs-6 form-label fw-bold text-dark">Status</label>
+                        <select name="status" class="form-control" data-control="select2"
+                            data-placeholder="Select an option">
+                            <option value=""></option>
+                            @foreach ($statuses as $status)
+                            <option value="{{ $status }}" {{ request()->query('status') == $status ? 'selected' : ''
+                                }}>{{
+                                ucwords($status) }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <!--end::Col-->
 
                     <!--begin::Col-->
-                    <div class="col-md-6">
-                        <label class="fs-6 form-label fw-bold text-dark">Feedback</label>
-                        <input type="text" class="form-control" name="feedback"
-                            value="{{ request()->query('feedback') }}" placeholder="Enter Feedback..." />
+                    <div class="col-md-4">
+                        <label class="fs-6 form-label fw-bold text-dark">From</label>
+                        <input type="date" class="form-control" name="start_date"
+                            value="{{ request()->query('start_date') }}" />
+                    </div>
+                    <!--end::Col-->
+
+                    <!--begin::Col-->
+                    <div class="col-md-4">
+                        <label class="fs-6 form-label fw-bold text-dark">To</label>
+                        <input type="date" class="form-control" name="end_date"
+                            value="{{ request()->query('end_date') }}" />
                     </div>
                     <!--end::Col-->
                 </div>
@@ -146,41 +146,44 @@ $groups = Helper::get_groups();
                     <!--begin::Table head-->
                     <thead>
                         <tr>
-                            <th class="col-1 p-3"></th>
+                            <th class="col-1 p-3">ID</th>
+                            <th class="col-2 p-3">Course</th>
                             <th class="col-2 p-3">Chef</th>
-                            <th class="col-2 p-3">Rank</th>
-                            <th class="col-2 p-3">Info</th>
+                            <th class="col-2 p-3">Date</th>
+                            <th class="col-2 p-3">Status</th>
                             <th class="col-2 p-3">Actions</th>
                         </tr>
                     </thead>
                     <!--end::Table head-->
                     <!--begin::Table body-->
                     <tbody>
-                        @forelse ($chefs as $chef)
+                        @forelse ($enrollments as $enrollment)
                         <tr>
                             <td>
-                                <div class="color-circle" style="background-color: {{ $chef->group->color }}"></div>
+                                <b>{{ $enrollment->id }}</b>
                             </td>
                             <td>
-                                <b>{{ ucwords($chef->name) }}</b> <br>
-                                {{ $chef->phone }}
+                                <b>{{ ucwords($enrollment->course->title) }}</b>
                             </td>
                             <td>
-                                {{ ucwords($chef->rank) }}
+                                <b>{{ ucwords($enrollment->chef->name) }}</b>
                             </td>
                             <td>
-                                {{ $chef->address }} <br>
-                                {{ $chef->dob }}
+                                Enrolled At: {{ $enrollment->enrolled_at }} <br>
+                                {{ $enrollment->completed_at ? 'Completed At: ' . $enrollment->completed_at : '' }}
+                            </td>
+                            <td>
+                                {{ ucwords($enrollment->status) }}
                             </td>
                             <td class="d-flex justify-content-end border-0">
-                                <a href="{{ route('chefs.edit', $chef->id) }}"
+                                <a href="{{ route('enrollments.edit', $enrollment->id) }}"
                                     class="btn btn-icon btn-warning btn-sm me-1">
                                     <i class="bi bi-pen-fill"></i>
                                 </a>
-                                @if($chef->can_delete())
-                                <a href="{{ route('chefs.destroy', $chef->id) }}"
+                                @if($enrollment->can_delete())
+                                <a href="{{ route('enrollments.destroy', $enrollment->id) }}"
                                     class="btn btn-icon btn-danger btn-sm show_confirm" data-toggle="tooltip"
-                                    data-original-title="Delete Chef">
+                                    data-original-title="Delete Course Enrollment">
                                     <i class="bi bi-trash3-fill"></i>
                                 </a>
                                 @endif
@@ -188,7 +191,7 @@ $groups = Helper::get_groups();
                         </tr>
                         @empty
                         <tr>
-                            <th colspan="5">No Chefs Yet ...</th>
+                            <th colspan="6">No Enrollments Yet ...</th>
                         </tr>
                         @endforelse
                     </tbody>
@@ -196,11 +199,11 @@ $groups = Helper::get_groups();
 
                     <tfoot>
                         <tr>
-                            <th colspan="5">
-                                {{ $chefs->appends(['name' => request()->query('name'), 'phone' =>
-                                request()->query('phone'), 'dob' => request()->query('dob'), 'address' =>
-                                request()->query('address'), 'rank' => request()->query('rank'), 'feedback' =>
-                                request()->query('feedback'), 'group_id' => request()->query('group_id')])->links() }}
+                            <th colspan="6">
+                                {{ $enrollments->appends(['id' => request()->query('id'), 'course_id' =>
+                                request()->query('course_id'), 'chef_id' => request()->query('chef_id'), 'start_date' =>
+                                request()->query('start_date'), 'end_date' => request()->query('end_date'), 'status'
+                                =>request()->query('status')])->links() }}
                             </th>
                         </tr>
                     </tfoot>

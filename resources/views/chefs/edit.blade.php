@@ -109,8 +109,8 @@ $groups = Helper::get_groups();
                     <div class="col-md-12">
                         <div class="form-group">
                             <label class="form-label">Feedback</label>
-                            <textarea class="form-control" name="feedback" rows="3" value="{{ $chef->feedback }}"
-                                placeholder="Enter Feedback..."></textarea>
+                            <textarea class="form-control" name="feedback" rows="3"
+                                placeholder="Enter Feedback...">{{ $chef->feedback }}</textarea>
                         </div>
                     </div>
                 </div>

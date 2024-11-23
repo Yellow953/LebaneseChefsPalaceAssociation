@@ -55,6 +55,7 @@ class HomeController extends Controller
     {
         return view('frontend.institutes.costpitality');
     }
+
     public function custom_logout()
     {
         Session::flush();

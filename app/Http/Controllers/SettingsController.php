@@ -101,7 +101,7 @@ class SettingsController extends Controller
     {
         $filePath = public_path('backups/database_backup.sql');
 
-        exec('mysqldump -u' . env('DB_USERNAME') . ' -p' . env('DB_PASSWORD') . ' ' . env('DB_DATABASE') . ' > ' . $filePath);
+        exec('mysqldump -u ' . env('DB_USERNAME') . ' -p ' . env('DB_PASSWORD') . ' ' . env('DB_DATABASE') . ' > ' . $filePath);
 
         return response()->download($filePath)->deleteFileAfterSend(false);
     }

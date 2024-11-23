@@ -33,20 +33,11 @@ $units = Helper::get_units();
                         </div>
                     </div>
 
-                    <!-- Chef -->
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="form-label">Chef</label>
-                            <select class="form-select" data-control="select2" data-placeholder="Select an option"
-                                name="chef_id">
-                                <option value=""></option>
-                                @foreach ($chefs as $chef)
-                                <option value="{{ $chef->id }}" {{ old('chef_id')==$chef->id ?
-                                    'selected' : '' }}>
-                                    {{ $chef->name }}
-                                </option>
-                                @endforeach
-                            </select>
+                            <label class="required form-label">Date</label>
+                            <input type="date" class="form-control" name="achieved_on" value="{{ old('achieved_on') }}"
+                                required />
                         </div>
                     </div>
 
@@ -66,9 +57,17 @@ $units = Helper::get_units();
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="required form-label">Date</label>
-                            <input type="date" class="form-control" name="achieved_on" value="{{ old('achieved_on') }}"
-                                required />
+                            <label class="form-label">Chef</label>
+                            <select class="form-select" data-control="select2" data-placeholder="Select an option"
+                                name="chef_id">
+                                <option value=""></option>
+                                @foreach ($chefs as $chef)
+                                <option value="{{ $chef->id }}" {{ old('chef_id')==$chef->id ?
+                                    'selected' : '' }}>
+                                    {{ $chef->name }}
+                                </option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
 
@@ -76,8 +75,8 @@ $units = Helper::get_units();
                         <div class="form-group">
                             <label class="required form-label">Achivement Value</label>
                             <input type="number" class="form-control" name="achievement_value"
-                                placeholder="Enter Achievement Value..." value="{{ old('achievement_value') }}"
-                                required />
+                                placeholder="Enter Achievement Value..." value="{{ old('achievement_value') }}" min="0"
+                                step="any" required />
                         </div>
                     </div>
 
@@ -92,6 +91,14 @@ $units = Helper::get_units();
                                     $unit }}</option>
                                 @endforeach
                             </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="required form-label">Location</label>
+                            <input type="text" class="form-control" name="location" placeholder="Enter Location..."
+                                value="{{ old('location') }}" required />
                         </div>
                     </div>
 

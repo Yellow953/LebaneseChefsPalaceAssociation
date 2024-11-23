@@ -21,9 +21,9 @@ class Course extends Model
     // Filter
     public function scopeFilter($q)
     {
-        if (request('name')) {
-            $name = request('name');
-            $q->where('name', 'LIKE', "%{$name}%");
+        if (request('title')) {
+            $title = request('title');
+            $q->where('title', 'LIKE', "%{$title}%");
         }
         if (request('description')) {
             $description = request('description');
