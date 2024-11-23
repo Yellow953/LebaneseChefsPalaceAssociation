@@ -6,6 +6,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InsuranceApplicationController;
 use App\Http\Controllers\InsuranceController;
 use App\Http\Controllers\LogController;
 use App\Http\Controllers\ProfileController;
@@ -55,6 +56,18 @@ Route::middleware(['auth'])->group(function () {
             Route::get('/delete/{restaurant}', [RestaurantController::class, 'destroy'])->name('restaurants.destroy');
             Route::post('/download_file/{restaurant}', [RestaurantController::class, 'download_file'])->name('restaurants.download_file');
             Route::get('/', [RestaurantController::class, 'index'])->name('restaurants');
+        });
+
+        // Insurance Applications
+        Route::prefix('insurance_applications')->group(function () {
+            Route::get('/new', [InsuranceApplicationController::class, 'new'])->name('insurance_applications.new');
+            Route::post('/create', [InsuranceApplicationController::class, 'create'])->name('insurance_applications.create');
+            Route::get('/edit/{insurance_application}', [InsuranceApplicationController::class, 'edit'])->name('insurance_applications.edit');
+            Route::post('/update/{insurance_application}', [InsuranceApplicationController::class, 'update'])->name('insurance_applications.update');
+            Route::get('/delete/{insurance_application}', [InsuranceApplicationController::class, 'destroy'])->name('insurance_applications.destroy');
+            Route::get('/approve/{insurance_application}', [InsuranceApplicationController::class, 'approve'])->name('insurance_applications.approve');
+            Route::post('/transform/{insurance_application}', [InsuranceApplicationController::class, 'transform'])->name('insurance_applications.transform');
+            Route::get('/', [InsuranceApplicationController::class, 'index'])->name('insurance_applications');
         });
 
         // Insurances
@@ -174,8 +187,8 @@ Route::prefix('institutes')->group(function () {
 // About Page
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 
-// Landing Page
-Route::get('/', [HomeController::class, 'index'])->name('home');
-
 //Certificate Page
 Route::get('/certificate', [HomeController::class, 'certificate'])->name('certificate');
+
+// Landing Page
+Route::get('/', [HomeController::class, 'index'])->name('home');

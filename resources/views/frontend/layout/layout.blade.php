@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     @yield('title')
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +24,8 @@
     <link rel="icon" type="favicon" href="{{ asset('assets/images/favicon.png') }}" />
 </head>
 
-<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-white position-relative app-blank">
+<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu"
+    class="bg-white position-relative app-blank custom_scroller">
     <!--begin::Theme mode setup on page load-->
     <script>
         var defaultThemeMode = "light";

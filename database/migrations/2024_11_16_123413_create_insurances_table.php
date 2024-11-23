@@ -16,7 +16,7 @@ return new class extends Migration
 
             $table->string('policy_number')->unique();
             $table->date('start_date');
-            $table->date('end_date');
+            $table->date('end_date')->nullable();
             $table->enum('status', ['active', 'expired', 'canceled'])->default('active');
 
             $table->string('document')->nullable();

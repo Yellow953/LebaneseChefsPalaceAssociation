@@ -8,7 +8,10 @@ class Helper
 {
     public static function get_user_roles()
     {
-        return ['user', 'admin'];
+        return [
+            'user',
+            'admin'
+        ];
     }
 
     public static function get_restaurants_types()
@@ -92,12 +95,20 @@ class Helper
 
     public static function get_insurance_statuses()
     {
-        return ['active', 'expired', 'canceled'];
+        return [
+            'active',
+            'expired',
+            'canceled'
+        ];
     }
 
     public static function get_record_categories()
     {
-        return ['Food', 'Hotels', 'Hospitality'];
+        return [
+            'Food',
+            'Hotels',
+            'Hospitality'
+        ];
     }
 
     public static function get_units()
@@ -174,6 +185,16 @@ class Helper
             'Completed',
             'In Progress',
             'Cancelled',
+        ];
+    }
+
+    public static function get_insurance_application_maritial_statuses()
+    {
+        return [
+            'Single',
+            'Married',
+            'Divorced',
+            'Widowed',
         ];
     }
 }

@@ -84,7 +84,7 @@
 
                 <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click"
-                    class="menu-item px-0 py-1 here {{ request()->routeIs('insurances*') ? 'show' : '' }} menu-accordion">
+                    class="menu-item px-0 py-1 here {{ request()->routeIs('insurances*') ? 'show' : '' }} {{ request()->routeIs('insurance_applications*') ? 'show' : '' }} menu-accordion">
                     <!--begin:Menu link-->
                     <span class="menu-link">
                         <span class="menu-icon">
@@ -98,6 +98,19 @@
                     <div class="menu-sub menu-sub-accordion">
                         <!--begin:Menu item-->
                         <div class="menu-item px-0 py-1">
+                            <!--begin:Menu item-->
+                            <div class="menu-item px-0 py-1">
+                                <!--begin:Menu link-->
+                                <a class="menu-link {{ request()->routeIs('insurance_applications*') ? 'active' : '' }}"
+                                    href="{{ route('insurance_applications') }}">
+                                    <span class="menu-icon">
+                                        <i class="bi bi-file-text-fill"></i>
+                                    </span>
+                                    <span class="menu-title">Applications</span>
+                                </a>
+                                <!--end:Menu link-->
+                            </div>
+                            <!--end:Menu item-->
                             <!--begin:Menu item-->
                             <div class="menu-item px-0 py-1">
                                 <!--begin:Menu link-->
