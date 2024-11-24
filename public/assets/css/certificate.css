@@ -8,11 +8,12 @@ body {
 }
 
 .certificate {
-    background-image: url(../images/testchef-certificate/certificate-bg.png);
-    background-size: 800px 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     width: 800px;
     height: 100vh;
-    padding: 40px;
+    padding: 50px;
     position: relative;
     text-align: center;
     border: 2px solid #ccc;
@@ -24,7 +25,7 @@ body {
 
 .logo {
     width: 150px;
-    margin: 30px auto 0;
+    margin: 50px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,9 +59,9 @@ body {
 }
 
 .signature-line {
-    width: 200px;
+    width: 150px;
     border-bottom: 1px solid #000;
-    margin-top: 40px;
+    margin-top: 35px;
     position: relative;
 }
 
@@ -73,6 +74,6 @@ body {
 }
 
 .date {
-    margin-top: 50px;
+    margin-top: 35px;
     font-style: italic;
 }

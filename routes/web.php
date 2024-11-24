@@ -87,7 +87,6 @@ Route::middleware(['auth'])->group(function () {
             Route::get('/export', [CertificateController::class, 'export'])->name('certificates.export');
             Route::get('/new', [CertificateController::class, 'new'])->name('certificates.new');
             Route::post('/create', [CertificateController::class, 'create'])->name('certificates.create');
-            Route::get('/show/{certificate}', [CertificateController::class, 'show'])->name('certificates.show');
             Route::get('/edit/{certificate}', [CertificateController::class, 'edit'])->name('certificates.edit');
             Route::post('/update/{certificate}', [CertificateController::class, 'update'])->name('certificates.update');
             Route::get('/delete/{certificate}', [CertificateController::class, 'destroy'])->name('certificates.destroy');
@@ -189,6 +188,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/custom_logout', [HomeController::class, 'custom_logout'])->name('custom_logout');
 });
 
+Route::get('/certificates/{certificate}', [CertificateController::class, 'show'])->name('certificates.show');
+
 //Institutes Pages Group
 Route::prefix('institutes')->group(function () {
     //Individual Institutes Pages
@@ -205,9 +206,6 @@ Route::prefix('institutes')->group(function () {
 
 // About Page
 Route::get('/about', [HomeController::class, 'about'])->name('about');
-
-//Certificate Page
-Route::get('/certificate', [HomeController::class, 'certificate'])->name('certificate');
 
 // Landing Page
 Route::get('/', [HomeController::class, 'index'])->name('home');

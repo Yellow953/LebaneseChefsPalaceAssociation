@@ -4,16 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestChef Certificate</title>
+    <title>Lebanese Chefs Palace Association</title>
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!--Favicon-->
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
+
     <!--Certificate CSS File-->
     <link rel="stylesheet" href="{{ asset('assets/css/certificate.css') }}">
+
     <!--General CSS File-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
+    <style>
+        .certificate {
+            background-image: url("{{ asset('assets/images/testchef-certificate/certificate-bg.png') }}");
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            .certificate,
+            .certificate * {
+                visibility: visible;
+            }
+
+            .certificate {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            @page {
+                size: A4 landscape;
+                margin: 20mm;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -27,12 +60,11 @@
                     <img src="{{ asset('assets/images/logo.png') }}" alt="LCPA Logo" class="institutes-logos">
                 </div>
                 <div class="row">
-                    <img src="{{ asset('assets/images/golden-book/golden-book.png') }}" alt="Golden Book"
+                    <img src="{{ asset('assets/images/golden-book/golden-book.png') }}" alt="TestChef"
                         class="institutes-logos">
                 </div>
                 <div class="row">
-                    <img src="{{ asset('assets/images/golden-book/golden-book.png') }}" alt="TestChef"
-                        class="institutes-logos">
+                    <img src="{{ asset('assets/images/ghi/GHI.png') }}" alt="GHI Logo" class="institutes-logos">
                 </div>
             </div>
             <div class="col-8">

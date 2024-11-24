@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
@@ -18,10 +17,6 @@ class HomeController extends Controller
         return view('frontend.about');
     }
 
-    public function certificate()
-    {
-        return view('certificates.testchef');
-    }
     public function institutes()
     {
         return view('frontend.institutes.institutes');
