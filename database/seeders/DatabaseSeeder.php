@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             GroupSeeder::class,
             InsuranceTypeSeeder::class,
+            CertificateTypeSeeder::class,
         ]);
     }
 }

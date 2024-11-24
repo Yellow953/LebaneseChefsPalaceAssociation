@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AppController;
+use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ChefController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\EnrollmentController;
@@ -81,6 +82,18 @@ Route::middleware(['auth'])->group(function () {
             Route::get('/', [InsuranceController::class, 'index'])->name('insurances');
         });
 
+        // Certificates
+        Route::prefix('certificates')->group(function () {
+            Route::get('/export', [CertificateController::class, 'export'])->name('certificates.export');
+            Route::get('/new', [CertificateController::class, 'new'])->name('certificates.new');
+            Route::post('/create', [CertificateController::class, 'create'])->name('certificates.create');
+            Route::get('/show/{certificate}', [CertificateController::class, 'show'])->name('certificates.show');
+            Route::get('/edit/{certificate}', [CertificateController::class, 'edit'])->name('certificates.edit');
+            Route::post('/update/{certificate}', [CertificateController::class, 'update'])->name('certificates.update');
+            Route::get('/delete/{certificate}', [CertificateController::class, 'destroy'])->name('certificates.destroy');
+            Route::get('/', [CertificateController::class, 'index'])->name('certificates');
+        });
+
         // Events
         Route::prefix('events')->group(function () {
             Route::get('/export', [EventController::class, 'export'])->name('events.export');
@@ -157,6 +170,12 @@ Route::middleware(['auth'])->group(function () {
             Route::prefix('insurance_types')->group(function () {
                 Route::post('/create', [SettingsController::class, 'insurance_types_create'])->name('settings.insurance_types.create');
                 Route::get('/destroy/{insurance_type}', [SettingsController::class, 'insurance_types_destroy'])->name('settings.insurance_types.destroy');
+            });
+
+            // Certificate Types
+            Route::prefix('certificate_types')->group(function () {
+                Route::post('/create', [SettingsController::class, 'certificate_types_create'])->name('settings.certificate_types.create');
+                Route::get('/destroy/{insurance_type}', [SettingsController::class, 'certificate_types_destroy'])->name('settings.certificate_types.destroy');
             });
 
             Route::get('/', [SettingsController::class, 'index'])->name('settings');

@@ -6,7 +6,7 @@
 <div class="container px-4">
     <h2 class="mb-5 text-center">Insurance Types</h2>
     <div class="row">
-        <div class="col-md-4 my-auto">
+        <div class="col-md-4">
             <div class="card">
                 <img src="{{ asset('assets/images/insurance.jpg') }}" alt="Insurance" class="groups-img">
             </div>
@@ -21,8 +21,6 @@
                         <div class="input-group d-flex align-items-center gap-3">
                             <input type="text" name="name" class="form-control name-field"
                                 placeholder="Enter Insurance Type Name" required>
-
-                            <input type="file" name="image" class="form-control">
 
                             <input type="text" name="description" class="form-control"
                                 placeholder="Enter Insurance Type Description">
@@ -48,19 +46,8 @@
                             @forelse ($insurance_types as $insurance_type)
                             <tr>
                                 <td>
-                                    <div class="d-flex align-items-center">
-                                        <!--begin::Avatar-->
-                                        <div class="symbol symbol-45px me-5">
-                                            <img alt="user" src="{{ asset($insurance_type->image) }}" />
-                                        </div>
-                                        <!--end::Avatar-->
-                                        <!--begin::Name-->
-                                        <div class="d-flex justify-content-start flex-column">
-                                            <a href="#" class="text-dark fw-bold text-hover-primary mb-1 fs-6">{{
-                                                ucwords($insurance_type->name) }}</a>
-                                        </div>
-                                        <!--end::Name-->
-                                    </div>
+                                    <a href="#" class="text-dark fw-bold text-hover-primary mb-1 fs-6">{{
+                                        ucwords($insurance_type->name) }}</a>
                                 </td>
                                 <td>{{ $insurance_type->description }}</td>
                                 <td class="d-flex justify-content-center border-0">
@@ -76,6 +63,78 @@
                             @empty
                             <tr>
                                 <td colspan="3">No Insurance Types Yet...</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h2 class="mb-5 text-center">Certificate Types</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ asset('assets/images/certifications/testchef-certification.jpg') }}" alt="Certificate"
+                    class="groups-img">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card p-4 mb-5">
+                <div class="new">
+                    <form action="{{ route('settings.certificate_types.create') }}" method="post"
+                        enctype="multipart/form-data">
+                        @csrf
+
+                        <div class="input-group d-flex align-items-center gap-3">
+                            <input type="text" name="name" class="form-control name-field"
+                                placeholder="Enter Certificate Type Name" required>
+
+                            <input type="text" name="description" class="form-control"
+                                placeholder="Enter Certificate Type Description">
+
+                            <button type="submit" class="btn btn-success btn-sm">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card p-4 mb-5">
+                <div class="groups">
+                    <table class="w-100 text-center table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+                        <thead>
+                            <tr>
+                                <th class="col-2">Certificate Type</th>
+                                <th class="col-8">Description</th>
+                                <th class="col-2">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($certificate_types as $certificate_type)
+                            <tr>
+                                <td>
+                                    <a href="#" class="text-dark fw-bold text-hover-primary mb-1 fs-6">{{
+                                        ucwords($certificate_type->name)
+                                        }}</a>
+                                </td>
+                                <td>{{ $certificate_type->description }}</td>
+                                <td class="d-flex justify-content-center border-0">
+                                    @if($certificate_type->can_delete())
+                                    <a href="{{ route('settings.certificate_types.destroy', $certificate_type->id) }}"
+                                        class="btn btn-icon btn-danger btn-sm show_confirm" data-toggle="tooltip"
+                                        data-original-title="Delete Certificate Type">
+                                        <i class="bi bi-trash3-fill"></i>
+                                    </a>
+                                    @endif
+                                </td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td colspan="3">No Certificate Types Yet...</td>
                             </tr>
                             @endforelse
                         </tbody>

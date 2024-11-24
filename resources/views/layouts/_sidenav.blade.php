@@ -169,7 +169,7 @@
 
                 <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click"
-                    class="menu-item px-0 py-1 here {{ request()->routeIs('courses*') ? 'show' : '' }} {{ request()->routeIs('enrollments*') ? 'show' : '' }} menu-accordion">
+                    class="menu-item px-0 py-1 here {{ request()->routeIs('courses*') ? 'show' : '' }} {{ request()->routeIs('enrollments*') ? 'show' : '' }} {{ request()->routeIs('certificates*') ? 'show' : '' }} menu-accordion">
                     <!--begin:Menu link-->
                     <span class="menu-link">
                         <span class="menu-icon">
@@ -183,6 +183,19 @@
                     <div class="menu-sub menu-sub-accordion">
                         <!--begin:Menu item-->
                         <div class="menu-item px-0 py-1">
+                            <!--begin:Menu item-->
+                            <div class="menu-item px-0 py-1">
+                                <!--begin:Menu link-->
+                                <a class="menu-link {{ request()->routeIs('certificates*') ? 'active' : '' }}"
+                                    href="{{ route('certificates') }}">
+                                    <span class="menu-icon">
+                                        <i class="bi bi-patch-check-fill"></i>
+                                    </span>
+                                    <span class="menu-title">Certificates</span>
+                                </a>
+                                <!--end:Menu link-->
+                            </div>
+                            <!--end:Menu item-->
                             <!--begin:Menu item-->
                             <div class="menu-item px-0 py-1">
                                 <!--begin:Menu link-->

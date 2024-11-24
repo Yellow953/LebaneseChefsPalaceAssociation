@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'insurances')
+@section('title', 'certificates')
 
 @section('sub-title', 'new')
 
@@ -17,36 +17,28 @@ $statuses = Helper::get_insurance_statuses();
 @section('content')
 <div class="container mt-5">
     <div class="card">
-        <form action="{{ route('insurances.create') }}" method="POST" enctype="multipart/form-data" class="form">
+        <form action="{{ route('certificates.create') }}" method="POST" enctype="multipart/form-data" class="form">
             @csrf
             <div class="card-head">
-                <h1 class="text-center text-primary">New Insurance</h1>
+                <h1 class="text-center text-primary">New Certificate</h1>
             </div>
             <div class="card-body">
                 <div class="row">
-                    <!-- Insurance Type -->
-                    <div class="col-md-6">
+                    <!-- Certificate Type -->
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <label class="required form-label">Insurance Type</label>
+                            <label class="required form-label">Certificate Type</label>
                             <select class="form-select" data-control="select2" data-placeholder="Select an option"
-                                required name="insurance_type_id">
+                                required name="certificate_type_id">
                                 <option value=""></option>
-                                @foreach ($insuranceTypes as $type)
-                                <option value="{{ $type->id }}" {{ old('insurance_type_id')==$type->id ? 'selected' : ''
+                                @foreach ($certificateTypes as $type)
+                                <option value="{{ $type->id }}" {{ old('certificate_type_id')==$type->id ? 'selected' :
+                                    ''
                                     }}>
                                     {{ $type->name }}
                                 </option>
                                 @endforeach
                             </select>
-                        </div>
-                    </div>
-
-                    <!-- Policy Number -->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="required form-label">Policy Number</label>
-                            <input type="text" class="form-control" name="policy_number"
-                                placeholder="Enter Policy Number..." value="{{ old('policy_number') }}" required />
                         </div>
                     </div>
 

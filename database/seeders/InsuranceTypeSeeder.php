@@ -13,7 +13,6 @@ class InsuranceTypeSeeder extends Seeder
         $insurance_types = [
             [
                 'name' => 'Bitakatouna',
-                'image' => 'assets/images/no_img.png',
                 'description' => 'Card that gives discounts in various places...',
                 'created_at' => now(),
                 'updated_at' => now(),

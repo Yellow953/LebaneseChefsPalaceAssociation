@@ -39,7 +39,8 @@
                             <!--end::Link-->
                             <!--begin::Link-->
                             <span class="text-gray-400 fs-4 mb-6"><i class="bi bi-geo-alt fs-4 me-3"></i>Address:
-                                <a href="https://maps.app.goo.gl/vL2tAK9gUSF7ZxJ37" class="opacity-80 link-footer fs-5 mb-6">Jounieh, Lebanon</a></span>
+                                <a href="https://maps.app.goo.gl/vL2tAK9gUSF7ZxJ37"
+                                    class="opacity-80 link-footer fs-5 mb-6">Jounieh, Lebanon</a></span>
                             <!--end::Link-->
                         </div>
                         <!--end::Contact Us-->
@@ -63,7 +64,8 @@
                             </a>
                             <!--end::Link-->
                             <!--begin::Link-->
-                            <a href="https://www.instagram.com/costpitality/profilecard/?igsh=cTdneGE2MW11Z2x5" class="mb-6">
+                            <a href="https://www.instagram.com/costpitality/profilecard/?igsh=cTdneGE2MW11Z2x5"
+                                class="mb-6">
                                 <i class="bi bi-instagram fs-4 me-3"></i>
                                 <span class="opacity-80 link-footer fs-5 mb-6">Instagram</span>
                             </a>
@@ -124,25 +126,20 @@
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-lg-5">
-                        <!--begin::Powered By-->
-                        <div class="d-flex align-items-center order-1">
-                            <!--begin::Logo image-->
-                            <span class="fs-6 fw-semibold text-gray-600 pt-6">Powered by <a href="https://yellowtech.dev" class="opacity-80 link-footer fs-5 mb-6" target="_blank">YellowTech</a></span>
-                            <!--end::Logo image-->
-                        </div>
-                        <!--end::Powered By-->
+                    <div class="col-12 col-lg-5 my-4 my-md-auto text-center">
+                        <span class="fs-6 fw-semibold text-gray-600 pt-6">Powered by <a href="https://yellowtech.dev"
+                                class="opacity-80 link-footer fs-5 mb-6" target="_blank">YellowTech</a></span>
                     </div>
                     <!--end::Col-->
                     <!--begin::Col-->
-                    <div class="col-lg-1">
+                    <div class="col-12 col-lg-1">
                         <!--begin::Menu-->
-                        <ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 pt-2 mb-4 mb-md-0">
+                        <ul
+                            class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 pt-2 mb-4 mb-md-0 justify-content-center justify-content-md-start">
                             <li class="menu-item">
-                                <a href="{{route('home')}}" target="_blank"
-                                    class="link-footer opacity-80 px-2">HOME</a>
+                                <a href="{{route('home')}}" target="_blank" class="link-footer opacity-80 px-2">HOME</a>
                             </li>
-                            <li class="menu-item mx-5">
+                            <li class="menu-item">
                                 <a href="{{route('about')}}" target="_blank"
                                     class="link-footer opacity-80 px-2">ABOUT</a>
                             </li>
