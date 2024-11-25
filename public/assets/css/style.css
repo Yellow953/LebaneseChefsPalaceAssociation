@@ -193,6 +193,10 @@ body {
 
 /* -------------------Text------------------- */
 
+.text-center {
+    text-align: center !important;
+}
+
 .about-hero-text {
     font-family: "Poppins", sans-serif !important;
     color: var(--primary-color);
@@ -721,4 +725,18 @@ body {
     .timeline-content::after {
         top: 15px;
     }
+}
+
+/* -----------------Forms---------------- */
+
+.input {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-shadow: var(--dark-color);
+}
+
+.input:focus {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-shadow: var(--dark-color);
 }

@@ -51,6 +51,10 @@ class HomeController extends Controller
         return view('frontend.institutes.costpitality');
     }
 
+    public function apply_for_insurance()
+    {
+        return view('insurance_applications.apply');
+    }
     public function custom_logout()
     {
         Session::flush();

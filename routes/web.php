@@ -209,3 +209,6 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 // Landing Page
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+//apply for insurance
+Route::get('/apply_for_insurance', [HomeController::class, 'apply_for_insurance'])->name('apply_for_insurance');

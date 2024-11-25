@@ -74,7 +74,7 @@
                     CERTIFIES THAT<br>
                     <strong style="font-size: 20px; margin: 20px 0; display: block;">MR:<u>{{ ucwords($certificate->chef
                             ? $certificate->chef->name : $certificate->restaurant->name) }}</u></strong>
-                    based on his course of {{ ucwords($certificate->certificateType->name) }}, has been give this
+                    based on his course of {{ ucwords($certificate->certificateType->name) }}, has been given this
                     certificate of<br>
                     <strong class="text-uppercase" style="font-size: 36pt; margin: 20px 0; display: block;">{{
                         $certificate->chef->rank }}</strong>
