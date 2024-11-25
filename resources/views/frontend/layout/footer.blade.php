@@ -84,7 +84,7 @@
                             <h4 class="fw-bold text-gray-400 fs-2 mb-6">Follow Our Founder</h4>
                             <!--end::Subtitle-->
                             <!--begin::Link-->
-                            <a href="https://www.youtube.com/@costpitality" class="mb-6">
+                            <a href="https://www.facebook.com/share/1Ah8qhGAEc/" class="mb-6">
                                 <img src="{{asset('assets/images/chef-nizar.jpg')}}" alt="" class="chef-nizar">
                             </a>
                             <!--end::Link-->
