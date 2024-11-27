@@ -740,3 +740,7 @@ body {
     color: var(--light-color);
     text-shadow: var(--dark-color);
 }
+
+.card-insurance {
+    min-width: 80vw;
+}

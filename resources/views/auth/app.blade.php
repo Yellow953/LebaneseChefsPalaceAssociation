@@ -38,32 +38,8 @@
 
 <!--begin::Body-->
 
-<body id="kt_body" class="app-blank bgi-size-cover bgi-position-center bgi-no-repeat">
-    <!--begin::Root-->
-    <div class="d-flex flex-column flex-root" id="kt_app_root">
-        <!--begin::Authentication - Sign-in -->
-        <div class="d-flex flex-column flex-column-fluid flex-lg-row">
-            <!--begin::Body-->
-            <div class="d-flex flex-center w-lg-50 p-10" style="margin: auto">
-                <!--begin::Card-->
-                <div class="card login-card-custom rounded-3 w-md-450px">
-                    <!--begin::Card body-->
-                    <div class="card-body d-flex flex-column px-10 py-5">
-                        <!--begin::Wrapper-->
-                        <div class="d-flex flex-center flex-column-fluid">
-                            @yield('content')
-                        </div>
-                        <!--end::Wrapper-->
-                    </div>
-                    <!--end::Card body-->
-                </div>
-                <!--end::Card-->
-            </div>
-            <!--end::Body-->
-        </div>
-        <!--end::Authentication - Sign-in-->
-    </div>
-    <!--end::Root-->
+<body id="kt_body" class="app-blank">
+    @yield('content')
 
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
