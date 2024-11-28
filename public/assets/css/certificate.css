@@ -8,11 +8,10 @@ body {
 }
 
 .certificate {
-    background-image: url("{{ asset('assets/images/testchef-certificate/certificate-bg.png') }}");
+    background-image: url("../images/testchef-certificate/certificate-bg.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 800px;
+    background-size: cover;
     height: 100vh;
     padding: 50px;
     position: relative;
@@ -26,7 +25,7 @@ body {
 
 .logo {
     width: 150px;
-    margin: 50px auto 0;
+    margin: 20px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,6 +49,10 @@ body {
 .content {
     line-height: 1;
     font-size: 14px;
+}
+
+.contents {
+    margin-top: 10px;
 }
 
 .signature-area {
@@ -104,7 +107,13 @@ body {
         left: 0;
         width: 100%;
     }
+    .contents {
+        margin-top: 20px;
+    }
 
+    .signature-area {
+        margin-top: 50px;
+    }
     @page {
         size: A4 landscape;
         margin: 20mm;

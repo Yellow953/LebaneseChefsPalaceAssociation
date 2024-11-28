@@ -8,7 +8,7 @@
         <!--begin::Body-->
         <div class="d-flex flex-center w-lg-50 p-10" style="margin: auto">
             <!--begin::Card-->
-            <div class="card login-card-custom rounded-3">
+            <div class="card login-card-custom rounded-3 w-md-450px">
                 <!--begin::Card body-->
                 <div class="card-body d-flex flex-column px-10 py-5">
                     <!--begin::Wrapper-->

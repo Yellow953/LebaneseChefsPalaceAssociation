@@ -18,35 +18,6 @@
 
     <!--General CSS File-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
-    <style>
-        .certificate {
-            background-image: url("{{ asset('assets/images/testchef-certificate/certificate-bg.png') }}");
-        }
-
-        @media print {
-            body * {
-                visibility: hidden;
-            }
-
-            .certificate,
-            .certificate * {
-                visibility: visible;
-            }
-
-            .certificate {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-            }
-
-            @page {
-                size: A4 landscape;
-                margin: 20mm;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -54,7 +25,7 @@
         <div class="header">
             <div><img src="{{ asset('assets/images/ghi/GHI.png') }}" alt="GHI Logo" class="logo"></div>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center contents">
             <div class="col-2">
                 <div class="row">
                     <img src="{{ asset('assets/images/logo.png') }}" alt="LCPA Logo" class="institutes-logos">
