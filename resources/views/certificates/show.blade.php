@@ -22,7 +22,7 @@
 
 <body>
     <div class="certificate">
-        <div class="header">
+        <div>
             <div><img src="{{ asset('assets/images/ghi/GHI.png') }}" alt="GHI Logo" class="logo"></div>
         </div>
         <div class="row align-items-center contents">
@@ -43,11 +43,11 @@
 
                 <div class="content">
                     CERTIFIES THAT<br>
-                    <strong style="font-size: 20px; margin: 20px 0; display: block;">MR:<u>{{ ucwords($certificate->chef
+                    <strong class="chef-name">MR:<u>{{ ucwords($certificate->chef
                             ? $certificate->chef->name : $certificate->restaurant->name) }}</u></strong>
                     based on his course of {{ ucwords($certificate->certificateType->name) }}, has been given this
                     certificate of<br>
-                    <strong class="text-uppercase" style="font-size: 36pt; margin: 20px 0; display: block;">{{
+                    <strong class="text-uppercase rank">{{
                         $certificate->chef->rank }}</strong>
                     SPECIALIZING IN LEBANESE KITCHEN
                 </div>
